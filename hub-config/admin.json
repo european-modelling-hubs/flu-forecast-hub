@@ -1,17 +1,17 @@
 {
     "schema_version": "https://raw.githubusercontent.com/Infectious-Disease-Modeling-Hubs/schemas/main/v2.0.0/admin-schema.json",
-    "name": "Testing Forecasting Hub",
+    "name": "Influenza Forecasting Hub Europe",
     "maintainer": "ISI Foundation",
     "contact": {
         "name": "Paolo Milano",
         "email": "paolo.milano@.isi.Infectious"
     },
-    "repository_url": "https://github.com/Chappi74/test_hub",
+    "repository_url": "https://github.com/european-modelling-hubs/flu-forecast-hub",
     "file_format": ["csv"],
     "hub_models": [{
-        "team_abbr": "ISI",
-        "model_abbr": "GLEAM",
-        "model_type": "baseline"
+        "team_abbr": "ECDC",
+        "model_abbr": "TBD-ensemble",
+        "model_type": "ensemble"
     }],
-    "timezone": "Europe/Rome"
+    "timezone": "Europe/Stockholm"
 }
