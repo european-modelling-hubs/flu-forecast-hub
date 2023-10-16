@@ -10,7 +10,8 @@
         },
         "team_name": {
             "description": "The name of the team submitting the model",
-            "type": "string"
+            "type": "string",
+            "maxLength": 50
         },
         "team_abbr": {
             "description": "Abbreviated name of the team submitting the model",
@@ -20,7 +21,8 @@
         },
         "model_name": {
             "description": "The name of the model",
-            "type": "string"
+            "type": "string",
+            "maxLength": 50
         },
         "model_abbr": {
             "description": "Abbreviated name of the model",
@@ -31,6 +33,10 @@
         "model_version": {
             "description": "Identifier of the version of the model",
             "type": "string"
+        },
+        "team_model_designation": {
+            "type": "string",
+            "enum": ["primary", "secondary", "proposed", "other"]
         },
         "model_contributors": {
             "type": "array",
@@ -121,11 +127,10 @@
     "required": [
         "schema_version",
         "team_name",
-        "team_abbr",
         "model_name",
         "model_abbr",
         "model_contributors",
-        "license",
+        "team_model_designation",
         "model_details"
     ]
 }
