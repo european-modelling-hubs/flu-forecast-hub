@@ -134,7 +134,7 @@
                         {
                            "target_id": "ILI incidence",
                            "target_name": "Weekly incidence for Influenza like illness",
-                           "target_units": "count per 100,000 population",
+                           "target_units": "cases per 100,000 population",
                            "target_keys": {
                                "target": "ILI incidence"
                            },
@@ -148,8 +148,8 @@
             ],
             "submissions_due": {
                 "relative_to": "origin_date",
-                "start": -6,
-                "end": 1
+                "start": -7,
+                "end": 0
             }
         }
     ]
