@@ -62,7 +62,7 @@
                         }
                     },
                     "output_type": {
-                        "point": {
+                        "median": {
                             "output_type_id": {
                                 "required": "",
                                 "optional": null
@@ -103,8 +103,7 @@
                             },
                             "value": {
                                 "type": "double",
-                                "minimum": 0,
-                                "maximum": 1
+                                "minimum": 0
                             }
                         }
                     },
@@ -126,7 +125,7 @@
             ],
             "submissions_due": {
                 "relative_to": "origin_date",
-                "start": -7,
+                "start": -6,
                 "end": 0
             }
         }
