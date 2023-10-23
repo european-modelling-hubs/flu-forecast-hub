@@ -10,7 +10,7 @@
     "file_format": ["csv"],
     "hub_models": [{
         "team_abbr": "ECDC",
-        "model_abbr": "TBD-ensemble",
+        "model_abbr": "TBD",
         "model_type": "ensemble"
     }],
     "timezone": "Europe/Stockholm"
