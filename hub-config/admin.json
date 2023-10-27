@@ -4,7 +4,7 @@
     "maintainer": "ISI Foundation",
     "contact": {
         "name": "Paolo Milano",
-        "email": "paolo.milano@.isi.it"
+        "email": "paolo.milano@isi.it"
     },
     "repository_url": "https://github.com/european-modelling-hubs/flu-forecast-hub",
     "file_format": ["csv"],
