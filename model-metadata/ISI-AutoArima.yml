@@ -1,0 +1,15 @@
+team_name: ISI Foundation Computational Epidemiology Lab
+model_name: ISI AutoArima
+team_abbr: ISI
+model_abbr: AutoArima
+model_contributors:
+  - name: Corrado Gioannini
+    email: corrado.gioannini@isi.it
+website_url: https://github.com/european-modelling-hubs/flu-forecast-hub
+license: cc-by-4.0
+team_model_designation: primary
+methods: To be addded
+team_funding: To be addded
+repo_url: https://github.com/european-modelling-hubs/flu-forecast-hub
+data_inputs: To be added
+methods_long: To be added
