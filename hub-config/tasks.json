@@ -9,7 +9,7 @@
                     "task_ids": {
                         "origin_date": {
                             "required": null,
-                            "optional": ["NA"]
+                            "optional": ["2023-10-05"]
                         },
                         "target": {
                             "required": ["ILI incidence"],
@@ -21,7 +21,7 @@
                         },
                         "target_date": {
                             "required": null,
-                            "optional": ["NA"]
+                            "optional": ["2023-10-12"]
                         },
                         "location": {
                             "required": null,
@@ -64,7 +64,7 @@
                     "output_type": {
                         "median": {
                             "output_type_id": {
-                                "required": "",
+                                "required": ["NA"],
                                 "optional": null
                             },
                             "value": {
