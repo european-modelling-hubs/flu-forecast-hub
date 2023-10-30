@@ -212,7 +212,7 @@
                         "median": {
                             "output_type_id": {
                                 "required": null,
-                                "optional": [0.5]
+                                "optional": ["NA"]
                             },
                             "value": {
                                 "type": "double",
@@ -234,7 +234,6 @@
                            "time_unit": "week"
                         }
                     ]
-
                 }
             ],
             "submissions_due": {
