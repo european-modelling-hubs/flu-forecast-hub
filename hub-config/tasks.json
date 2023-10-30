@@ -9,7 +9,9 @@
                     "task_ids": {
                         "origin_date": {
                             "required": null,
-                            "optional": null
+                            "optional": [
+                                "2020-01-05"
+                            ]
                         },
                         "target": {
                             "required": ["ILI incidence"],
