@@ -212,7 +212,7 @@
                         "median": {
                             "output_type_id": {
                                 "required": null,
-                                "optional": ["NA"]
+                                "optional": [0.5]
                             },
                             "value": {
                                 "type": "double",
