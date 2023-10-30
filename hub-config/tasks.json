@@ -84,11 +84,11 @@
                     "output_type": {
                         "median": {
                             "output_type_id": {
-                                "required": ["NA"],
-                                "optional": null
+                                "required": null,
+                                "optional": ["NA"]
                             },
                             "value": {
-                                "type": "integer",
+                                "type": "double",
                                 "minimum": 0
                             }
                         },
