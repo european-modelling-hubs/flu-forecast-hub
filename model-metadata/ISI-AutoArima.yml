@@ -5,14 +5,5 @@ model_abbr: AutoArima
 model_contributors:
   - name: Corrado Gioannini
     email: corrado.gioannini@isi.it
-website_url: https://github.com/european-modelling-hubs/flu-forecast-hub
-license: CC-BY-4.0
 team_model_designation: primary
-model_details:
-  data_inputs: ""
-  methods: ""
-  methods_long: ""
-methods: To be addded
-repo_url: https://github.com/european-modelling-hubs/flu-forecast-hub
-data_inputs: To be added
-methods_long: To be added
+methods: "Equally weighted ensemble of simple time-series baseline models."
