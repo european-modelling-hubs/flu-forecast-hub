@@ -4,10 +4,6 @@
     "description": "This is the schema for hub model metadata files, please refer to https://github.com/covid19-forecast-hub-europe/covid19-forecast-hub-europe/wiki/Metadata for more information.",
     "type": "object",
     "properties": {
-        "schema_version": {
-            "type": "string",
-            "format": "uri"
-        },
         "team_name": {
             "description": "The name of the team submitting the model",
             "type": "string",
@@ -29,14 +25,6 @@
             "type": "string",
             "pattern": "^[a-zA-Z0-9_+]+$",
             "maxLength": 16
-        },
-        "model_version": {
-            "description": "Identifier of the version of the model",
-            "type": "string"
-        },
-        "team_model_designation": {
-            "type": "string",
-            "enum": ["primary", "secondary", "proposed", "other"]
         },
         "model_contributors": {
             "type": "array",
@@ -64,15 +52,18 @@
                 }
             }
         },
-        "website_url": {
-            "description": "Public facing website for the model",
+        "team_model_designation": {
             "type": "string",
-            "format": "uri"
+            "enum": ["primary", "secondary", "proposed", "other"]
         },
-        "repo_url": {
-            "description": "Repository containing code for the model",
+        "model_version": {
+            "description": "Identifier of the version of the model",
+            "type": "string"
+        },
+        "methods": {
+            "description": "A brief (200 char.) description of the methods used by this model",
             "type": "string",
-            "format": "uri"
+            "maxLength": 200
         },
         "license": {
             "description": "License for use of model output data",
@@ -87,38 +78,26 @@
                 "OGL-3.0"
             ]
         },
-        "citation": {
-            "description": "One or more citations for this model",
-            "type": "string"
-        },
         "team_funding": {
             "description": "Any information about funding source for the team or members of the team.",
             "type": "string"
         },
-        "model_details": {
-            "description": "Structured information about the model",
-            "type": "object",
-            "properties": {
-                "data_inputs": {
-                    "description": "List or description of data inputs used by the model",
-                    "type": "string"
-                },
-                "methods": {
-                    "description": "A brief (200 char.) description of the methods used by this model",
-                    "type": "string",
-                    "maxLength": 200
-                },
-                "methods_long": {
-                    "description": "A full description of the methods used by this model.",
-                    "type": "string"
-                }
-            },
-            "additionalProperties": false,
-            "required": ["data_inputs", "methods"]
+        "website_url": {
+            "description": "Public facing website for the model",
+            "type": "string",
+            "format": "uri"
         },
-        "ensemble_of_hub_models": {
-            "description": "Indicator for whether this model is an ensemble of other Hub models",
-            "type": "boolean"
+        "data_inputs": {
+            "description": "List or description of data inputs used by the model",
+            "type": "string"
+        },
+        "citation": {
+            "description": "One or more citations for this model",
+            "type": "string"
+        },
+        "methods_long": {
+            "description": "A full description of the methods used by this model.",
+            "type": "string"
         }
     },
     "additionalProperties": true,
@@ -129,6 +108,6 @@
         "model_abbr",
         "model_contributors",
         "team_model_designation",
-        "model_details"
+        "methods"
     ]
 }
