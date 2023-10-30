@@ -25,7 +25,7 @@
                             "optional": null
                         },
                         "target_horizon": {
-                            "required": [1],
+                            "required": null,
                             "optional": [1, 2, 3, 4]
                         },
                         "target_date": {
@@ -152,7 +152,7 @@
                             "optional": null
                         },
                         "target_horizon": {
-                            "required": [1],
+                            "required": null,
                             "optional": [1, 2, 3, 4]
                         },
                         "target_date": {
