@@ -22,7 +22,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,1,2023-11-11,IT,quantile,0.950,11.718109389348063
 2023-11-04,ILI incidence,1,2023-11-11,IT,quantile,0.975,13.588703326238031
 2023-11-04,ILI incidence,1,2023-11-11,IT,quantile,0.990,15.821737313936694
-2023-11-04,ILI incidence median,1,2023-11-11,IT,median,NA,0.029357258968932362
+2023-11-04,ILI incidence median,1,2023-11-11,IT,median,,0.029357258968932362
 2023-11-04,ILI incidence,2,2023-11-18,IT,quantile,0.010,0.0
 2023-11-04,ILI incidence,2,2023-11-18,IT,quantile,0.025,0.0
 2023-11-04,ILI incidence,2,2023-11-18,IT,quantile,0.050,0.0
@@ -46,7 +46,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,2,2023-11-18,IT,quantile,0.950,12.606152162278894
 2023-11-04,ILI incidence,2,2023-11-18,IT,quantile,0.975,14.745793405653766
 2023-11-04,ILI incidence,2,2023-11-18,IT,quantile,0.990,17.13058699664763
-2023-11-04,ILI incidence median,2,2023-11-18,IT,median,NA,1.3821681703818822
+2023-11-04,ILI incidence median,2,2023-11-18,IT,median,,1.3821681703818822
 2023-11-04,ILI incidence,3,2023-11-25,IT,quantile,0.010,0.0
 2023-11-04,ILI incidence,3,2023-11-25,IT,quantile,0.025,0.0
 2023-11-04,ILI incidence,3,2023-11-25,IT,quantile,0.050,0.0
@@ -70,7 +70,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,3,2023-11-25,IT,quantile,0.950,16.792213920563935
 2023-11-04,ILI incidence,3,2023-11-25,IT,quantile,0.975,18.410187588229373
 2023-11-04,ILI incidence,3,2023-11-25,IT,quantile,0.990,20.58749002211248
-2023-11-04,ILI incidence median,3,2023-11-25,IT,median,NA,5.122966398671371
+2023-11-04,ILI incidence median,3,2023-11-25,IT,median,,5.122966398671371
 2023-11-04,ILI incidence,4,2023-12-02,IT,quantile,0.010,0.0
 2023-11-04,ILI incidence,4,2023-12-02,IT,quantile,0.025,0.0
 2023-11-04,ILI incidence,4,2023-12-02,IT,quantile,0.050,1.6403576700586624
@@ -94,7 +94,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,4,2023-12-02,IT,quantile,0.950,24.759813539474603
 2023-11-04,ILI incidence,4,2023-12-02,IT,quantile,0.975,26.60325290383086
 2023-11-04,ILI incidence,4,2023-12-02,IT,quantile,0.990,29.0118799816005
-2023-11-04,ILI incidence median,4,2023-12-02,IT,median,NA,13.368567978290859
+2023-11-04,ILI incidence median,4,2023-12-02,IT,median,,13.368567978290859
 2023-11-04,ILI incidence,1,2023-11-11,FR,quantile,0.010,0.0
 2023-11-04,ILI incidence,1,2023-11-11,FR,quantile,0.025,0.0
 2023-11-04,ILI incidence,1,2023-11-11,FR,quantile,0.050,0.0
@@ -118,7 +118,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,1,2023-11-11,FR,quantile,0.950,12.18751515884576
 2023-11-04,ILI incidence,1,2023-11-11,FR,quantile,0.975,14.527339153137785
 2023-11-04,ILI incidence,1,2023-11-11,FR,quantile,0.990,16.56587874801082
-2023-11-04,ILI incidence median,1,2023-11-11,FR,median,NA,0.0
+2023-11-04,ILI incidence median,1,2023-11-11,FR,median,,0.0
 2023-11-04,ILI incidence,2,2023-11-18,FR,quantile,0.010,0.0
 2023-11-04,ILI incidence,2,2023-11-18,FR,quantile,0.025,0.0
 2023-11-04,ILI incidence,2,2023-11-18,FR,quantile,0.050,0.0
@@ -142,7 +142,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,2,2023-11-18,FR,quantile,0.950,14.327115817358882
 2023-11-04,ILI incidence,2,2023-11-18,FR,quantile,0.975,15.993648946073941
 2023-11-04,ILI incidence,2,2023-11-18,FR,quantile,0.990,18.9323698647802
-2023-11-04,ILI incidence median,2,2023-11-18,FR,median,NA,2.1315825915097126
+2023-11-04,ILI incidence median,2,2023-11-18,FR,median,,2.1315825915097126
 2023-11-04,ILI incidence,3,2023-11-25,FR,quantile,0.010,0.0
 2023-11-04,ILI incidence,3,2023-11-25,FR,quantile,0.025,0.0
 2023-11-04,ILI incidence,3,2023-11-25,FR,quantile,0.050,0.0
@@ -166,7 +166,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,3,2023-11-25,FR,quantile,0.950,18.445595933037872
 2023-11-04,ILI incidence,3,2023-11-25,FR,quantile,0.975,19.959166485419498
 2023-11-04,ILI incidence,3,2023-11-25,FR,quantile,0.990,22.32436829439133
-2023-11-04,ILI incidence median,3,2023-11-25,FR,median,NA,7.263954773043887
+2023-11-04,ILI incidence median,3,2023-11-25,FR,median,,7.263954773043887
 2023-11-04,ILI incidence,4,2023-12-02,FR,quantile,0.010,0.0
 2023-11-04,ILI incidence,4,2023-12-02,FR,quantile,0.025,0.9878162707850902
 2023-11-04,ILI incidence,4,2023-12-02,FR,quantile,0.050,3.372428514256848
@@ -190,7 +190,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,4,2023-12-02,FR,quantile,0.950,26.622900672196497
 2023-11-04,ILI incidence,4,2023-12-02,FR,quantile,0.975,28.776949595905126
 2023-11-04,ILI incidence,4,2023-12-02,FR,quantile,0.990,31.284213624791317
-2023-11-04,ILI incidence median,4,2023-12-02,FR,median,NA,15.018539279101738
+2023-11-04,ILI incidence median,4,2023-12-02,FR,median,,15.018539279101738
 2023-11-04,ILI incidence,1,2023-11-11,ES,quantile,0.010,0.0
 2023-11-04,ILI incidence,1,2023-11-11,ES,quantile,0.025,0.0
 2023-11-04,ILI incidence,1,2023-11-11,ES,quantile,0.050,0.0
@@ -214,7 +214,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,1,2023-11-11,ES,quantile,0.950,11.854470001034825
 2023-11-04,ILI incidence,1,2023-11-11,ES,quantile,0.975,13.915645070164647
 2023-11-04,ILI incidence,1,2023-11-11,ES,quantile,0.990,15.27160420686785
-2023-11-04,ILI incidence median,1,2023-11-11,ES,median,NA,0.3171374687037829
+2023-11-04,ILI incidence median,1,2023-11-11,ES,median,,0.3171374687037829
 2023-11-04,ILI incidence,2,2023-11-18,ES,quantile,0.010,0.0
 2023-11-04,ILI incidence,2,2023-11-18,ES,quantile,0.025,0.0
 2023-11-04,ILI incidence,2,2023-11-18,ES,quantile,0.050,0.0
@@ -238,7 +238,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,2,2023-11-18,ES,quantile,0.950,14.733093322679881
 2023-11-04,ILI incidence,2,2023-11-18,ES,quantile,0.975,16.874231193596305
 2023-11-04,ILI incidence,2,2023-11-18,ES,quantile,0.990,18.85917795420126
-2023-11-04,ILI incidence median,2,2023-11-18,ES,median,NA,2.8820539300691927
+2023-11-04,ILI incidence median,2,2023-11-18,ES,median,,2.8820539300691927
 2023-11-04,ILI incidence,3,2023-11-25,ES,quantile,0.010,0.7663022266147527
 2023-11-04,ILI incidence,3,2023-11-25,ES,quantile,0.025,3.5146811784017733
 2023-11-04,ILI incidence,3,2023-11-25,ES,quantile,0.050,5.890324954795662
@@ -262,7 +262,7 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,3,2023-11-25,ES,quantile,0.950,28.986617622474046
 2023-11-04,ILI incidence,3,2023-11-25,ES,quantile,0.975,30.951266794264235
 2023-11-04,ILI incidence,3,2023-11-25,ES,quantile,0.990,32.509746721793675
-2023-11-04,ILI incidence median,3,2023-11-25,ES,median,NA,17.6224903592929
+2023-11-04,ILI incidence median,3,2023-11-25,ES,median,,17.6224903592929
 2023-11-04,ILI incidence,4,2023-12-02,ES,quantile,0.010,27.57893031775253
 2023-11-04,ILI incidence,4,2023-12-02,ES,quantile,0.025,30.622152097852883
 2023-11-04,ILI incidence,4,2023-12-02,ES,quantile,0.050,32.56009913180381
@@ -286,4 +286,4 @@ origin_date,target,target_horizon,target_date,location,output_type,output_type_i
 2023-11-04,ILI incidence,4,2023-12-02,ES,quantile,0.950,55.21238164918899
 2023-11-04,ILI incidence,4,2023-12-02,ES,quantile,0.975,57.021246206153364
 2023-11-04,ILI incidence,4,2023-12-02,ES,quantile,0.990,60.241883984190714
-2023-11-04,ILI incidence median,4,2023-12-02,ES,median,NA,43.972536380212475
+2023-11-04,ILI incidence median,4,2023-12-02,ES,median,,43.972536380212475
