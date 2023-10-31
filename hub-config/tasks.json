@@ -24,11 +24,7 @@
                             "required": ["ILI incidence"],
                             "optional": null
                         },
-                        "target_horizon": {
-                            "required": null,
-                            "optional": [1, 2, 3, 4]
-                        },
-                        "target_date": {
+                        "target_end_date": {
                             "required": null,
                             "optional": [
                                 "2023-09-23", "2023-09-30", "2023-10-07", 
@@ -42,6 +38,10 @@
                                 "2024-04-27", "2024-05-04", "2024-05-11", "2024-05-18",
                                 "2024-05-25", "2024-06-01"
                             ]
+                        },
+                        "horizon": {
+                            "required": null,
+                            "optional": [1, 2, 3, 4]
                         },
                         "location": {
                             "required": null,
@@ -151,11 +151,7 @@
                             "required": ["ILI incidence median"],
                             "optional": null
                         },
-                        "target_horizon": {
-                            "required": null,
-                            "optional": [1, 2, 3, 4]
-                        },
-                        "target_date": {
+                        "target_end_date": {
                             "required": null,
                             "optional": [
                                 "2023-09-23", "2023-09-30", "2023-10-07", 
@@ -169,6 +165,10 @@
                                 "2024-04-27", "2024-05-04", "2024-05-11", "2024-05-18",
                                 "2024-05-25", "2024-06-01"
                             ]
+                        },
+                        "horizon": {
+                            "required": null,
+                            "optional": [1, 2, 3, 4]
                         },
                         "location": {
                             "required": null,
