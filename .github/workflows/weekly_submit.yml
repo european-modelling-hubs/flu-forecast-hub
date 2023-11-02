@@ -52,7 +52,8 @@ jobs:
           webhook_url: ${{ secrets.WEB_HOOK_URL }}
           webhook_secret: ${{ secrets.WEB_HOOK_SECRET }}
           data: ${{ steps.get_changes.outputs.packageJson }}
-
+          data_type: "forecast"
+          
         run: |
           echo ">>> Calling custom webhook"
           pip install requests
