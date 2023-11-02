@@ -5,6 +5,7 @@ on:
   schedule:
     - cron: '30 5 * * 3'  
 
+  # needed to trigger manually
   workflow_dispatch:
 
   
