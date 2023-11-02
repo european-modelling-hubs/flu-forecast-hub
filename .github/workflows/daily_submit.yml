@@ -1,0 +1,61 @@
+name: Daily Submission
+
+on:
+  # scheduled submission every day at 1.30 a.m. 
+  schedule:
+    - cron: '30 5 * * 3'  
+
+  workflow_dispatch:
+
+  
+jobs:
+  scheduled-submit:
+    runs-on: ubuntu-latest
+    
+    steps:
+
+      # Checkout the python tools repo
+      # used to authenticate and validate the PR
+      # -------------------------------------------      
+      - name: checkout python tools repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: 'european-modelling-hubs/hub-tools'
+          ref: 'main'
+          path: tools
+          
+    
+      # Get the list of changes from a json file 
+      - name: Get changes list
+        id: get_changes
+        run: |
+          echo "Read changes list from json"
+          content=`cat ./tools/.github/scripts/utils/metadata_db.json`
+          content="${content//'%'/'%25'}"
+          content="${content//$'\n'/'%0A'}"
+          content="${content//$'\r'/'%0D'}"
+          echo "::set-output name=packageJson::$content"
+          
+
+      - run: |
+          echo "${{ steps.get_changes.outputs.packageJson }}"
+
+          
+    
+      # Trigger server-side updating and UI deploy
+      # --------------------------------------------
+      # WEBHOOK
+      - name: Invoke deployment hook
+        env:
+          disease_name: ${{ secrets.DISEASE_NAME }}
+          webhook_url: ${{ secrets.WEB_HOOK_URL }}
+          webhook_secret: ${{ secrets.WEB_HOOK_SECRET }}
+          data: ${{ steps.get_changes.outputs.packageJson }}
+          data_type: "metadata"
+
+        run: |
+          echo ">>> Calling custom webhook"
+          pip install requests
+          echo ">>> Pip installed" 
+          python ./tools/.github/scripts/utils/workflow_webhook.py
