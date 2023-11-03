@@ -48,3 +48,7 @@ jobs:
           )
           hubValidations::check_for_errors(v, verbose = TRUE)
         shell: Rscript {0}
+        
+      - name: Check if validation ok
+        run: |
+          print ("If I am here everything should be ok!") 
