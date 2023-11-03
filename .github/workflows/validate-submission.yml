@@ -51,4 +51,4 @@ jobs:
         
       - name: Check if validation ok
         run: |
-          print ("If I am here everything should be ok!") 
+          echo "If I am here everything should be ok!"
