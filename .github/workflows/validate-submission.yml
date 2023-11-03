@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
 
     steps:
       - uses: actions/checkout@v3
@@ -49,6 +50,39 @@ jobs:
           hubValidations::check_for_errors(v, verbose = TRUE)
         shell: Rscript {0}
         
-      - name: Check if validation ok
+      # Eventually comment on it
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            All checks completed successfully ! :wave:
+          pr_number: ${{ github.event.pull_request.number }}
+
+
+      # Approve pull request 
+      # ---------------------------
+      - name: Approve Pull Request
+        uses: juliangruber/approve-pull-request-action@v2.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ github.event.pull_request.number }}
+
+      # Merge changes  
+      # ---------------------------    
+      # - uses: de-vri-es/setup-git-credentials@v2
+      #   with:
+      #     credentials: ${{ secrets.WF_PR_CREDENTIALS }}
+      
+      - name: Merge the pull request
+        id: merge_pr
         run: |
-          echo "If I am here everything should be ok!"
+          # echo ">>> USER: secrets.WF_PR_USER"
+          # echo ">>> PAT: ${{ secrets.WF_PR_PAT }} "
+          echo ">>> PR URL: ${{ github.event.pull_request.html_url }}"
+          # export GIT_USER=${{secrets.WF_PR_USER}}
+          # git config --global user.name $GIT_USER
+          # git config --global user.email "paolo.milano@isi.it"
+          gh pr merge --auto --squash $PR_URL
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          # GH_TOKEN: ${{ secrets.WF_PR_PAT }}
