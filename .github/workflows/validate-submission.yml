@@ -85,4 +85,5 @@ jobs:
           gh pr merge --auto --squash $PR_URL
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ github.token }}
           # GH_TOKEN: ${{ secrets.WF_PR_PAT }}
