@@ -1,0 +1,33 @@
+name: Persist Forecasts to json
+
+on:
+  pull_request_target:
+    branches: main
+    
+    types: closed
+    
+    paths:
+      - 'model-output/**'      
+      - '!**README**'
+
+
+jobs:
+  if_merged:
+    runs-on: ubuntu-latest
+    env:
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      # Get changes from pull request 
+      # --------------------------------      
+      - name: Get changes
+        id: get_changed_files
+        uses: tj-actions/changed-files@v36
+
+      - name: Trace changes
+        run: |
+          echo "Changes: ${{ steps.get_changed_files.outputs.all_changed_files }}"
