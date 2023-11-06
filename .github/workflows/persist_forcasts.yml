@@ -1,18 +1,13 @@
 name: Persist Forecasts to json
 
 on:
-  pull_request:
-    branches: main
-    
+  pull_request:    
     types: closed
     
-    paths:
-      - 'model-output/**'      
-      - '!**README**'
-
 
 jobs:
   if_merged:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     env:
       PR_NUMBER: ${{ github.event.pull_request.number }}
@@ -31,3 +26,11 @@ jobs:
       - name: Trace changes
         run: |
           echo "<<Persist_WF>> Changes: ${{ steps.get_changed_files.outputs.all_changed_files }}"
+
+  just_trace:
+    runs-on: ubuntu-latest
+    steps:
+      - name: traceonly
+        run: |
+          echo "<<Persist_WF was here >>"
+     
