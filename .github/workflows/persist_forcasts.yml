@@ -30,4 +30,4 @@ jobs:
 
       - name: Trace changes
         run: |
-          echo "Changes: ${{ steps.get_changed_files.outputs.all_changed_files }}"
+          echo "<<Persist_WF>> Changes: ${{ steps.get_changed_files.outputs.all_changed_files }}"
