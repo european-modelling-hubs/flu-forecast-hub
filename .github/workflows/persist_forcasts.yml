@@ -9,7 +9,8 @@ jobs:
   test_job:
     runs-on: ubuntu-latest
     steps:
-    - run: |
+    - name: Test Action
+      run: |
         echo "The PR was merged"
   
 # jobs:
