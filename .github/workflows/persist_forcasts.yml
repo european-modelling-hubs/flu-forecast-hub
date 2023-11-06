@@ -1,7 +1,7 @@
 name: Persist Forecasts to json
 
 on:
-  pull_request_target:
+  pull_request:
     branches: main
     
     types: closed
