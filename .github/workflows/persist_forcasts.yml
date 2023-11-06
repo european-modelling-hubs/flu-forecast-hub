@@ -2,13 +2,8 @@ name: Persist Forecasts to json
 
 on:
   workflow_dispatch:
-  pull_request_target:
+  push:
     branches: main
-    paths:
-      - 'model-output/**'
-      - 'model-metadata/*'
-      - '!**README**'
-    types: closed
     
 
 jobs:
