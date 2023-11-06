@@ -2,8 +2,6 @@ name: Persist Forecasts to json
 
 on:
   pull_request:
-    types:
-      - closed
 
 jobs:
   if_merged:
