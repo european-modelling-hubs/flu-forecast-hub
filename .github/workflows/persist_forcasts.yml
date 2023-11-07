@@ -14,6 +14,23 @@ jobs:
     - name: Test Action
       run: |
         echo "The PR was merged"
+
+    - name: Download workflow artifact
+      uses: dawidd6/action-download-artifact@v2.11.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        workflow: validate-submission.yml
+        run_id: ${{ github.event.workflow_run.id }}
+
+    - name: Read the pr_num file
+      id: pr_changes_reader
+      uses: juliangruber/read-file-action@v1.0.0
+      with:
+        path: ./pr_changes/pr_changes.txt
+
+    - name: Trace the changes
+      run: | 
+        echo "Changes: ${{ steps.pr_changes_reader.outputs.content }}
   
 # jobs:
 #   if_merged:
