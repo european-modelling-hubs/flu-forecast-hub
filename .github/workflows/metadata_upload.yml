@@ -1,4 +1,4 @@
-name: Daily Submission
+name: Metadata Upload
 
 on:
   # scheduled submission every day at 1.30 a.m. 
