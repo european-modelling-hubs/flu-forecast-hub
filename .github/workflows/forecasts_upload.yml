@@ -1,4 +1,4 @@
-name: Weekly Submission
+name: Forecast Upload
 
 on:
   # scheduled submission every Wednesday at 1.30 a.m. 
