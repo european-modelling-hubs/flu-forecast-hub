@@ -21,6 +21,20 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
+      # Get changes from pull request for later use
+      # --------------------------------------------      
+      - name: Get changes
+        id: get_changed_files
+        uses: tj-actions/changed-files@v36
+
+        
+      # DEBUG ONLY
+      - name: List all changed files
+        run: |
+          for file in ${{ steps.get_changed_files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
+
       - uses: r-lib/actions/setup-r@v2
         with:
           install-r: false
@@ -81,3 +95,17 @@ jobs:
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ github.token }}
+
+      - name: Save changes to artifact
+        env:
+          changed_files: ${{ steps.get_changed_files.outputs.all_changed_files }}
+        run: |
+          echo $changed_files > pr_changes.txt
+      
+      - name: Upload the PR number
+        uses: actions/upload-artifact@v2
+        with:
+          name: pr_changes
+          path: ./pr_changes.txt
+
+      
