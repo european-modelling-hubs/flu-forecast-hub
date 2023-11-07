@@ -30,7 +30,7 @@ jobs:
 
     - name: Trace the changes
       run: | 
-        echo "Changes: ${{ steps.pr_changes_reader.outputs.content }}
+        echo "Changes: ${{ steps.pr_changes_reader.outputs.content }}"
   
 # jobs:
 #   if_merged:
