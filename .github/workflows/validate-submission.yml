@@ -102,7 +102,7 @@ jobs:
         run: |
           echo $changed_files > pr_changes.txt
       
-      - name: Upload the PR number
+      - name: Upload changes
         uses: actions/upload-artifact@v2
         with:
           name: pr_changes
