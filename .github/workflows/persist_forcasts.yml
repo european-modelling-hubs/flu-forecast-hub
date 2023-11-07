@@ -1,8 +1,11 @@
 name: Persist Forecasts to json
 
 on:
-  pull_request_target:
-    types: ["closed"]
+  workflow_run:
+    workflows: 
+      - Hub Submission Validation (R)
+    types:
+      - completed
 
 jobs:
   test_job:
