@@ -286,4 +286,4 @@ origin_date,target,target_end_date,horizon,location,output_type,output_type_id,v
 2023-11-11,ILI incidence,2023-12-09,4,ES,quantile,0.950,55.21238164918899
 2023-11-11,ILI incidence,2023-12-09,4,ES,quantile,0.975,57.021246206153364
 2023-11-11,ILI incidence,2023-12-09,4,ES,quantile,0.990,60.241883984190714
-2023-11-11,ILI incidence,2023-12-09,4,ES,median,,43.972536380212479
+2023-11-11,ILI incidence,2023-12-09,4,ES,median,,43.972536380212480
