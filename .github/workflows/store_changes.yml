@@ -1,4 +1,4 @@
-name: Persist Forecasts to json
+name: Persist Forecasts and meta-data changes to json
 
 on:
   workflow_run:
