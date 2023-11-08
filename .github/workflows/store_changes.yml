@@ -31,6 +31,15 @@ jobs:
     - name: Trace the changes
       run: | 
         echo "Changes: ${{ steps.pr_changes_reader.outputs.content }}"
+
+    # Store changes 
+    # -------------------------
+    - name: Store Changes 
+      env:
+        data: ${{ steps.pr_changes_reader.outputs.content }}
+      run: |
+        echo ">>> Store changes to json"
+        python ./tools/.github/scripts/utils/store_changes.py
   
 # jobs:
 #   if_merged:
