@@ -6,4 +6,4 @@ model_contributors:
   - name: Corrado Gioannini
     email: corrado.gioannini@isi.it
 team_model_designation: primary
-methods: "Equally weighted ensemble of simple time-series baseline models"
+methods: "Equally weighted ensemble of a simple time-series baseline models"
