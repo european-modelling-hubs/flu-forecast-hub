@@ -64,7 +64,7 @@ jobs:
         data: ${{ steps.pr_changes_reader.outputs.content }}
       run: |
         echo ">>> Store changes to json"
-        python ./store_changes.py
+        python ./.github/workflows/store_changes.py
         # python ./tools/.github/scripts/utils/store_changes.py
 
     # - name: push 
