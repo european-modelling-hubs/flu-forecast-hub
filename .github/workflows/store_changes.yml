@@ -54,7 +54,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         repository: 'european-modelling-hubs/hub-tools'
         ref: 'main'
-        path: tools
+        path: './tools/'
 
     
     # Store changes 
@@ -73,4 +73,5 @@ jobs:
         author_name: Your Name
         author_email: mail@example.com
         message: 'Commit changes'
-        add: '.tools'
+        add: '.'
+        cwd: './tools/'
