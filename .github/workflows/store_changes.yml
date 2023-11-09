@@ -11,34 +11,28 @@ on:
 
 jobs:
 
-  # call_from_other:
-  #   uses: european-modelling-hubs/hub-tools/.github/workflows/store_the_changes.yml@main
-  #   with:
-  #     the-changes: "model-metadata/ISI-AutoArima.yml model-output/Test1-SIRModel/2023-11-11-Test1-SIRModel.csv"
-
-      
   update_json_changes:
     runs-on: ubuntu-latest
     steps:
 
-    # - name: Download workflow artifact
-    #   uses: dawidd6/action-download-artifact@v2.11.0
-    #   with:
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
-    #     workflow: validate-submission.yml
-    #     run_id: ${{ github.event.workflow_run.id }}
+    - name: Download workflow artifact
+      uses: dawidd6/action-download-artifact@v2.11.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        workflow: validate-submission.yml
+        run_id: ${{ github.event.workflow_run.id }}
 
-    # - name: Read the changes from artifacts
-    #   id: pr_changes_reader
-    #   uses: juliangruber/read-file-action@v1.0.0
-    #   with:
-    #     path: ./pr_changes/pr_changes.txt
-
-
-    - name: test only
+    - name: Read the changes from artifacts
       id: pr_changes_reader
-      run: |
-        echo content="model-metadata/ISI-AutoArima.yml model-output/Test1-SIRModel/2023-11-11-Test1-SIRModel.csv" >> $GITHUB_OUTPUT
+      uses: juliangruber/read-file-action@v1.0.0
+      with:
+        path: ./pr_changes/pr_changes.txt
+
+
+    # - name: test only
+    #   id: pr_changes_reader
+    #   run: |
+    #     echo content="model-metadata/ISI-AutoArima.yml model-output/Test1-SIRModel/2023-11-11-Test1-SIRModel.csv" >> $GITHUB_OUTPUT
       
     - name: Trace the changes
       run: | 
