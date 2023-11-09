@@ -10,5 +10,5 @@ model_contributors:
     affiliation: Affiliation 2
     email: user2@example.com
 team_model_designation: primary
-methods: A simple SIR model.
+methods: A simple SIR model
 license: CC-BY-4.0
