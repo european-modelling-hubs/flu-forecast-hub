@@ -8,7 +8,7 @@ on:
       - completed
 
 jobs:
-  test_job:
+  update_json_changes:
     runs-on: ubuntu-latest
     steps:
     - name: Test Action
