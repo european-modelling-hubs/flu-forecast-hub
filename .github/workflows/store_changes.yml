@@ -16,7 +16,7 @@ jobs:
   call_from_other:
     uses: european-modelling-hubs/hub-tools/.github/workflows/store_the_changes.yml@main
     with:
-      the changes: "Pippo pluto e paperino"
+      the-changes: "Pippo pluto e paperino"
 
       
   # update_json_changes:
