@@ -38,7 +38,7 @@ jobs:
     - name: test only
       id: pr_changes_reader
       run: |
-        echo "content= 'model-metadata/ISI-AutoArima.yml model-output/Test1-SIRModel/2023-11-11-Test1-SIRModel.csv'" >> $GITHUB_OUTPUT
+        echo content="model-metadata/ISI-AutoArima.yml model-output/Test1-SIRModel/2023-11-11-Test1-SIRModel.csv" >> $GITHUB_OUTPUT
       
     - name: Trace the changes
       run: | 
