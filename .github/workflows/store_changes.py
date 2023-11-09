@@ -25,8 +25,8 @@ def storeForecasts (forecasts):
 
     if out_data['models']:
         print(f"Current path: {os.getcwd()}")
-        db_path = os.path.join("..", "data-storage", "changes_db.json")
-        # db_path = db_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "changes_db.json")
+        # db_path = os.path.join("..", "data-storage", "changes_db.json")
+        db_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", "data-storage", "changes_db.json")
         updateForecastsJson(db_path, out_data)
     
 
