@@ -56,6 +56,16 @@ jobs:
         ref: 'main'
         path: './tools/'
 
+
+    - name: checkout data repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: 'european-modelling-hubs/flu-forecast-hub'
+        ref: 'main'
+        path: './repo/'
+
+
     
     # Store changes 
     # -------------------------
@@ -64,12 +74,12 @@ jobs:
         data: ${{ steps.pr_changes_reader.outputs.content }}
       run: |
         echo ">>> Store changes to json"
-        # python ./.github/workflows/store_changes.py
-        python ./tools/.github/scripts/utils/store_changes.py
+        python ./tools/code/store_changes.py
+        # python ./tools/.github/scripts/utils/store_changes.py
 
     - name: push 
       run: |
-        cd ./tools
+        cd ./repo/./github/data-storage
         git config --local user.name M-7th
         git config --local user.email paolo.milano@gmail.com
         git add .
