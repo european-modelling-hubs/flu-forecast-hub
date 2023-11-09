@@ -48,13 +48,13 @@ jobs:
     # Checkout the python tools repo
     # used to authenticate and validate the PR
     # -------------------------------------------      
-    - name: checkout python tools repo
-      uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        repository: 'european-modelling-hubs/hub-tools'
-        ref: 'main'
-        path: './tools/'
+    # - name: checkout python tools repo
+    #   uses: actions/checkout@v3
+    #   with:
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+    #     repository: 'european-modelling-hubs/hub-tools'
+    #     ref: 'main'
+    #     path: './tools/'
 
     
     # Store changes 
@@ -64,14 +64,15 @@ jobs:
         data: ${{ steps.pr_changes_reader.outputs.content }}
       run: |
         echo ">>> Store changes to json"
-        python ./tools/.github/scripts/utils/store_changes.py
+        python ./store_changes.py
+        # python ./tools/.github/scripts/utils/store_changes.py
 
-    - name: push 
-      run: |
-        cd ./tools
-        git config user.name M-7th
-        git config user.email paolo.milano@gmail.com
-        git add .
-        git commit -m "generated"
-        git push
+    # - name: push 
+    #   run: |
+    #     cd ./tools
+    #     git config user.name M-7th
+    #     git config user.email paolo.milano@gmail.com
+    #     git add .
+    #     git commit -m "generated"
+    #     git push
             
