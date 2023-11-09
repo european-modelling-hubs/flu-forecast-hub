@@ -68,7 +68,7 @@ jobs:
 
     - name: push 
       run: |
-        cwd ./tools
+        cd ./tools
         git config user.name M-7th
         git config user.email paolo.milano@gmail.com
         git add .
