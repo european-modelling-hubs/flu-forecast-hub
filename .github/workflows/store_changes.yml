@@ -7,85 +7,60 @@ on:
     types:
       - completed
 
+  workflow_dispatch:
+
 jobs:
-  update_json_changes:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Test Action
-      run: |
-        echo "The PR was merged"
 
-    - name: Download workflow artifact
-      uses: dawidd6/action-download-artifact@v2.11.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        workflow: validate-submission.yml
-        run_id: ${{ github.event.workflow_run.id }}
 
-    - name: Read the pr_num file
-      id: pr_changes_reader
-      uses: juliangruber/read-file-action@v1.0.0
-      with:
-        path: ./pr_changes/pr_changes.txt
 
-    - name: Trace the changes
-      run: | 
-        echo "Changes: ${{ steps.pr_changes_reader.outputs.content }}"
+  call_from_other:
+    uses: european-modelling-hubs/hub-tools/.github/workflows/store_the_changes.yml@main
+    with:
+      the changes: "Pippo pluto e paperino"
 
-    # Checkout the python tools repo
-    # used to authenticate and validate the PR
-    # -------------------------------------------      
-    - name: checkout python tools repo
-      uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        repository: 'european-modelling-hubs/hub-tools'
-        ref: 'main'
-        path: tools
+      
+  # update_json_changes:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Test Action
+  #     run: |
+  #       echo "The PR was merged"
+
+  #   - name: Download workflow artifact
+  #     uses: dawidd6/action-download-artifact@v2.11.0
+  #     with:
+  #       github_token: ${{ secrets.GITHUB_TOKEN }}
+  #       workflow: validate-submission.yml
+  #       run_id: ${{ github.event.workflow_run.id }}
+
+  #   - name: Read the pr_num file
+  #     id: pr_changes_reader
+  #     uses: juliangruber/read-file-action@v1.0.0
+  #     with:
+  #       path: ./pr_changes/pr_changes.txt
+
+  #   - name: Trace the changes
+  #     run: | 
+  #       echo "Changes: ${{ steps.pr_changes_reader.outputs.content }}"
+
+  #   # Checkout the python tools repo
+  #   # used to authenticate and validate the PR
+  #   # -------------------------------------------      
+  #   - name: checkout python tools repo
+  #     uses: actions/checkout@v3
+  #     with:
+  #       token: ${{ secrets.GITHUB_TOKEN }}
+  #       repository: 'european-modelling-hubs/hub-tools'
+  #       ref: 'main'
+  #       path: tools
 
     
-    # Store changes 
-    # -------------------------
-    - name: Store Changes 
-      env:
-        data: ${{ steps.pr_changes_reader.outputs.content }}
-      run: |
-        echo ">>> Store changes to json"
-        python ./tools/.github/scripts/utils/store_changes.py
-  
-# jobs:
-#   if_merged:
-#     if: github.event.pull_request.merged == true
-#     runs-on: ubuntu-latest
-#     steps:
-#     - run: |
-#         echo "The PR was merged"
-
-  # if_merged_two:
-  #   if: github.event.pull_request.merged == true
-  #   runs-on: ubuntu-latest
-  #   env:
-  #     PR_NUMBER: ${{ github.event.pull_request.number }}
-
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #       with:
-  #         ref: ${{ github.event.pull_request.head.sha }}
-
-  #     # Get changes from pull request 
-  #     # --------------------------------      
-  #     - name: Get changes
-  #       id: get_changed_files
-  #       uses: tj-actions/changed-files@v36
-
-  #     - name: Trace changes
-  #       run: |
-  #         echo "<<Persist_WF>> Changes: ${{ steps.get_changed_files.outputs.all_changed_files }}"
-
-  # just_trace:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: traceonly
-  #       run: |
-  #         echo "<<Persist_WF was here >>"
+  #   # Store changes 
+  #   # -------------------------
+  #   - name: Store Changes 
+  #     env:
+  #       data: ${{ steps.pr_changes_reader.outputs.content }}
+  #     run: |
+  #       echo ">>> Store changes to json"
+  #       python ./tools/.github/scripts/utils/store_changes.py
      
