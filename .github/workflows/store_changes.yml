@@ -26,7 +26,7 @@ jobs:
       id: pr_changes_reader
       uses: juliangruber/read-file-action@v1.0.0
       with:
-        path: ./pr_changes/pr_changes.txt
+        path: ./pr_changes/pr_changes.json
 
 
     # - name: test only
@@ -67,9 +67,7 @@ jobs:
       env:
         data: ${{ steps.pr_changes_reader.outputs.content }}
       run: |
-        echo ">>> Store changes to json"
         python ./tools/code/store_changes.py
-        # python ./tools/.github/scripts/utils/store_changes.py
 
     - name: push 
       run: |
