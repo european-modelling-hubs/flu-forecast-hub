@@ -82,8 +82,8 @@ def updateForecastsJson(json_file_path, changes):
 
 
 def storetMetaData (metadata):
-    print ("Storing meta-data")    
-    db_path = os.path.join("..", "data-storage", "metadata_db.json")
+    print ("Storing meta-data")
+    db_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", "data-storage", "metadata_db.json")
     updateMetadataJson(db_path, metadata)
 
 
