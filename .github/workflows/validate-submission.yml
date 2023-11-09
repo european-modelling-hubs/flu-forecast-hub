@@ -100,12 +100,12 @@ jobs:
         env:
           changed_files: ${{ steps.get_changed_files.outputs.all_changed_files }}
         run: |
-          echo $changed_files > pr_changes.txt
+          echo "{ "pr-changes" : {{$changed_files}} }" > pr_changes.json
       
       - name: Upload changes
         uses: actions/upload-artifact@v2
         with:
           name: pr_changes
-          path: ./pr_changes.txt
+          path: ./pr_changes.json
 
       
