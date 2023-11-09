@@ -12,8 +12,8 @@ jobs:
     - name: Save changes to artifact
       env:
         changed_files: "model-metadata/Test1-SIRModel.yml model-output/Test1-SIRModel/2023-11-11-Test1-SIRModel.csv"
-        run: |
-          echo "{ "pr-changes" : {{$changed_files}} }" > pr_changes.json
+      run: |
+        echo "{ "pr-changes" : {{$changed_files}} }" > pr_changes.json
       
     - name: Upload changes
       uses: actions/upload-artifact@v2
