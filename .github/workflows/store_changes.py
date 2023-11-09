@@ -117,6 +117,7 @@ def updateMetadataJson (json_file_path, changes):
 ###
 def store(to_store):
 
+    print(f"Store -> {to_store}")
     
     # Make a list out of the changed files
     fchanges = to_store.split(" ")
@@ -146,7 +147,7 @@ def store(to_store):
             metadata_changes.append(fchanged)
         else :
             # unknown just discard
-            print ('Unkown file submitted! Skip it')
+            print (f'Unkown file submitted {rootFolder}! Skip it')
 
 
     if model_changes:
