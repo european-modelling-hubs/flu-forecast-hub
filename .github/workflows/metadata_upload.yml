@@ -25,14 +25,22 @@ jobs:
           repository: 'european-modelling-hubs/hub-tools'
           ref: 'main'
           path: tools
+
+      # Checkout the data repo
+      - name: checkout data repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: 'european-modelling-hubs/flu-forecast-hub'
+          ref: 'main'
+          path: './repo/'
           
-    
       # Get the list of changes from a json file 
       - name: Get changes list
         id: get_changes
         run: |
           echo "Read changes list from json"
-          content=`cat ./tools/.github/scripts/utils/metadata_db.json`
+          content=`cat ./repo/.github/data-storage/metadata_db.json`
           content="${content//'%'/'%25'}"
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"
