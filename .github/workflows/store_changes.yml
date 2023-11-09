@@ -70,8 +70,8 @@ jobs:
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
       with:
-        author_name: Your Name
-        author_email: mail@example.com
+        author_name: M-7th
+        author_email: paolo.milano@isi.it
         message: 'Commit changes'
         add: '.'
         cwd: './tools/'
