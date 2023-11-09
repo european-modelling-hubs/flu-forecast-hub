@@ -1,1 +1,10 @@
-{}
+{
+    "Test1": [
+        {
+            "model": "SIRModel",
+            "changes": [
+                "model-output/Test1-SIRModel/2023-11-11-Test1-SIRModel.csv\n"
+            ]
+        }
+    ]
+}
