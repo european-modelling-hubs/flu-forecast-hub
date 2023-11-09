@@ -79,7 +79,7 @@ jobs:
 
     - name: push 
       run: |
-        cd ./repo/./github/data-storage
+        cd ./repo/
         git config --local user.name M-7th
         git config --local user.email paolo.milano@gmail.com
         git add .
