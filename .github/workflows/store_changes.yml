@@ -67,12 +67,12 @@ jobs:
         python ./.github/workflows/store_changes.py
         # python ./tools/.github/scripts/utils/store_changes.py
 
-    # - name: push 
-    #   run: |
-    #     cd ./tools
-    #     git config user.name M-7th
-    #     git config user.email paolo.milano@gmail.com
-    #     git add .
-    #     git commit -m "generated"
-    #     git push
+    - name: push 
+      run: |
+        # cd ./tools
+        git config --local user.name M-7th
+        git config --local user.email paolo.milano@gmail.com
+        git add .
+        git commit -m "generated"
+        git push
             
