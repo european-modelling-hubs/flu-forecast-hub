@@ -5,6 +5,7 @@ on:
     workflows: 
       # - Fake - Hub Submission Validation
       - Hub Submission Validation (R)
+      - On Target Data Submission
     types:
       - completed
 
@@ -21,7 +22,7 @@ jobs:
       uses: dawidd6/action-download-artifact@v2.11.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        workflow: validate-submission.yml
+        # workflow: validate-submission.yml
         run_id: ${{ github.event.workflow_run.id }}
 
     - name: Read the changes from artifacts
