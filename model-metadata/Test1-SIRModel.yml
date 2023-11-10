@@ -1,6 +1,5 @@
 team_name: Test1
 model_name: SIRModel
-team_abbr: Test1
 model_abbr: SIRModel
 model_contributors:
   - name: Contributor 1
