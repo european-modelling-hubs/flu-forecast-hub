@@ -6,5 +6,13 @@
                 "model-output/Test1-SIRModel/2023-11-11-Test1-SIRModel.csv"
             ]
         }
+    ],
+    "GC": [
+        {
+            "model": "ForeTest1",
+            "changes": [
+                "model-output/GC-ForeTest1/2023-11-15-GC-ForeTest1.csv"
+            ]
+        }
     ]
 }

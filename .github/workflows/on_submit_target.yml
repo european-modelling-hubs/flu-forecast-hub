@@ -1,0 +1,60 @@
+name: On Target Data Submission
+
+on:
+  workflow_dispatch:
+  pull_request_target:
+    branches: main
+    paths:
+      - 'target-data/**'
+      - '!**README**'
+
+jobs:
+  validate-submission:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      # Get changes from pull request for later use
+      # --------------------------------------------      
+      - name: Get changes
+        id: get_changed_files
+        uses: tj-actions/changed-files@v36
+
+        
+      # DEBUG ONLY
+      - name: List all changed files
+        run: |
+          for file in ${{ steps.get_changed_files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
+
+      # Merge changes  
+      # ---------------------------    
+      - name: Merge the pull request
+        id: merge_pr
+        run: |
+          echo ">>> PR URL: ${{ github.event.pull_request.html_url }}"
+          gh pr merge --auto --squash $PR_URL
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Save changes to artifact
+        env:
+          changed_files: ${{ steps.get_changed_files.outputs.all_changed_files }}
+        run: |
+          echo "{ \"pr-changes\" : \"$changed_files\" }" > push_changes.json
+      
+      - name: Upload changes
+        uses: actions/upload-artifact@v2
+        with:
+          name: pr_changes
+          path: ./pr_changes.json
+
+      
