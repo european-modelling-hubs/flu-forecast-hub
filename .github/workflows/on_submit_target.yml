@@ -2,7 +2,7 @@ name: On Target Data Submission
 
 on:
   workflow_dispatch:
-  push:
+  pull_request_target:
     branches: main
     paths:
       - 'target-data/**'
@@ -36,18 +36,18 @@ jobs:
 
       # Merge changes  
       # ---------------------------    
-      # - uses: de-vri-es/setup-git-credentials@v2
-      #   with:
-      #     credentials: ${{ secrets.WF_PR_CREDENTIALS }}
+      - uses: de-vri-es/setup-git-credentials@v2
+        with:
+          credentials: ${{ secrets.WF_PR_CREDENTIALS }}
       
-      # - name: Merge the pull request
-      #   id: merge_pr
-      #   run: |
-      #     echo ">>> PR URL: ${{ github.event.pull_request.html_url }}"
-      #     gh pr merge --auto --squash $PR_URL
-      #   env:
-      #     PR_URL: ${{ github.event.pull_request.html_url }}
-      #     GH_TOKEN: ${{ github.token }}
+      - name: Merge the pull request
+        id: merge_pr
+        run: |
+          echo ">>> PR URL: ${{ github.event.pull_request.html_url }}"
+          gh pr merge --auto --squash $PR_URL
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ github.token }}
 
       - name: Save changes to artifact
         env:
