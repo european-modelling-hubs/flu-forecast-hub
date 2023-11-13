@@ -1,7 +1,8 @@
 {
     "changes": [
+        "model-metadata/GC-ForeTest1.yml",
         "model-metadata/ISI-AutoArima.yml",
         "model-metadata/Test1-SIRModel.yml",
-        "model-metadata/GC-ForeTest1.yml"
+        "model-metadata/PMI-SIRModel.yml"
     ]
 }
