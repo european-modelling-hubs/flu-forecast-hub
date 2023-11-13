@@ -1,4 +1,4 @@
-name: On Target Data Submission
+name: OnTargetSubmission
 
 on:
   workflow_dispatch:

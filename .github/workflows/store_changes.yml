@@ -2,10 +2,8 @@ name: Persist Forecasts and meta-data changes to json
 
 on:
   workflow_run:
-    workflows: 
-      # - Fake - Hub Submission Validation
-      - Hub Submission Validation (R)
-      - On Target Data Submission
+    workflows: [HubSubmissionValidation(R), OnTargetSubmission, FakeHubSubmissionValidation]
+      
     types:
       - completed
 
