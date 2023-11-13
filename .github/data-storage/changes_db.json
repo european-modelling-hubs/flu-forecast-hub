@@ -20,5 +20,13 @@
                 "model-output/GC-ForeTest2/2023-11-15-GC-ForeTest2.csv"
             ]
         }
+    ],
+    "PMI": [
+        {
+            "model": "SIRModel",
+            "changes": [
+                "model-output/PMI-SIRModel/2023-11-15-PMI-SIRModel.csv"
+            ]
+        }
     ]
 }
