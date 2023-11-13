@@ -1,0 +1,11 @@
+team_name: Paolo Milano Test Team
+model_name: SIRModel
+team_abbr: PMI
+model_abbr: SIRModel
+model_contributors:
+  - name: PMI 1
+    affiliation: Affiliation 1
+    email: pmi1@example.com
+team_model_designation: primary
+methods: A simple SIR model
+license: CC-BY-4.0
