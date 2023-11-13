@@ -1,4 +1,4 @@
-name: Fake - Hub Submission Validation
+name: FakeHubSubmissionValidation
 on:
 
   workflow_dispatch:
