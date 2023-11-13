@@ -1,0 +1,13 @@
+team_name: Test GC
+model_name: ForeTest n.3
+team_abbr: GC
+model_abbr: foreTest3
+model_contributors:
+  - name: GC
+    affiliation: Test Affiliation Extra 
+    email: gioco@pm.me
+team_model_designation: other
+methods: Another fake test model 
+license: CC-BY-4.0
+data_inputs: Imaginary data
+methods_long: A fake test model but longer
