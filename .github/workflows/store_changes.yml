@@ -76,6 +76,6 @@ jobs:
         git config --local user.name M-7th
         git config --local user.email paolo.milano@gmail.com
         git add .
-        git commit -m "generated"
+        git commit -m "generated" --allow-empty
         git push
             
