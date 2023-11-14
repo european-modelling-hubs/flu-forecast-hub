@@ -17,7 +17,7 @@ origin_date,target,horizon,target_end_date,location,output_type,output_type_id,v
 2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.700,27.50034270137943
 2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.750,28.36398212714027
 2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.800,29.067633201305153
-2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.850,30.048096642102742
+2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.850,30.0480966421022
 2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.900,31.159564275886233
 2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.950,33.224751800647674
 2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.975,34.837007796013886
@@ -31,7 +31,7 @@ origin_date,target,horizon,target_end_date,location,output_type,output_type_id,v
 2023-11-15,ILI incidence,2,2023-11-19,DE,quantile,0.200,11.960862997132024
 2023-11-15,ILI incidence,2,2023-11-19,DE,quantile,0.250,12.895299075287237
 2023-11-15,ILI incidence,2,2023-11-19,DE,quantile,0.300,13.583213781599378
-2023-11-15,ILI incidence,2,2023-11-19,DE,quantile,0.350,14.267484858353802
+2023-11-15,ILI incidence,2,2023-11-19,DE,quantile,0.350,14.2674848583802
 2023-11-15,ILI incidence,2,2023-11-19,DE,quantile,0.400,15.087577085820428
 2023-11-15,ILI incidence,2,2023-11-19,DE,quantile,0.450,15.954459861176436
 2023-11-15,ILI incidence,2,2023-11-19,DE,quantile,0.500,16.41641014071405
@@ -52,16 +52,16 @@ origin_date,target,horizon,target_end_date,location,output_type,output_type_id,v
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.050,2.0748967093659325
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.100,3.7752277818455866
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.150,5.231856643023408
-2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.200,6.08933147776766
+2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.200,6.18933147776766
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.250,6.757601180906233
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.300,7.485392518050617
-2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.350,8.012333979503017
+2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.350,8.512333979503017
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.400,8.761202237354885
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.450,9.381851677375977
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.500,10.066321660619547
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.550,10.622278336451371
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.600,11.30298733417743
-2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.650,11.450730398914834
+2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.650,11.750730398914834
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.700,12.573396788615574
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.750,13.369436052809732
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.800,14.393307391725733
@@ -70,7 +70,7 @@ origin_date,target,horizon,target_end_date,location,output_type,output_type_id,v
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.950,18.47521151234067
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.975,19.91742609180897
 2023-11-15,ILI incidence,3,2023-11-26,DE,quantile,0.990,21.73244857805524
-2023-11-15,ILI incidence,3,2023-11-26,DE,median,,10.6321660619547
+2023-11-15,ILI incidence,3,2023-11-26,DE,median,,10.5321660619547
 2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.010,0.0
 2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.025,0.0
 2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.050,0.0
@@ -83,7 +83,7 @@ origin_date,target,horizon,target_end_date,location,output_type,output_type_id,v
 2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.400,4.403654979271069
 2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.450,5.166681161815339
 2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.500,5.306134441928528
-2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.550,6.264995057512783
+2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.550,6.664995057512783
 2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.600,7.002210363024741
 2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.650,7.658025020189136
 2023-11-15,ILI incidence,4,2023-12-03,DE,quantile,0.700,8.392749565973672
