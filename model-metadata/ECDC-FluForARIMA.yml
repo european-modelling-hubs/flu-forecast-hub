@@ -1,0 +1,10 @@
+team_name: European Centre for Disease Prevention and Control
+model_name: ARIMA model with seasonality
+team_abbr: ECDC
+model_abbr: FluForARIMA
+model_contributors:
+  - name: Lydia Champezou
+    affiliation: European Centre for Disease Prevention and Control
+    email: lydia.champezou@ecdc.europa.eu
+team_model_designation: primary
+methods: A simple ARIMA model with seasonality
