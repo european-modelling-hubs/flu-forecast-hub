@@ -1,11 +1,11 @@
 {
     "changes": [
-        "model-metadata/PMI-SIRModel.yml",
         "model-metadata/ECDC-norrsken.yml",
-        "model-metadata/GC-ForeTest1.yml",
-        "model-metadata/Test1-SIRModel.yml",
+        "model-metadata/ECDC-FluForARIMA.yml",
         "model-metadata/ISI-AutoArima.yml",
-        "model-metadata/GC-foreTest3.yml",
-        "model-metadata/ECDC-FluForARIMA.yml"
+        "model-metadata/Test1-SIRModel.yml",
+        "model-metadata/PMI-SIRModel.yml",
+        "model-metadata/GC-ForeTest1.yml",
+        "model-metadata/GC-foreTest3.yml"
     ]
 }
