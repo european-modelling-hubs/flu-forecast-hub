@@ -14,20 +14,25 @@ jobs:
     # checkout repo
     - uses: actions/checkout@v3
 
-
     - uses: r-lib/actions/setup-r@v2
       with:
-        install-r: false
         use-public-rspm: true
 
     - name: Install HubValidations
       run: |
         install.packages("remotes")
-        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubValidations")
-        
+        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubValidations")        
       shell: Rscript {0}
 
     - name: Generate Ensamble
       run: |
         # code here
-      shell: Rscript {0}
+        # Rscript code-folder/code.R
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
+      with: 
+          add: 'data-folder'
+          message: "Update ensemble data"
+          default_author: github_actions
+          push: true
