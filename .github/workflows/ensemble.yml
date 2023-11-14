@@ -6,9 +6,12 @@ on:
 
 
 jobs:
+  
   ensemble:
   # if: github.repository_owner == 'european-modelling-hubs'
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
     # checkout repo
