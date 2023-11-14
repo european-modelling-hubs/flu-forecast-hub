@@ -22,16 +22,10 @@ jobs:
         install-r: false
         use-public-rspm: true
         
-    - name: Install system dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install libcurl4-openssl-dev libv8-dev
-
-    # - name: Install HubValidations
+    # - name: Install system dependencies
     #   run: |
-    #     install.packages("remotes")
-    #     remotes::install_github("Infectious-Disease-Modeling-Hubs/hubValidations")
-    #   shell: Rscript {0}
+    #     sudo apt-get update
+    #     sudo apt-get install libcurl4-openssl-dev libv8-dev
 
     - name: Installing dependencies
       run: |
