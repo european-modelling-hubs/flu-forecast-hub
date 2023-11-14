@@ -29,6 +29,8 @@ jobs:
         remotes::install_github("Infectious-Disease-Modeling-Hubs/hubEnsembles")
         install.packages("dplyr")
         install.packages("jsonlite")
+        #install.packages("optparse")
+        install.packages("purrr")
       shell: Rscript {0}
 
     - name: Generate Ensemble
