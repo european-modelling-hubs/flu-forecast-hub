@@ -19,6 +19,12 @@
             "changes": [
                 "model-output/GC-ForeTest2/2023-11-15-GC-ForeTest2.csv"
             ]
+        },
+        {
+            "model": "foreTest3",
+            "changes": [
+                "model-output/GC-foreTest3/2023-11-15-GC-foreTest3.csv"
+            ]
         }
     ],
     "PMI": [
@@ -26,6 +32,20 @@
             "model": "SIRModel",
             "changes": [
                 "model-output/PMI-SIRModel/2023-11-15-PMI-SIRModel.csv"
+            ]
+        }
+    ],
+    "ECDC": [
+        {
+            "model": "norrsken",
+            "changes": [
+                "model-output/ECDC-norrsken/2023-11-15-ECDC-norrsken.csv"
+            ]
+        },
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2023-11-15-ECDC-FluForARIMA.csv"
             ]
         }
     ]
