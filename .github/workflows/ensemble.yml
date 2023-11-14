@@ -27,20 +27,20 @@ jobs:
         sudo apt-get update
         sudo apt-get install libcurl4-openssl-dev libv8-dev
 
-    - name: Install HubValidations
-      run: |
-        install.packages("remotes")
-        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubValidations")
-      shell: Rscript {0}
-
-    # - name: Installing dependencies
+    # - name: Install HubValidations
     #   run: |
     #     install.packages("remotes")
-    #     remotes::install_github("Infectious-Disease-Modeling-Hubs/hubUtils")
-    #     remotes::install_github("Infectious-Disease-Modeling-Hubs/hubEnsembles")
-    #     install.packages("dplyr")
-    #     install.packages("jsonlite")
+    #     remotes::install_github("Infectious-Disease-Modeling-Hubs/hubValidations")
     #   shell: Rscript {0}
+
+    - name: Installing dependencies
+      run: |
+        install.packages("remotes")
+        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubUtils")
+        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubEnsembles")
+        install.packages("dplyr")
+        install.packages("jsonlite")
+      shell: Rscript {0}
 
     - name: Generate Ensemble
       run: |
