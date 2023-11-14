@@ -18,13 +18,16 @@ jobs:
       with:
         use-public-rspm: true
 
-    - name: Install HubValidations
+    - name: Installing dependencies
       run: |
         install.packages("remotes")
-        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubValidations")        
+        remotes::install_github("infectious-disease-modeling-hubs/hubUtils")
+        remotes::install_github("infectious-disease-modeling-hubs/hubEnsembles")
+        install.packages("dplyr")
+        install.packages("jsonlite")
       shell: Rscript {0}
 
-    - name: Generate Ensamble
+    - name: Generate Ensemble
       run: |
         # code here
         # Rscript code-folder/code.R
