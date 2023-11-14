@@ -1,5 +1,5 @@
 origin_date,target,horizon,target_end_date,location,output_type,output_type_id,value
-2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.010,13.325526947690594
+2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.010,13.325526947690595
 2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.025,14.683686976668184
 2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.050,16.211564660088506
 2023-11-15,ILI incidence,1,2023-11-12,DE,quantile,0.100,18.07942318686913
