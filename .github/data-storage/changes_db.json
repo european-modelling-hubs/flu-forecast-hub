@@ -41,6 +41,12 @@
             "changes": [
                 "model-output/ECDC-norrsken/2023-11-15-ECDC-norrsken.csv"
             ]
+        },
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2023-11-15-ECDC-FluForARIMA.csv"
+            ]
         }
     ]
 }
