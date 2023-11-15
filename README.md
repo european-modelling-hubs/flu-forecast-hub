@@ -8,3 +8,5 @@ During the influenza season, participating teams submit weekly probabilistic for
 
 ### Join the Hub
 TODO
+
+### Visualize Latest Forecasts
