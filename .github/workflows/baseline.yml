@@ -1,0 +1,49 @@
+name: Baseline 
+
+on:
+
+  workflow_dispatch:
+  schedule:
+    - cron: "15 11,23 * * 2,3"
+
+    
+jobs:
+
+  baseline_job:
+    runs-on: ubuntu-latest
+    steps:
+
+    # Checkout the python tools repo
+    # -------------------------------------------      
+    # - name: checkout python tools repo
+    #   uses: actions/checkout@v3
+    #   with:
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+    #     repository: 'european-modelling-hubs/hub-tools'
+    #     ref: 'main'
+    #     path: './tools/'
+
+    # Checkout data 
+    - name: checkout data repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: 'european-modelling-hubs/flu-forecast-hub'
+        ref: 'main'
+        path: './repo/'
+
+
+    
+    # Run Pyton code
+    # -------------------------
+    - name: Pyhton  
+      run: |
+        #python python-script.py 
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
+      with: 
+          cwd: './repo'
+          message: "Update data storage"
+          default_author: github_actions
+          push: true
