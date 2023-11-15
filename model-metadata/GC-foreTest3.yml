@@ -6,6 +6,9 @@ model_contributors:
   - name: GC
     affiliation: Test Affiliation Extra 
     email: gioco@pm.me
+  - name: Mr. X
+    affiliation: Test Affiliation Extra 
+    email: test@example.org
 team_model_designation: other
 methods: A fake test model 
 license: CC-BY-4.0
