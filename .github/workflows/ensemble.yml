@@ -48,7 +48,7 @@ jobs:
     - name: Generate Ensemble
       run: |
         # call R script from tools
-        Rscript ./tools/R-code/generate-ensemble.R --hub_path "./repo/" --agg_fun "median" --model_id "hubEnsemble" --team_id "respicast"
+        Rscript ./tools/R-code/generate-ensemble.R --hub_path "./repo" --agg_fun "median" --model_id "hubEnsemble" --team_id "respicast"
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v7
