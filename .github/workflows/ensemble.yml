@@ -16,7 +16,8 @@ jobs:
     steps:
     # checkout repo
     - uses: actions/checkout@v3
-      path: './repo/
+      with: 
+        path: './repo/'
 
     # Checkout the python tools repo
     # -------------------------------------------      
