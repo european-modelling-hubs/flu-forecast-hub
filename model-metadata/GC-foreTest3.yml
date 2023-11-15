@@ -7,7 +7,7 @@ model_contributors:
     affiliation: Test Affiliation Extra 
     email: gioco@pm.me
 team_model_designation: other
-methods: Another fake test model 
+methods: A fake test model 
 license: CC-BY-4.0
 data_inputs: Imaginary data
 methods_long: A fake test model but longer
