@@ -37,6 +37,12 @@ jobs:
     
     # Run Pyton code
     # -------------------------
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' 
+    
+    - run: pip install pandas==1.2.5 numpy==1.22.4
+    
     - name: Pyhton  
       run: |
         python ./tools/code/quantile_baseline.py --hub_path ./repo --target_name "ILI incidence" --filename "ILI_incidence" --symmetrize True --nsamples 10000 --horizon 4 --team_abbr "respicast" --model_abbr "quantileBaseline" --submission_end_weekday 2
