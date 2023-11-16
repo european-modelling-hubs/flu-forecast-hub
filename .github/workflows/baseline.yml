@@ -39,7 +39,7 @@ jobs:
     # -------------------------
     - name: Pyhton  
       run: |
-        #python python-script.py 
+        python ./tools/code/quantile_baseline.py --hub_path ./repo --target_name "ILI incidence" --filename "ILI_incidence" --symmetrize True --nsamples 10000 --horizon 4 --team_abbr "respicast" --model_abbr "quantileBaseline" --submission_end_weekday 2
 
     - name: Commit data repo changes
       uses: EndBug/add-and-commit@v7
