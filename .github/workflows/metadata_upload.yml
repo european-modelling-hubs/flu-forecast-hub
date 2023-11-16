@@ -39,19 +39,15 @@ jobs:
       - name: Get changes list
         id: get_changes
         run: |
-          echo "Read changes list from json"
           content=`cat ./repo/.github/data-storage/metadata_db.json`
           content="${content//'%'/'%25'}"
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"
           echo "::set-output name=packageJson::$content"
           
-
       - run: |
           echo "${{ steps.get_changes.outputs.packageJson }}"
-
-          
-    
+              
       # Trigger server-side updating and UI deploy
       # --------------------------------------------
       # WEBHOOK
@@ -64,7 +60,5 @@ jobs:
           data_type: "metadata"
 
         run: |
-          echo ">>> Calling custom webhook"
           pip install requests
-          echo ">>> Pip installed" 
           python ./tools/.github/scripts/utils/workflow_webhook.py
