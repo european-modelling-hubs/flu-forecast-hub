@@ -71,12 +71,13 @@ jobs:
       - name: trace only
         run: |
           echo "webhook results: ${{ steps.invoke_webhook.outputs.run_results }}"
-          # echo "Status:  ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status }}"
 
       # SUCCESSFUL RUN
       # --------------------------------------------
       - name: Successful run
         if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'success'}}
+        env:
+          wh_response:  ${{ steps.invoke_webhook.outputs.run_results }}
         run: |
           echo "UPLOAD SUCCEEDED -  clear djson db"
           python ./tools/code/clear_data_storage.py --storage_type "model-metadata"
@@ -86,7 +87,7 @@ jobs:
       - name: Some ingestion failed
         if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'failure'}}
         env:
-          not_ingested:  ${{ steps.invoke_webhook.outputs.run_results }}
+          wh_response:  ${{ steps.invoke_webhook.outputs.run_results }}
           
         run: |
           echo "UPLOAD FAILED - Some ingestion failed -  $not_ingested"
