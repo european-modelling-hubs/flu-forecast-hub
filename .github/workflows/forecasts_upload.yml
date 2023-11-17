@@ -63,3 +63,46 @@ jobs:
         run: |
           pip install requests
           python ./tools/.github/scripts/utils/workflow_webhook.py
+
+      - name: trace only
+        run: |
+          echo "webhook results: ${{ steps.invoke_webhook.outputs.run_results }}"
+
+      # SUCCESSFUL RUN
+      # --------------------------------------------
+      - name: Successful run
+        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'success'}}
+        env:
+          wh_response:  ${{ steps.invoke_webhook.outputs.run_results }}
+        run: |
+          echo "UPLOAD SUCCEEDED -  clear djson db"
+          python ./tools/code/clear_data_storage.py --storage_type "model-output"
+
+      # RUN FAILURE
+      # --------------------------------------------
+      - name: Some ingestion failed
+        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'failure'}}
+        env:
+          wh_response:  ${{ steps.invoke_webhook.outputs.run_results }}
+          
+        run: |
+          echo "UPLOAD FAILED - Some ingestion failed"
+          python ./tools/code/clear_data_storage.py --storage_type "model-output" 
+
+      # ERROR RUN
+      # --------------------------------------------
+      - name: Error
+        if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
+        run: |
+          echo "UPLOAD FAILED -  ignore djson db cleaning"
+
+      # Final commit
+      # --------------------------------------------
+      - name: Commit changes
+        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'failure' || fromJSON(steps.invoke_webhook.outputs.run_results).status == 'success' }}
+        uses: EndBug/add-and-commit@v7
+        with: 
+          cwd: './repo'
+          message: "Update model-output db json"
+          default_author: github_actions
+          push: true
