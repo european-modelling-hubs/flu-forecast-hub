@@ -90,7 +90,7 @@ jobs:
           
         run: |
           echo "UPLOAD FAILED - Some ingestion failed -  $not_ingested"
-          # python ./tools/code/clear_data_storage.py --storage_type "model-metadata" --not_ingested "${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}"
+          python ./tools/code/clear_data_storage.py --storage_type "model-metadata" 
 
       # ERROR RUN
       # --------------------------------------------
