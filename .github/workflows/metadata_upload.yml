@@ -73,21 +73,21 @@ jobs:
           echo "webhook results: ${{ steps.invoke_webhook.outputs.run_results }}"
 
       - name: Successful run
-        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'success'}}
+        if: ${{ steps.invoke_webhook.outputs.run_results.status == 'success'}}
         env:
           run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
         run: |
           echo "UPLOAD SUCCEEDED -  clear djson db"
 
       - name: Some ingestion failed
-        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'failure'}}
+        if: ${{ steps.invoke_webhook.outputs.run_results.status == 'failure'}}
         env:
           not_ingested: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}
         run: |
           echo "UPLOAD FAILED - Some ingestion failed -  $not_ingested"
   
       - name: Error
-        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'error'}}
+        if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
         env:
           run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
         run: |
