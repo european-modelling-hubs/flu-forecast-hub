@@ -77,17 +77,15 @@ jobs:
         if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'success'}}
         run: |
           echo "UPLOAD SUCCEEDED -  clear djson db"
+          python ./tools/code/clear_data_storage.py --storage_type "model-metadata"
 
       - name: Some ingestion failed
         if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'failure'}}
-        # env:
-        #   not_ingested: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}
         run: |
           echo "UPLOAD FAILED - Some ingestion failed -  $not_ingested"
+          python ./tools/code/clear_data_storage.py --storage_type "model-metadata" --not_ingested ${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}
   
-      # - name: Error
-      #   if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
-      #   env:
-      #     run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
-      #   run: |
-      #     echo "UPLOAD FAILED -  ignore djson db cleaning"
+      - name: Error
+        if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
+        run: |
+          echo "UPLOAD FAILED -  ignore djson db cleaning"
