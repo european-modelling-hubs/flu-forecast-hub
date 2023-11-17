@@ -1,1 +1,7 @@
-{}
+{
+  "changes": [
+        "model-metadata/PMI-SIRModel3.yml",
+        "model-metadata/PMI-SIRModel8.yml",
+        "model-metadata/PMI-SIRModel9.yml"
+    ]
+}
