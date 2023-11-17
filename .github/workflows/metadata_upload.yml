@@ -90,7 +90,7 @@ jobs:
           wh_response:  ${{ steps.invoke_webhook.outputs.run_results }}
           
         run: |
-          echo "UPLOAD FAILED - Some ingestion failed -  $not_ingested"
+          echo "UPLOAD FAILED - Some ingestion failed"
           python ./tools/code/clear_data_storage.py --storage_type "model-metadata" 
 
       # ERROR RUN
