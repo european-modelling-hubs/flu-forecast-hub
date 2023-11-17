@@ -3,7 +3,6 @@
         {
             "model": "SIRModel",
             "changes": [
-                "model-output/PMI-SIRModel/2023-11-15-PMI-SIRModel.csv",
                 "model-output/PMI-SIRModel/2023-11-12-PMI-SIRModel.csv",
                 "model-output/PMI-SIRModel/2023-11-13-PMI-SIRModel.csv"
             ]
