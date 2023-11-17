@@ -74,7 +74,7 @@ jobs:
           echo "Status:  ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status }}"
 
       - name: Successful run
-        if: steps.invoke_webhook.outputs.run_results.status == 'success'
+        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'success'}}
         env:
           run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
         run: |
