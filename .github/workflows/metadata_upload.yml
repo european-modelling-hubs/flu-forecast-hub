@@ -73,23 +73,23 @@ jobs:
           echo "webhook results: ${{ steps.invoke_webhook.outputs.run_results }}"
           echo "Status:  ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status }}"
 
-      - name: Successful run
-        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'success'}}
-        env:
-          run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
-        run: |
-          echo "UPLOAD SUCCEEDED -  clear djson db"
+      # - name: Successful run
+      #   if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'success'}}
+      #   env:
+      #     run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
+      #   run: |
+      #     echo "UPLOAD SUCCEEDED -  clear djson db"
 
       - name: Some ingestion failed
-        if: ${{ steps.invoke_webhook.outputs.run_results.status == 'failure'}}
-        env:
-          not_ingested: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}
+        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'failure'}}
+        # env:
+        #   not_ingested: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}
         run: |
           echo "UPLOAD FAILED - Some ingestion failed -  $not_ingested"
   
-      - name: Error
-        if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
-        env:
-          run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
-        run: |
-          echo "UPLOAD FAILED -  ignore djson db cleaning"
+      # - name: Error
+      #   if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
+      #   env:
+      #     run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
+      #   run: |
+      #     echo "UPLOAD FAILED -  ignore djson db cleaning"
