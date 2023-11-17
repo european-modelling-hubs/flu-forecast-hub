@@ -1,7 +1,7 @@
 {
     "changes": [
-        "model-metadata/GC-foreTest3.yml",
-        "model-metadata/GC-foreTest8.yml",
-        "model-metadata/GC-foreTest9.yml"
+        "model-metadata/PMI-SIRModel.yml",
+        "model-metadata/PMI-SIRModel8.yml",
+        "model-metadata/PMI-SIRModel9.yml"
     ]
 }
