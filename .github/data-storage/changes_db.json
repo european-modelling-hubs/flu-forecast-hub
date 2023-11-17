@@ -1,10 +1,1 @@
-{
-    "PMI": [
-        {
-            "model": "SIRModel",
-            "changes": [
-                "model-output/PMI-SIRModel/2023-11-15-PMI-SIRModel.csv"
-            ]
-        }
-    ]
-}
+{}
