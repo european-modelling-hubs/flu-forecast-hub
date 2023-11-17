@@ -39,19 +39,24 @@ jobs:
       - name: Get changes list
         id: get_changes
         run: |
+          echo "Read changes list from json"
           content=`cat ./repo/.github/data-storage/metadata_db.json`
           content="${content//'%'/'%25'}"
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"
           echo "::set-output name=packageJson::$content"
           
+
       - run: |
           echo "${{ steps.get_changes.outputs.packageJson }}"
-              
+
+          
+    
       # Trigger server-side updating and UI deploy
       # --------------------------------------------
       # WEBHOOK
       - name: Invoke deployment hook
+        id: invoke_webhook
         env:
           disease_name: ${{ secrets.DISEASE_NAME }}
           webhook_url: ${{ secrets.WEB_HOOK_URL }}
@@ -62,3 +67,24 @@ jobs:
         run: |
           pip install requests
           python ./tools/.github/scripts/utils/workflow_webhook.py
+
+      - name: Successful run
+        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'success'}}
+        env:
+          run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
+        run: |
+          echo "UPLOAD SUCCEEDED -  clear djson db"
+
+      - name: Some ingestion failed
+        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'failure'}}
+        env:
+          not_ingested: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}
+        run: |
+          echo "UPLOAD FAILED - Some ingestion failed -  $not_ingested"
+  
+      - name: Error
+        if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'error'}}
+        env:
+          run_results: ${{ fromJSON(steps.invoke_webhook.outputs.run_results) }}
+        run: |
+          echo "UPLOAD FAILED -  ignore djson db cleaning"
