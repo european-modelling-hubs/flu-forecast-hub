@@ -1,6 +1,5 @@
 {
     "changes": [
-        "model-metadata/PMI-SIRModel.yml",
         "model-metadata/PMI-SIRModel8.yml",
         "model-metadata/PMI-SIRModel9.yml"
     ]
