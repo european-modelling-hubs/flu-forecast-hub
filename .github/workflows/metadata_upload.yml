@@ -86,7 +86,8 @@ jobs:
       - name: Some ingestion failed
         if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'failure'}}
         env:
-          not_ingested: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}
+          not_ingested: "${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}"
+          
         run: |
           echo "UPLOAD FAILED - Some ingestion failed -  $not_ingested"
           python ./tools/code/clear_data_storage.py --storage_type "model-metadata" --not_ingested ${{ fromJSON(steps.invoke_webhook.outputs.run_results).failed_ingestions }}
