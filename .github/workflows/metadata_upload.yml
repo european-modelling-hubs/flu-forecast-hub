@@ -71,8 +71,6 @@ jobs:
       - name: trace only
         run: |
           echo "webhook results: ${{ steps.invoke_webhook.outputs.run_results }}"
-          echo "Status:  ${{ fromJSON(steps.invoke_webhook.outputs.run_results)["status"] }}"
-          echo "list:  ${{ fromJSON(steps.invoke_webhook.outputs.run_results)["failed_ingestions"] }}"
           # echo "Status:  ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status }}"
 
       # SUCCESSFUL RUN
@@ -88,7 +86,7 @@ jobs:
       - name: Some ingestion failed
         if: ${{ fromJSON(steps.invoke_webhook.outputs.run_results).status == 'failure'}}
         env:
-          not_ingested: "empty"
+          not_ingested:  ${{ steps.invoke_webhook.outputs.run_results }}
           
         run: |
           echo "UPLOAD FAILED - Some ingestion failed -  $not_ingested"
