@@ -46,7 +46,7 @@ jobs:
     - name: Import Truth
       id: import_truth
       run: |
-        python ./tools/code/import_truth.py
+        python ./tools/code/import_truth_ILI.py
 
     - name: Commit data repo changes
       uses: EndBug/add-and-commit@v7
