@@ -1,0 +1,70 @@
+name: "ImportTruthErviss"
+on:
+
+  workflow_dispatch:
+
+  # scheduled run every Wednesday at 03.00 a.m. (Wednesday 02.00 a.m.UTC)
+  # TODO for the time being upload is Thursday at 03.00 a.m. (Thursday 02.00 a.m. UTC)
+  schedule:
+    - cron: '00 02 * * 4'
+
+    
+jobs:
+
+  import_truth_job:
+    runs-on: ubuntu-latest
+    steps:
+
+    # Checkout the python tools repo
+    # -------------------------------------------      
+    - name: checkout python tools repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: 'european-modelling-hubs/hub-tools'
+        ref: 'main'
+        path: './tools/'
+
+    # Checkout the data repository
+    # -------------------------------------------      
+    - name: checkout data repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: 'european-modelling-hubs/flu-forecast-hub/'
+        ref: 'main'
+        path: './repo/'
+    
+    # Run Pyton code
+    # -------------------------
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' 
+    
+    - run: pip install pycountry isoweek
+    
+    - name: Import Truth
+      id: import_truth
+      run: |
+        python ./tools/code/import.py
+
+    - name: Commit data repo changes
+      uses: EndBug/add-and-commit@v7
+      with: 
+          cwd: './repo'
+          message: "Updating Truth Data repo ..."
+          default_author: github_actions
+          push: true
+
+    # Save changes to artifact for json db store 
+    - name: Save changes to artifact
+      env:
+        imported_files: ${{ steps.import_truth.outputs.imported_files }}
+      run: |
+        echo "{ \"imported_files\" : \"previsioni/Influcast-Ensemble/$imported_files\" }" > pr_changes.json
+          
+    - name: Upload changes
+      uses: actions/upload-artifact@v2
+      with:
+        name: import_changes
+        path: ./import_changes.json
