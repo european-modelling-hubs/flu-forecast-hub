@@ -61,10 +61,10 @@ jobs:
       env:
         imported_files: ${{ steps.import_truth.outputs.imported_files }}
       run: |
-        echo "{ \"imported_files\" : \"$imported_files\" }" > pr_changes.json
+        echo "{ \"pr-changes\" : \"$imported_files\" }" > pr_changes.json
           
     - name: Upload changes
       uses: actions/upload-artifact@v2
       with:
-        name: import_changes
-        path: ./import_changes.json
+        name: pr_changes
+        path: ./pr_changes.json
