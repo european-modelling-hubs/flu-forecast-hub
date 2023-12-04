@@ -61,7 +61,7 @@ jobs:
       env:
         imported_files: ${{ steps.import_truth.outputs.imported_files }}
       run: |
-        echo "{ \"imported_files\" : \"previsioni/Influcast-Ensemble/$imported_files\" }" > pr_changes.json
+        echo "{ \"imported_files\" : \"$imported_files\" }" > pr_changes.json
           
     - name: Upload changes
       uses: actions/upload-artifact@v2
