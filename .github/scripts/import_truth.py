@@ -60,4 +60,4 @@ for output_path in out_files_ILI:
 
 env_file = os.getenv('GITHUB_OUTPUT')
 with open(env_file, "a") as outenv:
-   outenv.write (f"imported_files={out_files_ILI}")
+   outenv.write (f"imported_files={' '.join(out_files_ILI)}")
