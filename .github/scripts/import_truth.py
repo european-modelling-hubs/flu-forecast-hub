@@ -60,4 +60,4 @@ for output_path in out_files_ILI:
 
 env_file = os.getenv('GITHUB_OUTPUT')
 with open(env_file, "a") as outenv:
-   outenv.write (f"imported_files={' '.join([out_file in out_files_ILI if not 'latest-' in out_file] )}")
+   outenv.write (f"imported_files={' '.join([out_file for out_file in out_files_ILI if not 'latest-' in out_file] )}")
