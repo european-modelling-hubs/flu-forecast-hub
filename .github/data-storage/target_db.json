@@ -1,8 +1,1 @@
-{
-    "ERVISS": {
-        "changes": [
-            "target-data/ERVISS/snapshots/2023-11-01-ILI_incidence.csv",
-            "target-data/ERVISS/snapshots/2023-12-01-ILI_incidence.csv"
-        ]
-    }
-}
+{}
