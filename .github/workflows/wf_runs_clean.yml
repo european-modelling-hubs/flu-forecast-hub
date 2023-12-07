@@ -8,6 +8,7 @@ on:
 
 jobs:
   del_runs:
+    if: github.repository_owner == 'european-modelling-hubs'
     runs-on: ubuntu-latest
     permissions:
       actions: write
