@@ -11,6 +11,7 @@ on:
   
 jobs:
   scheduled-submit:
+    if: github.repository_owner == 'european-modelling-hubs'
     runs-on: ubuntu-latest
     
     steps:
