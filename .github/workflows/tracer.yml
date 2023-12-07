@@ -1,0 +1,23 @@
+name: test tracing
+on:
+  workflow_dispatch:
+
+jobs:
+
+  activate_as_master:
+    if: github.repository_owner == 'european-modelling-hubs'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Save changes to artifact      
+      run: echo "Running on master with owner ${{ github.repository_owner }}"
+
+
+  activate_not_master:
+    if: github.repository_owner != 'european-modelling-hubs'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Save changes to artifact      
+      run: echo "Running not on master with owner ${{ github.repository_owner }}"
+
+
+
