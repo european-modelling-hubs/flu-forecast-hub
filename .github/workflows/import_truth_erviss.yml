@@ -12,6 +12,7 @@ on:
 jobs:
 
   import_truth_job:
+    if: github.repository_owner == 'european-modelling-hubs'
     runs-on: ubuntu-latest
     steps:
 
