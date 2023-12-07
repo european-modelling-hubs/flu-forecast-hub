@@ -1,1 +1,10 @@
-{}
+{
+    "TestTeam": [
+        {
+            "model": "TestModel",
+            "changes": [
+                "model-output/TestTeam-TestModel/2023-12-13-TestTeam-TestModel.csv"
+            ]
+        }
+    ]
+}
