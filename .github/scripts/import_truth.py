@@ -2,6 +2,7 @@ import os
 import sys
 import csv
 from urllib.request import urlopen
+import urllib.error
 from datetime import datetime, timedelta
 from isoweek import Week
 
