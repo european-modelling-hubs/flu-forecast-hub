@@ -1,1 +1,7 @@
-{}
+{
+    "changes": [
+        "model-metadata/ECDC-norrsken_blue.yml",
+        "model-metadata/ECDC-norrsken_green.yml",
+        "model-metadata/ECDC-norrsken.yml"
+    ]
+}
