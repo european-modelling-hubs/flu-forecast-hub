@@ -1,7 +1,7 @@
 team_name: PoliTo Complex System Lab
 model_name: Metapopulation SEINR model
 team_abbr: CSL_PoliTo
-model_abbr: MetaFlu
+model_abbr: metaFlu
 model_contributors:
   - name: Alessandro Rizzo, Lorenzo Zino, Francesco Celino
     affiliation: Politecnico di Torino
