@@ -13,6 +13,9 @@ jobs:
   import_truth_job:
     if: github.repository_owner == 'european-modelling-hubs'
     runs-on: ubuntu-latest
+    env:
+      # accepted values are 'go' / 'inhibit'
+      run_import: 'go'
     steps:
 
     # Checkout the python tools repo
