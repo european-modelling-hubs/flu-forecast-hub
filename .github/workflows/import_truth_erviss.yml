@@ -5,7 +5,7 @@ on:
 
   # scheduled run every Friday at 19.00 (18.00 UTC)
   schedule:
-    - cron: '50 22 * * 1,5'
+    - cron: '00 19 * * 1,5'
 
     
 jobs:
