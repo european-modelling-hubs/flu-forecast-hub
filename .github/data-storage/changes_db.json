@@ -10,13 +10,15 @@
         {
             "model": "norrsken_blue",
             "changes": [
-                "model-output/ECDC-norrsken_blue/2023-12-13-ECDC-norrsken_blue.csv"
+                "model-output/ECDC-norrsken_blue/2023-12-13-ECDC-norrsken_blue.csv",
+                "model-output/ECDC-norrsken_blue/2023-12-20-ECDC-norrsken_blue.csv"
             ]
         },
         {
             "model": "norrsken_green",
             "changes": [
-                "model-output/ECDC-norrsken_green/2023-12-13-ECDC-norrsken_green.csv"
+                "model-output/ECDC-norrsken_green/2023-12-13-ECDC-norrsken_green.csv",
+                "model-output/ECDC-norrsken_green/2023-12-20-ECDC-norrsken_green.csv"
             ]
         }
     ],
