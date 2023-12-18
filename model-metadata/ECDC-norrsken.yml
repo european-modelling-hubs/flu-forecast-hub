@@ -1,10 +1,10 @@
-team_name: European Centre For Disease Prevention and Control
+team_name: European Centre for Disease Prevention and Control
 model_name: Norrsken Piecewise Linear Bayesian Model
 team_abbr: ECDC
 model_abbr: norrsken
 model_contributors:
   - name: Rene Niehus
-    affiliation: European Centre For Disease Prevention and Control
+    affiliation: European Centre for Disease Prevention and Control
     email: rene.niehus@ecdc.europa.eu
 team_model_designation: primary
 methods: "A Bayesian piece-wise log-linear model fit."

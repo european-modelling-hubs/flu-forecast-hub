@@ -1,0 +1,5 @@
+origin_date,horizon,target_end_date,submission_round,is_latest
+2023-12-20,1,2023-12-17,1,True
+2023-12-20,2,2023-12-24,1,True
+2023-12-20,3,2023-12-31,1,True
+2023-12-20,4,2024-01-07,1,True

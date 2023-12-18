@@ -3,10 +3,9 @@ on:
 
   workflow_dispatch:
 
-  # scheduled run every Wednesday at 03.00 a.m. (Wednesday 02.00 a.m.UTC)
-  # TODO for the time being upload is Thursday at 03.00 a.m. (Thursday 02.00 a.m. UTC)
+  # scheduled run every Friday at 19.00 (18.00 UTC)
   schedule:
-    - cron: '50 22 * * 5'
+    - cron: '00 18 * * 1,5'
 
     
 jobs:
@@ -14,6 +13,7 @@ jobs:
   import_truth_job:
     if: github.repository_owner == 'european-modelling-hubs'
     runs-on: ubuntu-latest
+
     steps:
 
     # Checkout the python tools repo
