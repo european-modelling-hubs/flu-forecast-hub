@@ -38,7 +38,7 @@ csv_reader = csv.DictReader(lines, delimiter=',')
 ILI_records = [('location', 'truth_date', 'year_week', 'value')]
 
 # Temporarly exclude countries with inconsistent data scale 
-countries_to_exclude = ["Malta", "Luxembourg", "Cyprus"]
+countries_to_exclude = ('Malta', 'Luxembourg', 'Cyprus')
 
 for row in csv_reader:
     if (row['survtype'] != 'primary care syndromic'
