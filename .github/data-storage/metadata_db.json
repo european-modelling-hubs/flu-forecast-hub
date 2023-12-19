@@ -1,10 +1,11 @@
 {
     "changes": [
-        "model-metadata/ECDC-norrsken_green.yml",
-        "model-metadata/QMUL-SEIR.yml",
-        "model-metadata/ECDC-norrsken_blue.yml",
-        "model-metadata/CSL_PoliTo-metaFlu.yml",
         "model-metadata/ISI-FluABCaster.yml",
-        "model-metadata/ECDC-norrsken.yml"
+        "model-metadata/ECDC-norrsken.yml",
+        "model-metadata/ISI-GenLogModel.yml",
+        "model-metadata/CSL_PoliTo-metaFlu.yml",
+        "model-metadata/ECDC-norrsken_green.yml",
+        "model-metadata/ECDC-norrsken_blue.yml",
+        "model-metadata/QMUL-SEIR.yml"
     ]
 }
