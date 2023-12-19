@@ -10,5 +10,5 @@ model_contributors:
     affiliation: Queen Mary University of London
     email: yuhan.li@qmul.ac.uk
 team_model_designation: primary
-methods: Stochastic age-structed SIER model.
+methods: Stochastic age-structed SEIR model.
 license: CC-BY-4.0
