@@ -1,0 +1,11 @@
+team_name: ISI Foundation
+model_name: FluABCaster
+team_abbr: ISI
+model_abbr: FluABCaster
+model_contributors:
+  - name: Nicolò Gozzi
+    affiliation: ISI Foundation
+    email: nicolo.gozzi@isi.it
+team_model_designation: primary
+methods: A stochastic, age structured compartmental model calibrated via ABC-SMC techniques.
+license: CC-BY-4.0
