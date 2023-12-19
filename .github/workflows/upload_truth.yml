@@ -105,6 +105,6 @@ jobs:
         uses: EndBug/add-and-commit@v7
         with: 
           cwd: './repo'
-          message: "Update model-output db json"
+          message: "Update target db json"
           default_author: github_actions
           push: true
