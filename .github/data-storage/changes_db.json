@@ -30,5 +30,13 @@
                 "model-output/CSL_PoliTo-metaFlu/2023-12-20-CSL_PoliTo-metaFlu.csv"
             ]
         }
+    ],
+    "ISI": [
+        {
+            "model": "FluABCaster",
+            "changes": [
+                "model-output/ISI-FluABCaster/2023-12-20-ISI-FluABCaster.csv"
+            ]
+        }
     ]
 }

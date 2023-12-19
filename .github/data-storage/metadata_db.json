@@ -1,8 +1,9 @@
 {
     "changes": [
         "model-metadata/CSL_PoliTo-metaFlu.yml",
-        "model-metadata/ECDC-norrsken_blue.yml",
         "model-metadata/ECDC-norrsken_green.yml",
-        "model-metadata/ECDC-norrsken.yml"
+        "model-metadata/ECDC-norrsken.yml",
+        "model-metadata/ECDC-norrsken_blue.yml",
+        "model-metadata/ISI-FluABCaster.yml"
     ]
 }
