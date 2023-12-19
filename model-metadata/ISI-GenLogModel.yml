@@ -1,0 +1,11 @@
+team_name: ISI Foundation
+model_name: Generalized Logistic Model
+team_abbr: ISI
+model_abbr: GenLogModel
+model_contributors:
+  - name: Nicolò Gozzi
+    affiliation: ISI Foundation
+    email: nicolo.gozzi@isi.it
+team_model_designation: secondary
+methods: A generalized logistic model.
+license: CC-BY-4.0
