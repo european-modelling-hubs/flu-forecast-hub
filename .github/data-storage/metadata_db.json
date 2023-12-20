@@ -1,1 +1,9 @@
-{}
+{
+   "changes": [
+      "model-metadata/ECDC-norrsken_blue.yml",
+      "model-metadata/QMUL-SEIR.yml",
+      "model-metadata/ISI-FluABCaster.yml",
+      "model-metadata/QMUL-ARIMA.yml",
+      "model-metadata/ECDC-norrsken_green.yml"
+   ]
+}
