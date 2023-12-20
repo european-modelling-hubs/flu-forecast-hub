@@ -1,4 +1,4 @@
-name: "Generate Ensemble"
+name: "GenerateEnsemble"
 on:
   workflow_dispatch:
   schedule:
