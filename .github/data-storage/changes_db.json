@@ -20,18 +20,14 @@
                 "model-output/ECDC-norrsken_green/2023-12-13-ECDC-norrsken_green.csv",
                 "model-output/ECDC-norrsken_green/2023-12-20-ECDC-norrsken_green.csv"
             ]
-        }
-    ],
-    "CSL_PoliTo": [
+        },
         {
             "model": "metaFlu",
             "changes": [
                 "model-output/CSL_PoliTo-metaFlu/2023-12-13-CSL_PoliTo-metaFlu.csv",
                 "model-output/CSL_PoliTo-metaFlu/2023-12-20-CSL_PoliTo-metaFlu.csv"
             ]
-        }
-    ],
-    "ISI": [
+        },
         {
             "model": "FluABCaster",
             "changes": [
@@ -43,9 +39,7 @@
             "changes": [
                 "model-output/ISI-GenLogModel/2023-12-20-ISI-GenLogModel.csv"
             ]
-        }
-    ],
-    "QMUL": [
+        },
         {
             "model": "SEIR",
             "changes": [
