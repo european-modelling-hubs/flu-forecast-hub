@@ -62,7 +62,7 @@ jobs:
       env:
         changed_files: ${{ steps.compute_baseline.outputs.baseline_file }}
       run: |
-        echo "{ \"pr-changes\" : \"model-output/respicast-quantileBaseline/$changed_files\" }" > pr_changes.json
+        echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
           
     - name: Upload changes
       uses: actions/upload-artifact@v2
