@@ -4,5 +4,10 @@
             "target-data/FluID/latest_ILI_incidence.csv",
             "target-data/FluID/snapshots/2023-12-15-ILI_incidence.csv"
         ]
+    },
+    "ILI incidence": {
+        "changes": [
+            "target-data/FluID/snapshots/2023-12-15-ILI_incidence.csv"
+        ]
     }
 }
