@@ -7,36 +7,5 @@
                 "model-output/ECDC-FluForARIMA/2023-12-20-ECDC-FluForARIMA.csv"
             ]
         }
-    ],
-    "CSL_PoliTo": [
-        {
-            "model": "metaFlu",
-            "changes": [
-                "model-output/CSL_PoliTo-metaFlu/2023-12-13-CSL_PoliTo-metaFlu.csv",
-                "model-output/CSL_PoliTo-metaFlu/2023-12-20-CSL_PoliTo-metaFlu.csv"
-            ]
-        }
-    ],
-    "ISI": [
-        {
-            "model": "FluABCaster",
-            "changes": [
-                "model-output/ISI-FluABCaster/2023-12-20-ISI-FluABCaster.csv"
-            ]
-        },
-        {
-            "model": "GenLogModel",
-            "changes": [
-                "model-output/ISI-GenLogModel/2023-12-20-ISI-GenLogModel.csv"
-            ]
-        }
-    ],
-    "QMUL": [
-        {
-            "model": "SEIR",
-            "changes": [
-                "model-output/QMUL-SEIR/2023-12-20-QMUL-SEIR.csv"
-            ]
-        }
     ]
 }
