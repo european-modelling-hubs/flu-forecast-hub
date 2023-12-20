@@ -49,7 +49,6 @@
         {
             "model": "SEIR",
             "changes": [
-                "model-output/QMUL-SEIR/2023-12-06-QMUL-SEIR.csv",
                 "model-output/QMUL-SEIR/2023-12-20-QMUL-SEIR.csv"
             ]
         }
