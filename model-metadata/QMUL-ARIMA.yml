@@ -1,0 +1,14 @@
+team_name: QMUL
+model_name: ARIMA Model
+team_abbr: QMUL
+model_abbr: ARIMA
+model_contributors:
+  - name: Nicola Perra
+    affiliation: Queen Mary University of London
+    email: n.perra@qmul.ac.uk
+  - name: Yuhan Li
+    affiliation: Queen Mary University of London
+    email: yuhan.li@qmul.ac.uk
+team_model_designation: primary
+methods: Autoregressive integrated moving average model.
+license: CC-BY-4.0
