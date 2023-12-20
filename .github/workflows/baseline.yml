@@ -44,7 +44,8 @@ jobs:
     
     - run: pip install pandas==1.2.5 numpy==1.22.4
     
-    - name: Pyhton  
+    - name: compute baseline
+      id: compute_baseline
       run: |
         python ./tools/code/quantile_baseline.py --hub_path ./repo --target_name "ILI incidence" --filename "ILI_incidence" --symmetrize True --nsamples 10000 --horizon 4 --team_abbr "respicast" --model_abbr "quantileBaseline" --submission_end_weekday 2
 
@@ -55,3 +56,17 @@ jobs:
           message: "Update data storage"
           default_author: github_actions
           push: true
+
+    # Save changes to artifact for later persisting 
+    - name: Save changes to artifact
+      env:
+        changed_files: ${{ steps.compute_baseline.outputs.baseline_file }}
+      run: |
+        echo "{ \"pr-changes\" : \"model-output/respicast-quantileBaseline/$changed_files\" }" > pr_changes.json
+          
+    - name: Upload changes
+      uses: actions/upload-artifact@v2
+      with:
+        name: pr_changes
+        path: ./pr_changes.json
+  
