@@ -37,14 +37,18 @@
             "changes": [
                 "model-output/ISI-FluABCaster/2023-12-20-ISI-FluABCaster.csv"
             ]
+        },
+        {
+            "model": "GenLogModel",
+            "changes": [
+                "model-output/ISI-GenLogModel/2023-12-20-ISI-GenLogModel.csv"
+            ]
         }
     ],
     "QMUL": [
         {
             "model": "SEIR",
             "changes": [
-                "model-output/QMUL-SEIR/readme.md",
-                "model-output/QMUL-SEIR/2023-12-06-QMUL-SEIR.csv",
                 "model-output/QMUL-SEIR/2023-12-20-QMUL-SEIR.csv"
             ]
         }

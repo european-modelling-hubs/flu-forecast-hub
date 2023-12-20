@@ -56,7 +56,7 @@ jobs:
       - name: Invoke deployment hook
         id: invoke_webhook
         env:
-          disease_name: ${{ secrets.DISEASE_NAME }}
+          disease_name: ${{ vars.DISEASE_NAME }}
           webhook_url: ${{ secrets.WEB_HOOK_URL }}
           webhook_secret: ${{ secrets.WEB_HOOK_SECRET }}
           data: ${{ steps.get_changes.outputs.packageJson }}
