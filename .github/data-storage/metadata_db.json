@@ -1,7 +1,5 @@
 {
     "changes": [
-        "model-metadata/ECDC-norrsken.yml",
-        "model-metadata/CSL_PoliTo-metaFlu.yml",
         "model-metadata/ISI-GenLogModel.yml",
         "model-metadata/ECDC-norrsken_blue.yml",
         "model-metadata/QMUL-SEIR.yml",
