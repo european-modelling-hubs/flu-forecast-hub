@@ -3,8 +3,8 @@ name: GenerateBaseline
 on:
 
   workflow_dispatch:
-  # schedule:
-  #   - cron: "15 11,23 * * 2,3"
+  schedule:
+    - cron: "00 01 * * 4"
 
     
 jobs:
