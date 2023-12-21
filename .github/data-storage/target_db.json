@@ -1,12 +1,1 @@
-{
-    "ILI incidence": {
-        "changes": [
-            "target-data/FluID/snapshots/2023-12-15-ILI_incidence.csv"
-        ]
-    },
-    "Readme": {
-        "changes": [
-            "target-data/FluID/Readme.md"
-        ]
-    }
-}
+{}
