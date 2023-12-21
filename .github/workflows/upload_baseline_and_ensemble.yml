@@ -66,7 +66,8 @@ jobs:
           
         run: |
           pip install requests
-          python ./tools/code/workflow_webhook.py
+          python ./tools/.github/scripts/utils/workflow_webhook.py
+
 
       - name: trace only
         run: |
