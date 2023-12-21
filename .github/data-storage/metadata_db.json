@@ -1,1 +1,6 @@
-{}
+{
+    "changes": [
+        "model-metadata/ISI-FluABCaster.yml",
+        "model-metadata/ISI-GenLogModel.yml"
+    ]
+}
