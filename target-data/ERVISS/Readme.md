@@ -15,3 +15,6 @@ Each ground truth CSV file contains the following columns:
 | `year_week` | string | A string denoting the year and week to which the truth data corresponds |
 | `value ` | decimal | ILI incidence per $100,000$ population (except for Finland, where it is reported per $100,000$ consultations)|
 
+
+ERVISS covers the following countries: 
+  AT, BE, HR, CZ, DK, EE, FI, FR, GR, HU, IS, IE, IT, LV, LT, LU, MT, NL, NO, PL, PT, RO, SK, SI
