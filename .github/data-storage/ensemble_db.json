@@ -1,10 +1,16 @@
 {
-  "respicast": [
-    {
-        "model": "hubEnsemble",
-        "changes": [
-            "model-output/respicast-hubEnsemble/2023-12-20-respicast-hubEnsemble.csv"
-        ]
-    }
-  ]
+    "respicast": [
+        {
+            "model": "hubEnsemble",
+            "changes": [
+                "model-output/respicast-hubEnsemble/2023-12-20-respicast-hubEnsemble.csv"
+            ]
+        },
+        {
+            "model": "quantileBaseline",
+            "changes": [
+                "model-output/respicast-quantileBaseline/2023-12-27-respicast-quantileBaseline.csv"
+            ]
+        }
+    ]
 }
