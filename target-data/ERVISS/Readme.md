@@ -17,4 +17,5 @@ Each ground truth CSV file contains the following columns:
 
 
 ERVISS covers the following countries: 
-  AT, BE, HR, CZ, DK, EE, FI, FR, GR, HU, IS, IE, IT, LV, LT, LU, MT, NL, NO, PL, PT, RO, SK, SI
+
+    AT, BE, HR, CZ, DK, EE, FI, FR, GR, HU, IS, IE, IT, LV, LT, LU, MT, NL, NO, PL, PT, RO, SK, SI
