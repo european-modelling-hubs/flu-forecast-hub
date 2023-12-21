@@ -1,0 +1,11 @@
+team_name: RespiCast
+model_name: Quantile Baseline
+team_abbr: respicast
+model_abbr: quantileBaseline
+model_contributors:
+  - name: RespiCast Team
+    affiliation: European Respiratory Diseases Forecasting Hubs
+    email: European.Modelling.Hub@ecdc.europa.eu
+team_model_designation: ensemble
+methods: A simple baseline model that samples future target changes from historical increments.
+license: CC-BY-4.0
