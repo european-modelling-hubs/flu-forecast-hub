@@ -6,7 +6,7 @@ on:
     paths:
       - 'target-data/FluID/*'
       - 'target-data/Respivirnet/*'
-      - '!**README**'
+      - '!**.md'
 
 jobs:
   custom-changes:
