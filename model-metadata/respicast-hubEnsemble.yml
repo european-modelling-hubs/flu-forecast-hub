@@ -1,0 +1,11 @@
+team_name: RespiCast
+model_name: Hub Ensemble
+team_abbr: respicast
+model_abbr: hubEnsemble
+model_contributors:
+  - name: RespiCast Team 
+    affiliation: European Respiratory Diseases Forecasting Hubs
+    email: European.Modelling.Hub@ecdc.europa.eu
+team_model_designation: ensemble
+methods: An Ensemble model that computes the median across different models' quantiles.
+license: CC-BY-4.0
