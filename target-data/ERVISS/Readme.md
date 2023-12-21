@@ -1,4 +1,4 @@
-# Target Data
+# Target Data - ERVISS
 
 This folder contains the ground truth information about ILI incidence in EU/EEA countries from [ERVISS](https://erviss.org/).
 
