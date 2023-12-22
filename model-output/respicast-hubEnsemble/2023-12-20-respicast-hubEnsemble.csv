@@ -1,5 +1,5 @@
 "origin_date","target","target_end_date","horizon","location","output_type","output_type_id","value"
-2023-12-20,"ILI incidence",2023-12-17,1,"AT","median","",2562.8742077677
+2023-12-20,"ILI incidence",2023-12-17,1,"AT","median","",2562.8742077678
 2023-12-20,"ILI incidence",2023-12-17,1,"AT","quantile","0.01",2455.42278980529
 2023-12-20,"ILI incidence",2023-12-17,1,"AT","quantile","0.025",2474.62434431397
 2023-12-20,"ILI incidence",2023-12-17,1,"AT","quantile","0.05",2487.91165744206
