@@ -3,10 +3,5 @@
         "changes": [
             "target-data/ERVISS/snapshots/2023-12-22-ILI_incidence.csv"
         ]
-    },
-    "latest ILI incidence": {
-        "changes": [
-            "target-data/FluID/latest_ILI_incidence.csv"
-        ]
     }
 }
