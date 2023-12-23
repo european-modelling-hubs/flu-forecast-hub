@@ -54,7 +54,7 @@
         },
         "team_model_designation": {
             "type": "string",
-            "enum": ["primary", "secondary", "proposed", "other"]
+            "enum": ["primary", "secondary", "proposed", "other", "ensemble", "hub_other"]
         },
         "model_version": {
             "description": "Identifier of the version of the model",

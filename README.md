@@ -12,7 +12,7 @@ This is a brief outline for anyone considering contributing a forecast. For a de
 To prepare for your initial submission, consult the [Preparing to Submit](https://github.com/european-modelling-hubs/flu-forecast-hub/wiki/Preparing-to-submit) guide. This guide provides details on forking the repository, creating a team folder, and uploading a team metadata file.
 
 #### Targets
-After completing the preceding steps, you are now prepared to submit your first forecast. We are currently focused on the forecast target of Weekly ILI Incidence (notified cases per $100,000$) in EU/EEA countries. Forecasts are evaluated against ILI incidence collated by the ECDC and stored in the `target-data` folder of this repository. 
+After completing the preceding steps, you are now prepared to submit your first forecast. We are currently focused on the forecast target of Weekly ILI Incidence (notified cases per $100,000$) in EU/EEA countries. Forecasts are evaluated against ILI incidence stored in the `target-data` folder of this repository. 
 
 
 #### Forecast Submission

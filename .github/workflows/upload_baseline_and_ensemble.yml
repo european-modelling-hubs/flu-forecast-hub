@@ -1,10 +1,11 @@
-name: Forecast Upload
+name: Baseline Ensemble Upload
 
 on:
-  # scheduled submission every Thursday at 00.10 a.m. 
+  # scheduled submission every Wednesday at 04.00 a.m. (Wednesday 03.00 a.m.UTC)
+  # TODO for the time being upload is Thursday at 04.00 a.m. (Thursday 03.00 a.m. UTC)
   schedule:
-    - cron: '10 23 * * 3'  
-
+    - cron: '00 03 * * 4'
+  
   workflow_dispatch:
 
   
@@ -24,7 +25,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: 'european-modelling-hubs/hub-tools'
           ref: 'main'
-          path: tools
+          path: './tools/'
 
 
       - name: checkout data repo
@@ -40,7 +41,7 @@ jobs:
       - name: Get changes list
         id: get_changes
         run: |
-          content=`cat ./repo/.github/data-storage/changes_db.json`
+          content=`cat ./repo/.github/data-storage/ensemble_db.json`
           content="${content//'%'/'%25'}"
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"
@@ -61,10 +62,12 @@ jobs:
           webhook_secret: ${{ secrets.WEB_HOOK_SECRET }}
           data: ${{ steps.get_changes.outputs.packageJson }}
           data_type: "forecast"
+          season: "NA"
           
         run: |
           pip install requests
           python ./tools/.github/scripts/utils/workflow_webhook.py
+
 
       - name: trace only
         run: |
@@ -78,7 +81,7 @@ jobs:
           wh_response:  ${{ steps.invoke_webhook.outputs.run_results }}
         run: |
           echo "UPLOAD SUCCEEDED -  clear djson db"
-          python ./tools/code/clear_data_storage.py --storage_type "model-output"
+          python ./tools/code/clear_data_storage.py --storage_type "ensemble"
 
       # RUN FAILURE
       # --------------------------------------------
@@ -89,14 +92,14 @@ jobs:
           
         run: |
           echo "UPLOAD FAILED - Some ingestion failed"
-          python ./tools/code/clear_data_storage.py --storage_type "model-output" 
+          python ./tools/code/clear_data_storage.py --storage_type "ensemble" 
 
       # ERROR RUN
       # --------------------------------------------
       - name: Error
         if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
         run: |
-          echo "UPLOAD FAILED -  ignore djson db cleaning"
+          echo "EnsambleUPLOAD FAILED -  ignore djson db cleaning"
 
       # Final commit
       # --------------------------------------------

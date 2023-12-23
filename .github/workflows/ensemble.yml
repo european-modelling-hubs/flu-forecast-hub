@@ -1,9 +1,8 @@
-name: "Generate Ensemble"
+name: GenerateEnsemble
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: "15 11,23 * * 2,3"
-
+  schedule:
+    - cron: "15 01 * * 4"
 
 jobs:
   
@@ -46,6 +45,7 @@ jobs:
       shell: Rscript {0}
 
     - name: Generate Ensemble
+      id: generate_ensemble
       run: |
         # call R script from tools
         Rscript ./tools/R-code/generate-ensemble.R --hub_path "./repo" --agg_fun "median" --model_id "hubEnsemble" --team_id "respicast"
@@ -57,3 +57,16 @@ jobs:
           message: "Update ensemble data"
           default_author: github_actions
           push: true
+
+    # Save changes to artifact for later persisting 
+    - name: Save changes to artifact
+      env:
+        changed_files: ${{ steps.generate_ensemble.outputs.ensemble_file }}
+      run: |
+        echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
+          
+    - name: Upload changes
+      uses: actions/upload-artifact@v2
+      with:
+        name: pr_changes
+        path: ./pr_changes.json
