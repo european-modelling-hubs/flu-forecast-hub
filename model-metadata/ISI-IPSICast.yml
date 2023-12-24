@@ -1,0 +1,10 @@
+team_name: ISI Foundation
+model_name: IPSICast
+team_abbr: ISI
+model_abbr: IPSICast
+model_contributors:
+    - name: Stefania Fiandrino
+    - affiliation: ISI Foundation
+    - email: stefania.fiandrino@isi.it
+team_model_designation: primary
+methods: An exogenous autoregressive model that integrates information on digital surveillance data from the Influweb participatory system.
