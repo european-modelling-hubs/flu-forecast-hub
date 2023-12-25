@@ -34,5 +34,13 @@
                 "model-output/CSL_PoliTo-metaFlu/2023-12-27-CSL_PoliTo-metaFlu.csv"
             ]
         }
+    ],
+    "ECDC": [
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2023-12-27-ECDC-FluForARIMA.csv"
+            ]
+        }
     ]
 }
