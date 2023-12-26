@@ -41,6 +41,18 @@
             "changes": [
                 "model-output/ECDC-FluForARIMA/2023-12-27-ECDC-FluForARIMA.csv"
             ]
+        },
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2023-12-27-ECDC-norrsken_blue.csv"
+            ]
+        },
+        {
+            "model": "norrsken_green",
+            "changes": [
+                "model-output/ECDC-norrsken_green/2023-12-27-ECDC-norrsken_green.csv"
+            ]
         }
     ]
 }
