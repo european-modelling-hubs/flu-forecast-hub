@@ -11,6 +11,12 @@
             "changes": [
                 "model-output/ISI-GenLogModel/2023-12-27-ISI-GenLogModel.csv"
             ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/README.md"
+            ]
         }
     ],
     "QMUL": [
@@ -26,6 +32,26 @@
             "model": "metaFlu",
             "changes": [
                 "model-output/CSL_PoliTo-metaFlu/2023-12-27-CSL_PoliTo-metaFlu.csv"
+            ]
+        }
+    ],
+    "ECDC": [
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2023-12-27-ECDC-FluForARIMA.csv"
+            ]
+        },
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2023-12-27-ECDC-norrsken_blue.csv"
+            ]
+        },
+        {
+            "model": "norrsken_green",
+            "changes": [
+                "model-output/ECDC-norrsken_green/2023-12-27-ECDC-norrsken_green.csv"
             ]
         }
     ]
