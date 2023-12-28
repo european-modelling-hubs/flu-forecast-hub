@@ -3,7 +3,6 @@
         {
             "model": "IPSICast",
             "changes": [
-                "model-output/ISI-IPSICast/README.md",
                 "model-output/ISI-IPSICast/2023-12-27-ISI-IPSICast.csv"
             ]
         }
