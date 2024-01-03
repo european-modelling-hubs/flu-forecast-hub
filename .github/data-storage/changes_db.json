@@ -14,5 +14,13 @@
                 "model-output/ECDC-FluForARIMA/2024-01-03-ECDC-FluForARIMA.csv"
             ]
         }
+    ],
+    "ISI": [
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-01-03-ISI-IPSICast.csv"
+            ]
+        }
     ]
 }
