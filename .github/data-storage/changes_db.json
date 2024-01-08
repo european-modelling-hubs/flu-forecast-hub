@@ -1,1 +1,16 @@
-{}
+{
+    "ISI": [
+        {
+            "model": "FluABCaster",
+            "changes": [
+                "model-output/ISI-FluABCaster/2024-01-10-ISI-FluABCaster.csv"
+            ]
+        },
+        {
+            "model": "GenLogModel",
+            "changes": [
+                "model-output/ISI-GenLogModel/2024-01-10-ISI-GenLogModel.csv"
+            ]
+        }
+    ]
+}
