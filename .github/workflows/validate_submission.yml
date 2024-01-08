@@ -86,12 +86,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           number: ${{ github.event.pull_request.number }}
-
-      # Merge changes  
-      # ---------------------------    
-      # - uses: de-vri-es/setup-git-credentials@v2
-      #   with:
-      #     credentials: ${{ secrets.WF_PR_CREDENTIALS }}
+          
       
       - name: Merge the pull request
         id: merge_pr
