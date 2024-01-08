@@ -87,11 +87,12 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           number: ${{ github.event.pull_request.number }}
           
-      
+      # And then merge it
+      # ---------------------------
       - name: Merge the pull request
         id: merge_pr
         run: |
-          echo ">>> PR URL: ${{ github.event.pull_request.html_url }}"
+          echo ">>> Merging PR URL: ${{ github.event.pull_request.html_url }}"
           gh pr merge --auto --squash $PR_URL
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
