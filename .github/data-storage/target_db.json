@@ -1,6 +1,9 @@
 {
     "ILI incidence": {
         "changes": [
+            "target-data/FluID/snapshots/2023-12-15-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2023-12-22-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2023-12-29-ILI_incidence.csv",
             "target-data/FluID/snapshots/2024-01-05-ILI_incidence.csv",
             "target-data/ERVISS/snapshots/2024-01-05-ILI_incidence.csv"
         ]
