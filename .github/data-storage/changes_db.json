@@ -11,6 +11,12 @@
             "changes": [
                 "model-output/ISI-GenLogModel/2024-01-10-ISI-GenLogModel.csv"
             ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-01-10-ISI-IPSICast.csv"
+            ]
         }
     ],
     "QMUL": [
