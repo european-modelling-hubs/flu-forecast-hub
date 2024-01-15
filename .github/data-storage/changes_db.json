@@ -34,5 +34,19 @@
                 "model-output/CSL_PoliTo-metaFlu/2024-01-17-CSL_PoliTo-metaFlu.csv"
             ]
         }
+    ],
+    "ECDC": [
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2024-01-17-ECDC-norrsken_blue.csv"
+            ]
+        },
+        {
+            "model": "norrsken_green",
+            "changes": [
+                "model-output/ECDC-norrsken_green/2024-01-17-ECDC-norrsken_green.csv"
+            ]
+        }
     ]
 }
