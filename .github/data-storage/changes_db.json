@@ -19,6 +19,12 @@
             "changes": [
                 "model-output/QMUL-SEIR/2024-01-17-QMUL-SEIR.csv"
             ]
+        },
+        {
+            "model": "ARIMA",
+            "changes": [
+                "model-output/QMUL-ARIMA/2024-01-17-QMUL-ARIMA.csv"
+            ]
         }
     ],
     "CSL_PoliTo": [
