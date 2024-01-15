@@ -12,5 +12,13 @@
                 "model-output/ISI-FluABCaster/2024-01-17-ISI-FluABCaster.csv"
             ]
         }
+    ],
+    "QMUL": [
+        {
+            "model": "SEIR",
+            "changes": [
+                "model-output/QMUL-SEIR/2024-01-17-QMUL-SEIR.csv"
+            ]
+        }
     ]
 }
