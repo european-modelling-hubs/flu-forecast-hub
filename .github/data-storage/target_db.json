@@ -1,8 +1,1 @@
-{
-    "ILI incidence": {
-        "changes": [
-            "target-data/ERVISS/snapshots/2024-01-12-ILI_incidence.csv",
-            "target-data/FluID/snapshots/2024-01-12-ILI_incidence.csv"
-        ]
-    }
-}
+{}
