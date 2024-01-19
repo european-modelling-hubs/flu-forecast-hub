@@ -1,1 +1,7 @@
-{}
+{
+    "ILI incidence": {
+        "changes": [
+            "target-data/FluID/snapshots/2024-01-19-ILI_incidence.csv"
+        ]
+    }
+}
