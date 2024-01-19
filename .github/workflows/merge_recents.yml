@@ -3,9 +3,10 @@ name: MergeRecents
 on:
 
   workflow_dispatch:
-  # schedule:
-  #   - cron: "00 01 * * 4"
-
+  
+  # scheduled run every Friday at 19.30 (18.30 UTC)
+  schedule:
+    - cron: '30 18 * * 1,5'
     
 jobs:
 
