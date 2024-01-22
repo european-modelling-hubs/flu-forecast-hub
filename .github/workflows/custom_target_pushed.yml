@@ -1,14 +1,15 @@
 name: CustomPushedTargets
 
 on: 
-  push:
-    branches: [main]
-    paths:
-      - 'target-data/FluID/**'
-      - 'target-data/Respivirnet/**'
-      - '!**README**'
-      - '!**.md'
-      - '!**.MD'
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - 'target-data/FluID/**'
+  #     - 'target-data/Respivirnet/**'
+  #     - '!**README**'
+  #     - '!**.md'
+  #     - '!**.MD'
 
 jobs:
   custom-changes:
