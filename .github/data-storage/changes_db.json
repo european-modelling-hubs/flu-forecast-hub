@@ -1,23 +1,23 @@
 {
-    "ISI": [
+    "ECDC": [
         {
-            "model": "GenLogModel",
+            "model": "FluForARIMA",
             "changes": [
-                "model-output/ISI-GenLogModel/2024-01-17-ISI-GenLogModel.csv"
-            ]
-        },
-        {
-            "model": "FluABCaster",
-            "changes": [
-                "model-output/ISI-FluABCaster/2024-01-17-ISI-FluABCaster.csv"
+                "model-output/ECDC-FluForARIMA/2024-01-24-ECDC-FluForARIMA.csv"
             ]
         }
     ],
     "QMUL": [
         {
+            "model": "ARIMA",
+            "changes": [
+                "model-output/QMUL-ARIMA/2024-01-24-QMUL-ARIMA.csv"
+            ]
+        },
+        {
             "model": "SEIR",
             "changes": [
-                "model-output/QMUL-SEIR/2024-01-17-QMUL-SEIR.csv"
+                "model-output/QMUL-SEIR/2024-01-24-QMUL-SEIR.csv"
             ]
         }
     ]
