@@ -1,4 +1,4 @@
-location,truth_date,year_week,value,datasource
+location,truth_date,year_week,value,data_source
 AT,2024-01-14,2024-W02,2343.01124225125,ERVISS
 AT,2024-01-07,2024-W01,2420.40588344815,ERVISS
 AT,2023-12-31,2023-W52,2238.25574046766,ERVISS
