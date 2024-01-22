@@ -1,1 +1,10 @@
-{}
+{
+    "ECDC": [
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2024-01-24-ECDC-FluForARIMA.csv"
+            ]
+        }
+    ]
+}
