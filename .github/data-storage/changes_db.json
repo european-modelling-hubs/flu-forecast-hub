@@ -48,5 +48,13 @@
                 "model-output/fjordhest-ensemble/2024-01-24-fjordhest-ensemble.csv"
             ]
         }
+    ],
+    "ISI": [
+        {
+            "model": "FluABCaster",
+            "changes": [
+                "model-output/ISI-FluABCaster/2024-01-24-ISI-FluABCaster.csv"
+            ]
+        }
     ]
 }
