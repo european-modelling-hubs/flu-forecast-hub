@@ -1,41 +1,35 @@
 {
-    "ISI": [
+    "ECDC": [
         {
-            "model": "GenLogModel",
+            "model": "FluForARIMA",
             "changes": [
-                "model-output/ISI-GenLogModel/2024-01-17-ISI-GenLogModel.csv"
+                "model-output/ECDC-FluForARIMA/2024-01-24-ECDC-FluForARIMA.csv"
             ]
         },
         {
-            "model": "FluABCaster",
+            "model": "norrsken_blue",
             "changes": [
-                "model-output/ISI-FluABCaster/2024-01-17-ISI-FluABCaster.csv"
+                "model-output/ECDC-norrsken_blue/2024-01-24-ECDC-norrsken_blue.csv"
             ]
         },
         {
-            "model": "IPSICast",
+            "model": "norrsken_green",
             "changes": [
-                "model-output/ISI-IPSICast/2024-01-17-ISI-IPSICast.csv"
-            ]
-        },
-        {
-            "model": "GLEAM",
-            "changes": [
-                "model-output/ISI-GLEAM/2024-01-17-ISI-GLEAM.csv"
+                "model-output/ECDC-norrsken_green/2024-01-24-ECDC-norrsken_green.csv"
             ]
         }
     ],
     "QMUL": [
         {
-            "model": "SEIR",
+            "model": "ARIMA",
             "changes": [
-                "model-output/QMUL-SEIR/2024-01-17-QMUL-SEIR.csv"
+                "model-output/QMUL-ARIMA/2024-01-24-QMUL-ARIMA.csv"
             ]
         },
         {
-            "model": "ARIMA",
+            "model": "SEIR",
             "changes": [
-                "model-output/QMUL-ARIMA/2024-01-17-QMUL-ARIMA.csv"
+                "model-output/QMUL-SEIR/2024-01-24-QMUL-SEIR.csv"
             ]
         }
     ],
@@ -43,27 +37,7 @@
         {
             "model": "metaFlu",
             "changes": [
-                "model-output/CSL_PoliTo-metaFlu/2024-01-17-CSL_PoliTo-metaFlu.csv"
-            ]
-        }
-    ],
-    "ECDC": [
-        {
-            "model": "norrsken_blue",
-            "changes": [
-                "model-output/ECDC-norrsken_blue/2024-01-17-ECDC-norrsken_blue.csv"
-            ]
-        },
-        {
-            "model": "norrsken_green",
-            "changes": [
-                "model-output/ECDC-norrsken_green/2024-01-17-ECDC-norrsken_green.csv"
-            ]
-        },
-        {
-            "model": "FluForARIMA",
-            "changes": [
-                "model-output/ECDC-FluForARIMA/2024-01-17-ECDC-FluForARIMA.csv"
+                "model-output/CSL_PoliTo-metaFlu/2024-01-24-CSL_PoliTo-metaFlu.csv"
             ]
         }
     ],
@@ -71,7 +45,27 @@
         {
             "model": "ensemble",
             "changes": [
-                "model-output/fjordhest-ensemble/2024-01-17-fjordhest-ensemble.csv"
+                "model-output/fjordhest-ensemble/2024-01-24-fjordhest-ensemble.csv"
+            ]
+        }
+    ],
+    "ISI": [
+        {
+            "model": "FluABCaster",
+            "changes": [
+                "model-output/ISI-FluABCaster/2024-01-24-ISI-FluABCaster.csv"
+            ]
+        },
+        {
+            "model": "GenLogModel",
+            "changes": [
+                "model-output/ISI-GenLogModel/2024-01-24-ISI-GenLogModel.csv"
+            ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-01-24-ISI-IPSICast.csv"
             ]
         }
     ]

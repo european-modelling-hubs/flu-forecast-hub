@@ -2,7 +2,7 @@ name: Persist Forecasts and meta-data changes to json
 
 on:
   workflow_run:
-    workflows: [HubSubmissionValidation(R), ImportTruthErviss, CustomPushedTargets, GenerateBaseline, GenerateEnsemble]
+    workflows: [HubSubmissionValidation(R), ImportTruthErviss, DownloadFluID, GenerateBaseline, GenerateEnsemble]
       
     types:
       - completed
