@@ -49,6 +49,7 @@ jobs:
         install.packages("remotes")
         remotes::install_github("Infectious-Disease-Modeling-Hubs/hubUtils")
         install.packages("dplyr")
+        install.packages("optparse")
         install.packages("scoringutils")
 
     # Setup Python
