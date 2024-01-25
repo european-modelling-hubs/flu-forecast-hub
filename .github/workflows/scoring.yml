@@ -51,6 +51,7 @@ jobs:
         install.packages("dplyr")
         install.packages("optparse")
         install.packages("scoringutils")
+      shell: Rscript {0}
 
     # Setup Python
     # -------------------------
