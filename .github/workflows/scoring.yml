@@ -1,0 +1,113 @@
+name: Scoring
+
+on:
+
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "00 01 * * 4"
+
+    
+jobs:
+
+  scoring_job:
+    if: github.repository_owner == 'european-modelling-hubs'
+    runs-on: ubuntu-latest
+    steps:
+
+    # Checkout the tools repo
+    # -------------------------------------------      
+    - name: checkout tools repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: 'european-modelling-hubs/hub-tools'
+        ref: 'main'
+        path: './tools/'
+
+
+    # Checkout the data repository
+    # -------------------------------------------      
+    - name: checkout data repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: 'european-modelling-hubs/flu-forecast-hub'
+        ref: 'main'
+        path: './repo/'
+
+
+    # Setup R env
+    # -------------------------
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        install-r: false
+        use-public-rspm: true
+        
+    # Eventually install R dependencies
+    # - name: Installing dependencies
+    #   run: |
+    #     install.packages("remotes")
+
+
+    # Setup Python
+    # -------------------------
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' 
+    
+    # eventually install additional packages
+    # - name: Installing python additional packages
+    #   run: pip install pandas==1.2.5 numpy==1.22.4
+
+    
+    # Run R code to compute scoring and produce an output file (scoring_outfile)
+    # ----------------------------------------------------------------------------
+    - name: Generate Scoring
+      id: generate_scoring
+      run: |
+        # call R script from tools
+        Rscript ./tools/R-code/
+        
+
+    # Do the python manipulations and produce an output file (scoring_file)
+    # ------------------------------------------------------------------------
+    - name: format scoreing output
+      id: format_scoring_output
+      env:
+        # get output from R step into local env
+        scoring_output_file: ${{ steps.generate_scoring.outputs.scoring_outfile }}
+      run: |
+        python ./tools/code/
+
+    # Commit the changes
+    # -------------------------
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
+      with: 
+          cwd: './repo'
+          add: 'src'  # put here file changes 
+          message: "Update ensemble data"
+          default_author: github_actions
+          push: true
+
+    # Save changes to artifact for later persisting 
+    - name: Save changes to artifact
+      env:
+        changed_files: ${{ steps.format_scoring_output.outputs.scoring_file }}
+      run: |
+        echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
+          
+    - name: Upload changes
+      uses: actions/upload-artifact@v2
+      with:
+        name: pr_changes
+        path: ./pr_changes.json
+
+
+
+
+
+
+
+
+
