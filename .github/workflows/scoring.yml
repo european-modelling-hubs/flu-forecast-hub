@@ -44,10 +44,12 @@ jobs:
         use-public-rspm: true
         
     # Eventually install R dependencies
-    # - name: Installing dependencies
-    #   run: |
-    #     install.packages("remotes")
-
+    - name: Installing dependencies
+      run: |
+        install.packages("remotes")
+        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubUtils")
+        install.packages("dplyr")
+        install.packages("scoringutils")
 
     # Setup Python
     # -------------------------
@@ -56,8 +58,8 @@ jobs:
         python-version: '3.10' 
     
     # eventually install additional packages
-    # - name: Installing python additional packages
-    #   run: pip install pandas==1.2.5 numpy==1.22.4
+    - name: Installing python additional packages
+      run: pip install pandas==1.2.5 numpy==1.22.4
 
     
     # Run R code to compute scoring and produce an output file (scoring_outfile)
@@ -66,18 +68,14 @@ jobs:
       id: generate_scoring
       run: |
         # call R script from tools
-        Rscript ./tools/R-code/
-        
+        Rscript ./tools/R-code/forecast_evaluation.R --hub_path "./repo" --truth_file_name "latest-ILI_incidence.csv" --subfolders "ERVISS,FluID"
 
     # Do the python manipulations and produce an output file (scoring_file)
     # ------------------------------------------------------------------------
     - name: format scoreing output
       id: format_scoring_output
-      env:
-        # get output from R step into local env
-        scoring_output_file: ${{ steps.generate_scoring.outputs.scoring_outfile }}
       run: |
-        python ./tools/code/
+        python ./tools/code/format_evaluation_file.py --hub_path "./repo"
 
     # Commit the changes
     # -------------------------
@@ -85,15 +83,15 @@ jobs:
       uses: EndBug/add-and-commit@v7
       with: 
           cwd: './repo'
-          add: 'src'  # put here file changes 
-          message: "Update ensemble data"
+          add: ${{ steps.format_scoring_output.outputs.scoring_file_latest }} ${{ steps.format_scoring_output.outputs.scoring_file_snapshot }} # put here file changes 
+          message: "Update forecast scoring"
           default_author: github_actions
           push: true
 
     # Save changes to artifact for later persisting 
     - name: Save changes to artifact
       env:
-        changed_files: ${{ steps.format_scoring_output.outputs.scoring_file }}
+        changed_files: ${{ steps.format_scoring_output.outputs.scoring_file_latest }} ${{ steps.format_scoring_output.outputs.scoring_file_snapshot }}
       run: |
         echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
           
