@@ -16,8 +16,7 @@
               "model-output/respicast-hubEnsemble/2024-01-17-respicast-hubEnsemble.csv"
             ]    
         }
-    ]
-    
+    ],    
     "ISI": [
         {
             "model": "IPSICast",
