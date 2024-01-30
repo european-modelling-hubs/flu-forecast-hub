@@ -13,6 +13,12 @@
             "changes": [
                 "model-output/QMUL-SEIR/2024-01-31-QMUL-SEIR.csv"
             ]
+        },
+        {
+            "model": "ARIMA",
+            "changes": [
+                "model-output/QMUL-ARIMA/2024-01-31-QMUL-ARIMA.csv"
+            ]
         }
     ],
     "ISI": [
