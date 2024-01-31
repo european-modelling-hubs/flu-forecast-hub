@@ -45,6 +45,12 @@
             "changes": [
                 "model-output/ISI-GenLogModel/2024-01-31-ISI-GenLogModel.csv"
             ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-01-31-ISI-IPSICast.csv"
+            ]
         }
     ],
     "CSL_PoliTo": [
