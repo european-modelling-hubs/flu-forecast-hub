@@ -3,49 +3,33 @@
         {
             "model": "FluForARIMA",
             "changes": [
-                "model-output/ECDC-FluForARIMA/2024-01-24-ECDC-FluForARIMA.csv"
+                "model-output/ECDC-FluForARIMA/2024-01-31-ECDC-FluForARIMA.csv"
             ]
         },
         {
             "model": "norrsken_blue",
             "changes": [
-                "model-output/ECDC-norrsken_blue/2024-01-24-ECDC-norrsken_blue.csv"
+                "model-output/ECDC-norrsken_blue/2024-01-31-ECDC-norrsken_blue.csv"
             ]
         },
         {
             "model": "norrsken_green",
             "changes": [
-                "model-output/ECDC-norrsken_green/2024-01-24-ECDC-norrsken_green.csv"
+                "model-output/ECDC-norrsken_green/2024-01-31-ECDC-norrsken_green.csv"
             ]
         }
     ],
     "QMUL": [
         {
-            "model": "ARIMA",
+            "model": "SEIR",
             "changes": [
-                "model-output/QMUL-ARIMA/2024-01-24-QMUL-ARIMA.csv"
+                "model-output/QMUL-SEIR/2024-01-31-QMUL-SEIR.csv"
             ]
         },
         {
-            "model": "SEIR",
+            "model": "ARIMA",
             "changes": [
-                "model-output/QMUL-SEIR/2024-01-24-QMUL-SEIR.csv"
-            ]
-        }
-    ],
-    "CSL_PoliTo": [
-        {
-            "model": "metaFlu",
-            "changes": [
-                "model-output/CSL_PoliTo-metaFlu/2024-01-24-CSL_PoliTo-metaFlu.csv"
-            ]
-        }
-    ],
-    "fjordhest": [
-        {
-            "model": "ensemble",
-            "changes": [
-                "model-output/fjordhest-ensemble/2024-01-24-fjordhest-ensemble.csv"
+                "model-output/QMUL-ARIMA/2024-01-31-QMUL-ARIMA.csv"
             ]
         }
     ],
@@ -53,13 +37,21 @@
         {
             "model": "FluABCaster",
             "changes": [
-                "model-output/ISI-FluABCaster/2024-01-24-ISI-FluABCaster.csv"
+                "model-output/ISI-FluABCaster/2024-01-31-ISI-FluABCaster.csv"
             ]
         },
         {
             "model": "GenLogModel",
             "changes": [
-                "model-output/ISI-GenLogModel/2024-01-24-ISI-GenLogModel.csv"
+                "model-output/ISI-GenLogModel/2024-01-31-ISI-GenLogModel.csv"
+            ]
+        }
+    ],
+    "CSL_PoliTo": [
+        {
+            "model": "metaFlu",
+            "changes": [
+                "model-output/CSL_PoliTo-metaFlu/2024-01-31-CSL_PoliTo-metaFlu.csv"
             ]
         }
     ]
