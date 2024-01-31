@@ -51,6 +51,12 @@
             "changes": [
                 "model-output/ISI-IPSICast/2024-01-31-ISI-IPSICast.csv"
             ]
+        },
+        {
+            "model": "GLEAM",
+            "changes": [
+                "model-output/ISI-GLEAM/2024-01-31-ISI-GLEAM.csv"
+            ]
         }
     ],
     "CSL_PoliTo": [
