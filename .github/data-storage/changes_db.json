@@ -1,9 +1,15 @@
 {
-    "ECDC": [
+    "ISI": [
         {
-            "model": "FluForARIMA",
+            "model": "FluABCaster",
             "changes": [
-                "model-output/ECDC-FluForARIMA/2024-01-31-ECDC-FluForARIMA.csv"
+                "model-output/ISI-FluABCaster/2024-02-07-ISI-FluABCaster.csv"
+            ]
+        },
+        {
+            "model": "GenLogModel",
+            "changes": [
+                "model-output/ISI-GenLogModel/2024-02-07-ISI-GenLogModel.csv"
             ]
         }
     ]
