@@ -1,0 +1,13 @@
+team_name: ISI Foundation
+model_name: EpiNow
+team_abbr: ISI
+model_abbr: EpiNow
+model_contributors:
+    - name: Stefania Fiandrino
+      affiliation: ISI Foundation
+      email: stefania.fiandrino@isi.it
+    - name: Nicolo Gozzi
+      affiliation: ISI Foundation
+      email: nicolo.gozzi@isi.it
+team_model_designation: primary
+methods: A semimechanistic model based on Rt estimation developed by the epiforecasts team at LSHTM
