@@ -10,5 +10,5 @@ model_contributors:
       affiliation: ISI Foundation
       email: nicolo.gozzi@isi.it
 team_model_designation: primary
-methods: a semi-mechanistic model based on Rt estimation developed by the epi-forecasts team at LSHTM (https://epiforecasts.io/EpiNow2/)
+methods: a semi-mechanistic model based on Rt estimation developed by the epi-forecasts team at LSHTM <a href="https://epiforecasts.io/EpiNow2/">Reference</a>
 license: CC-BY-4.0
