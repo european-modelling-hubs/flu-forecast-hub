@@ -34,5 +34,13 @@
                 "model-output/ECDC-FluForARIMA/2024-02-07-ECDC-FluForARIMA.csv"
             ]
         }
+    ],
+    "fjordhest": [
+        {
+            "model": "ensemble",
+            "changes": [
+                "model-output/fjordhest-ensemble/2024-02-07-fjordhest-ensemble.csv"
+            ]
+        }
     ]
 }
