@@ -1,0 +1,11 @@
+team_name: Team Name Test
+model_name: Test Model 
+team_abbr: test_team
+model_abbr: test_model
+model_contributors:
+  - name: Name Surname
+    affiliation: Institution A
+    email: name.surname@institution.com
+team_model_designation: primary
+methods: A test model for ili hub
+data_inputs:
