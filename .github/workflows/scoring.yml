@@ -3,8 +3,8 @@ name: Scoring
 on:
 
   workflow_dispatch:
-  # schedule:
-  #   - cron: "00 01 * * 4"
+  schedule:
+    - cron: "30 01 * * 4"
 
     
 jobs:
