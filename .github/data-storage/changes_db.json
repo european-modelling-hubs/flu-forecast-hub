@@ -17,6 +17,12 @@
             "changes": [
                 "model-output/ISI-IPSICast/2024-02-07-ISI-IPSICast.csv"
             ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-02-07-ISI-EpiNow.csv"
+            ]
         }
     ],
     "QMUL": [
