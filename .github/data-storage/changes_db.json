@@ -1,10 +1,1 @@
-{
-    "ItaLuxColab": [
-        {
-            "model": "EpiEKF",
-            "changes": [
-                "model-output/ItaLuxColab-EpiEKF/2024-02-07-ItaLuxColab-EpiEKF.csv"
-            ]
-        }
-    ]
-}
+{}
