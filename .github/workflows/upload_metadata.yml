@@ -3,7 +3,7 @@ name: Metadata Upload
 on:
   # scheduled submission every day at 23.00 p.m. 
   schedule:
-    - cron: '00 22 * * *'  
+    - cron: '00 12,18,23 * * *'  
 
   # needed to trigger manually
   workflow_dispatch:
