@@ -1,7 +1,7 @@
 name: Metadata Upload
 
 on:
-  # scheduled submission every day at 23.00 p.m. 
+  # scheduled submission every day at 13.00, 19.00 and 24.00 CET 
   schedule:
     - cron: '00 12,18,23 * * *'  
 
