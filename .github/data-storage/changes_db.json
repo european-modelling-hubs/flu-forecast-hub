@@ -12,5 +12,13 @@
                 "model-output/ISI-GenLogModel/2024-02-14-ISI-GenLogModel.csv"
             ]
         }
+    ],
+    "CSL_PoliTo": [
+        {
+            "model": "metaFlu",
+            "changes": [
+                "model-output/CSL_PoliTo-metaFlu/2024-02-14-CSL_PoliTo-metaFlu.csv"
+            ]
+        }
     ]
 }
