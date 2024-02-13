@@ -3,49 +3,13 @@
         {
             "model": "FluABCaster",
             "changes": [
-                "model-output/ISI-FluABCaster/2024-02-07-ISI-FluABCaster.csv"
+                "model-output/ISI-FluABCaster/2024-02-14-ISI-FluABCaster.csv"
             ]
         },
         {
             "model": "GenLogModel",
             "changes": [
-                "model-output/ISI-GenLogModel/2024-02-07-ISI-GenLogModel.csv"
-            ]
-        },
-        {
-            "model": "IPSICast",
-            "changes": [
-                "model-output/ISI-IPSICast/2024-02-07-ISI-IPSICast.csv"
-            ]
-        }
-    ],
-    "QMUL": [
-        {
-            "model": "SEIR",
-            "changes": [
-                "model-output/QMUL-SEIR/2024-02-07-QMUL-SEIR.csv"
-            ]
-        },
-        {
-            "model": "ARIMA",
-            "changes": [
-                "model-output/QMUL-ARIMA/2024-02-07-QMUL-ARIMA.csv"
-            ]
-        }
-    ],
-    "ECDC": [
-        {
-            "model": "FluForARIMA",
-            "changes": [
-                "model-output/ECDC-FluForARIMA/2024-02-07-ECDC-FluForARIMA.csv"
-            ]
-        }
-    ],
-    "fjordhest": [
-        {
-            "model": "ensemble",
-            "changes": [
-                "model-output/fjordhest-ensemble/2024-02-07-fjordhest-ensemble.csv"
+                "model-output/ISI-GenLogModel/2024-02-14-ISI-GenLogModel.csv"
             ]
         }
     ],
@@ -53,15 +17,15 @@
         {
             "model": "metaFlu",
             "changes": [
-                "model-output/CSL_PoliTo-metaFlu/2024-02-07-CSL_PoliTo-metaFlu.csv"
+                "model-output/CSL_PoliTo-metaFlu/2024-02-14-CSL_PoliTo-metaFlu.csv"
             ]
         }
     ],
-    "ItaLuxColab": [
+    "ECDC": [
         {
-            "model": "EpiEKF",
+            "model": "FluForARIMA",
             "changes": [
-                "model-output/ItaLuxColab-EpiEKF/2024-02-07-ItaLuxColab-EpiEKF.csv"
+                "model-output/ECDC-FluForARIMA/2024-02-14-ECDC-FluForARIMA.csv"
             ]
         }
     ]
