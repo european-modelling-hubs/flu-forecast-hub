@@ -11,6 +11,12 @@
             "changes": [
                 "model-output/ISI-GenLogModel/2024-02-14-ISI-GenLogModel.csv"
             ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-02-14-ISI-EpiNow.csv"
+            ]
         }
     ],
     "CSL_PoliTo": [
