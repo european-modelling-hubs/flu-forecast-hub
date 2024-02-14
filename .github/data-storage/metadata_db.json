@@ -1,6 +1,5 @@
 {
     "changes": [
-        "model-metadata/ItaLuxColab-EpiEKF.yml",
-        "model-metadata/ISI-EpiNow.yml"
+        "model-metadata/ECDC-soca_simplex.yml"
     ]
 }
