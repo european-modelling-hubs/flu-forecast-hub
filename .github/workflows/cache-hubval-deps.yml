@@ -8,8 +8,8 @@ on:
     paths:
       - '.github/workflows/cache-hubval-deps.yml'
   
-  # schedule:
-  #   - cron: "10 0 * * *"
+  schedule:
+    - cron: "10 0 * * *"
 
 jobs:
   build-deps-cache-on-main:

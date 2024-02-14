@@ -3,13 +3,41 @@
         {
             "model": "FluABCaster",
             "changes": [
-                "model-output/ISI-FluABCaster/2024-02-07-ISI-FluABCaster.csv"
+                "model-output/ISI-FluABCaster/2024-02-14-ISI-FluABCaster.csv"
             ]
         },
         {
             "model": "GenLogModel",
             "changes": [
-                "model-output/ISI-GenLogModel/2024-02-07-ISI-GenLogModel.csv"
+                "model-output/ISI-GenLogModel/2024-02-14-ISI-GenLogModel.csv"
+            ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-02-14-ISI-EpiNow.csv"
+            ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-02-14-ISI-IPSICast.csv"
+            ]
+        }
+    ],
+    "CSL_PoliTo": [
+        {
+            "model": "metaFlu",
+            "changes": [
+                "model-output/CSL_PoliTo-metaFlu/2024-02-14-CSL_PoliTo-metaFlu.csv"
+            ]
+        }
+    ],
+    "ECDC": [
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2024-02-14-ECDC-FluForARIMA.csv"
             ]
         }
     ]
