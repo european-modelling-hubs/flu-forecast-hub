@@ -1,0 +1,20 @@
+team_name: ItaLuxColab
+model_name: Epidemic projections by SIRS+EKF
+team_abbr: ItaLuxColab
+model_abbr: EpiEKF
+model_contributors:
+  - name: Atte Aalto
+    affiliation: Luxembourg Centre for Systems Biomedicine, University of Luxembourg
+    email: atte.aalto@uni.lu
+  - name: Daniele Proverbio
+    affiliation: University of Trento
+    email: daniele.proverbio@unitn.it
+  - name: Giulia Giordano
+    affiliation: University of Trento
+    email: giulia.giordano@unitn.it
+  - name: Jorge Goncalves
+    affiliation: Luxembourg Centre for Systems Biomedicine, University of Luxembourg
+    email: jorge.goncalves@uni.lu
+team_model_designation: primary
+methods: A stochastic SIRS model coupled with the extended Kalman filter (EKF) with adaptive hyperparameter estimation for automatic data integration, applied separately on each region.
+license: CC-BY-4.0
