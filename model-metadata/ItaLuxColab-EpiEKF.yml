@@ -16,5 +16,5 @@ model_contributors:
     affiliation: Luxembourg Centre for Systems Biomedicine, University of Luxembourg
     email: jorge.goncalves@uni.lu
 team_model_designation: primary
-methods: A stochastic SIRS model coupled with the extended Kalman filter (EKF) for automatic data integration, applied separately on each region. Hyperparameter (ratio of detected and total cases) is adaptively and retroactively adjusted in case the model's state estimate becomes unreasonable (very high R(t) and low S(t)).
+methods: A stochastic SIRS model coupled with the extended Kalman filter (EKF) with adaptive hyperparameter estimation for automatic data integration, applied separately on each region.
 license: CC-BY-4.0
