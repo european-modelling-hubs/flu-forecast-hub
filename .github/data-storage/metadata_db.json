@@ -1,1 +1,5 @@
-{}
+{
+    "changes": [
+        "model-metadata/ECDC-soca_simplex.yml"
+    ]
+}
