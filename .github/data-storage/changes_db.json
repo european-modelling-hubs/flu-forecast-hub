@@ -62,5 +62,13 @@
                 "model-output/ItaLuxColab-EpiEKF/2024-02-14-ItaLuxColab-EpiEKF.csv"
             ]
         }
+    ],
+    "fjordhest": [
+        {
+            "model": "ensemble",
+            "changes": [
+                "model-output/fjordhest-ensemble/2024-02-14-fjordhest-ensemble.csv"
+            ]
+        }
     ]
 }
