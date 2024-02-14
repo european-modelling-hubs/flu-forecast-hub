@@ -2,8 +2,8 @@ name: Scoring Upload
 
 on:
   # scheduled submission every day at 23.00 p.m. 
-  # schedule:
-  #   - cron: '00 22 * * *'  
+  schedule:
+    - cron: '30 03 * * 4'  
 
   # needed to trigger manually
   workflow_dispatch:
