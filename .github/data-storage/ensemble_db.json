@@ -5,6 +5,12 @@
             "changes": [
                 "model-output/respicast-quantileBaseline/2024-02-14-respicast-quantileBaseline.csv"
             ]
+        },
+        {
+            "model": "hubEnsemble",
+            "changes": [
+                "model-output/respicast-hubEnsemble/2024-02-14-respicast-hubEnsemble.csv"
+            ]
         }
     ]
 }
