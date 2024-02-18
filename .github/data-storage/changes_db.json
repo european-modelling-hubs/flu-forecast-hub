@@ -1,1 +1,10 @@
-{}
+{
+    "CSL_PoliTo": [
+        {
+            "model": "metaFlu",
+            "changes": [
+                "model-output/CSL_PoliTo-metaFlu/2024-02-21-CSL_PoliTo-metaFlu.csv"
+            ]
+        }
+    ]
+}
