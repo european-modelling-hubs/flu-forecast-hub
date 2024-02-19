@@ -1,20 +1,27 @@
 name: Baseline Ensemble Upload
 
 on:
-  # scheduled submission every Wednesday at 04.00 a.m. (Wednesday 03.00 a.m.UTC)
-  # TODO for the time being upload is Thursday at 04.00 a.m. (Thursday 03.00 a.m. UTC)
-  schedule:
-    - cron: '00 03 * * 4'
+  workflow_run:
+    workflows: [GenerateEnsemble]
+      
+    types:
+      - completed
   
   workflow_dispatch:
 
   
 jobs:
   scheduled-submit:
-    if: github.repository_owner == 'european-modelling-hubs'
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    
     runs-on: ubuntu-latest
     
     steps:
+
+      # Introduce some delay to complete DB write 
+      - name: Sleep for 60 seconds
+        run: sleep 60s
+        shell: bash
 
       # Checkout the python tools repo
       # used to authenticate and validate the PR
