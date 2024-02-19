@@ -14,5 +14,13 @@
                 "model-output/ECDC-FluForARIMA/2024-02-21-ECDC-FluForARIMA.csv"
             ]
         }
+    ],
+    "QMUL": [
+        {
+            "model": "ARIMA",
+            "changes": [
+                "model-output/QMUL-ARIMA/2024-02-21-QMUL-ARIMA.csv"
+            ]
+        }
     ]
 }
