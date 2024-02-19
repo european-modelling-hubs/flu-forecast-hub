@@ -1,4 +1,4 @@
-name: Forecast Upload
+name: ForecastUpload
 
 on:
   # scheduled submission every Thursday at 00.15 CET
