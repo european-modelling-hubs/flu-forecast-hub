@@ -19,8 +19,8 @@ jobs:
     steps:
 
       # Introduce some delay to complete DB write 
-      - name: Sleep for 60 seconds
-        run: sleep 60s
+      - name: Sleep for 90 seconds
+        run: sleep 90s
         shell: bash
 
       # Checkout the python tools repo
