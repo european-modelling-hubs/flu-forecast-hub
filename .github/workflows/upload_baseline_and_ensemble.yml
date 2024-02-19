@@ -1,4 +1,4 @@
-name: Baseline Ensemble Upload
+name: BaselineEnsembleUpload
 
 on:
   workflow_run:
