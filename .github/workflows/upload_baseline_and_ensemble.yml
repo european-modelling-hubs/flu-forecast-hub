@@ -102,11 +102,14 @@ jobs:
           python ./tools/code/clear_data_storage.py --storage_type "ensemble" 
 
       # ERROR RUN
+      # exit with error to prevent from running the rest of the workflow chain
+      # this will skip also the final commit step
       # --------------------------------------------
       - name: Error
         if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
         run: |
           echo "EnsambleUPLOAD FAILED -  ignore djson db cleaning"
+          exit 1
 
       # Final commit
       # --------------------------------------------
