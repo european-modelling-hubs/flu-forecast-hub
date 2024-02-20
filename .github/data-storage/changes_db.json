@@ -22,5 +22,13 @@
                 "model-output/QMUL-ARIMA/2024-02-21-QMUL-ARIMA.csv"
             ]
         }
+    ],
+    "ISI": [
+        {
+            "model": "FluABCaster",
+            "changes": [
+                "model-output/ISI-FluABCaster/2024-02-21-ISI-FluABCaster.csv"
+            ]
+        }
     ]
 }
