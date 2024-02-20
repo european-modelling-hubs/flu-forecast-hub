@@ -41,6 +41,12 @@
             "changes": [
                 "model-output/ISI-GenLogModel/2024-02-21-ISI-GenLogModel.csv"
             ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-02-21-ISI-EpiNow.csv"
+            ]
         }
     ],
     "ItaLuxColab": [
