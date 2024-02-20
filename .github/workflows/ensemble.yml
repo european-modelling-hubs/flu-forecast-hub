@@ -1,13 +1,20 @@
 name: GenerateEnsemble
+
 on:
+
   workflow_dispatch:
-  schedule:
-    - cron: "15 01 * * 4"
+
+  workflow_run:
+    workflows: [GenerateBaseline]
+      
+    types:
+      - completed
+
 
 jobs:
   
   ensemble:
-    if: github.repository_owner == 'european-modelling-hubs'
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
