@@ -29,6 +29,12 @@
             "changes": [
                 "model-output/ISI-FluABCaster/2024-02-21-ISI-FluABCaster.csv"
             ]
+        },
+        {
+            "model": "GenLogModel",
+            "changes": [
+                "model-output/ISI-GenLogModel/2024-02-21-ISI-GenLogModel.csv"
+            ]
         }
     ]
 }
