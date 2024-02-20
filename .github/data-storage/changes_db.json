@@ -36,5 +36,13 @@
                 "model-output/ISI-GenLogModel/2024-02-21-ISI-GenLogModel.csv"
             ]
         }
+    ],
+    "ItaLuxColab": [
+        {
+            "model": "EpiEKF",
+            "changes": [
+                "model-output/ItaLuxColab-EpiEKF/2024-02-21-ItaLuxColab-EpiEKF.csv"
+            ]
+        }
     ]
 }
