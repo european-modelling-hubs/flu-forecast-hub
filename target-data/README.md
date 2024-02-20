@@ -6,4 +6,4 @@ In particular, the countries are divided into the two data sources as follows:
 | Data Source | Countries (ISO-2 code) |
 | -------- | -------- |
 | ERVISS | AT, BE, HR, CZ, DK, EE, FI, FR, GR, HU, IS, IE, IT, LV, LT, LU, MT, NL, NO, PL, PT, RO, SK, SI|
-| FluID | CH |
+| FluID | CH, GB-ENG, GB-WLS, GB-NIR, GB-SCT |
