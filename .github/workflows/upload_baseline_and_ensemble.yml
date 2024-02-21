@@ -1,20 +1,27 @@
-name: Baseline Ensemble Upload
+name: BaselineEnsembleUpload
 
 on:
-  # scheduled submission every Wednesday at 04.00 a.m. (Wednesday 03.00 a.m.UTC)
-  # TODO for the time being upload is Thursday at 04.00 a.m. (Thursday 03.00 a.m. UTC)
-  schedule:
-    - cron: '00 03 * * 4'
+  workflow_run:
+    workflows: [GenerateEnsemble]
+      
+    types:
+      - completed
   
   workflow_dispatch:
 
   
 jobs:
   scheduled-submit:
-    if: github.repository_owner == 'european-modelling-hubs'
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    
     runs-on: ubuntu-latest
     
     steps:
+
+      # Introduce some delay to complete DB write 
+      - name: Sleep for 90 seconds
+        run: sleep 90s
+        shell: bash
 
       # Checkout the python tools repo
       # used to authenticate and validate the PR
@@ -95,11 +102,14 @@ jobs:
           python ./tools/code/clear_data_storage.py --storage_type "ensemble" 
 
       # ERROR RUN
+      # exit with error to prevent from running the rest of the workflow chain
+      # this will skip also the final commit step
       # --------------------------------------------
       - name: Error
         if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
         run: |
           echo "EnsambleUPLOAD FAILED -  ignore djson db cleaning"
+          exit 1
 
       # Final commit
       # --------------------------------------------

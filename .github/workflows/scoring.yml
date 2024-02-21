@@ -3,14 +3,18 @@ name: Scoring
 on:
 
   workflow_dispatch:
-  schedule:
-    - cron: "30 01 * * 4"
+
+  workflow_run:
+    workflows: [BaselineEnsembleUpload]
+      
+    types:
+      - completed
 
     
 jobs:
 
   scoring_job:
-    if: github.repository_owner == 'european-modelling-hubs'
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}

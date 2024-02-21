@@ -13,6 +13,7 @@ import pycountry
 url = 'https://raw.githubusercontent.com/EU-ECDC/Respiratory_viruses_weekly_data/main/data/snapshots/{snapshot_date}_ILIARIRates.csv'
 out_files_ILI = ['target-data/ERVISS/latest-ILI_incidence.csv', 'target-data/ERVISS/snapshots/{report_date}-ILI_incidence.csv']
 
+countries_to_x1000 = ('Malta', 'Luxembourg', 'Cyprus') # Values for this countries must be multiplied by 1000
 
 # Build URL
 
@@ -37,14 +38,10 @@ csv_reader = csv.DictReader(lines, delimiter=',')
 
 ILI_records = [('location', 'truth_date', 'year_week', 'value')]
 
-# Temporarly exclude countries with inconsistent data scale 
-countries_to_exclude = ('Malta', 'Luxembourg', 'Cyprus')
-
 for row in csv_reader:
     if (row['survtype'] != 'primary care syndromic'
             or row['indicator'] != 'ILIconsultationrate'
             or row['age'] != 'total'
-            or row['countryname'] in countries_to_exclude
        ):
         continue
     country2 = pycountry.countries.lookup(row['countryname']).alpha_2
@@ -52,6 +49,8 @@ for row in csv_reader:
     week_obj = Week(year, week)
     truth_date = week_obj.sunday().isoformat()
     value = float(row['value'])
+    if row['countryname'] in countries_to_x1000:
+        value = value*1000
     ILI_records.append((country2, truth_date, row['yearweek'], value))
 
 
