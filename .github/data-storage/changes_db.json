@@ -65,6 +65,12 @@
             "changes": [
                 "model-output/ISI-EpiNow/2024-02-21-ISI-EpiNow.csv"
             ]
+        },
+        {
+            "model": "GLEAM",
+            "changes": [
+                "model-output/ISI-GLEAM/2024-02-21-ISI-GLEAM.csv"
+            ]
         }
     ],
     "ItaLuxColab": [
