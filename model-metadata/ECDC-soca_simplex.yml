@@ -1,7 +1,7 @@
 team_name: European Centre for Disease Prevention and Control
 model_name: Historical simplex pattern
 team_abbr: ECDC
-model_abbr: soca_simplex
+model_abbr: ECDC-soca_simplex
 model_contributors:
   - name: Rok Grah
     affiliation: European Centre for Disease Prevention and Control
