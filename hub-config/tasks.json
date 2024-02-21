@@ -73,7 +73,11 @@
                                 "RO",
                                 "SE",
                                 "SI",
-                                "SK"
+                                "SK",
+                                "GB-ENG", 
+                                "GB-WLS", 
+                                "GB-NIR", 
+                                "GB-SCT"
                             ]
                         }
                     },

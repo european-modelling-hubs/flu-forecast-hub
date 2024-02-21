@@ -13,6 +13,24 @@
             "changes": [
                 "model-output/ECDC-FluForARIMA/2024-02-21-ECDC-FluForARIMA.csv"
             ]
+        },
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2024-02-21-ECDC-norrsken_blue.csv"
+            ]
+        },
+        {
+            "model": "norrsken_green",
+            "changes": [
+                "model-output/ECDC-norrsken_green/2024-02-21-ECDC-norrsken_green.csv"
+            ]
+        },
+        {
+            "model": "soca_simplex",
+            "changes": [
+                "model-output/ECDC-soca_simplex/2024-02-21-ECDC-soca_simplex.csv"
+            ]
         }
     ],
     "QMUL": [
@@ -41,6 +59,18 @@
             "changes": [
                 "model-output/ISI-GenLogModel/2024-02-21-ISI-GenLogModel.csv"
             ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-02-21-ISI-EpiNow.csv"
+            ]
+        },
+        {
+            "model": "GLEAM",
+            "changes": [
+                "model-output/ISI-GLEAM/2024-02-21-ISI-GLEAM.csv"
+            ]
         }
     ],
     "ItaLuxColab": [
@@ -48,6 +78,14 @@
             "model": "EpiEKF",
             "changes": [
                 "model-output/ItaLuxColab-EpiEKF/2024-02-21-ItaLuxColab-EpiEKF.csv"
+            ]
+        }
+    ],
+    "fjordhest": [
+        {
+            "model": "ensemble",
+            "changes": [
+                "model-output/fjordhest-ensemble/2024-02-21-fjordhest-ensemble.csv"
             ]
         }
     ]
