@@ -1,5 +1,6 @@
 {
     "changes": [
-        "model-metadata/ISI-IPSICast.yml"
+        "model-metadata/ISI-IPSICast.yml",
+        "model-metadata/ISI-EpiNow.yml"
     ]
 }
