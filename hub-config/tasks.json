@@ -54,7 +54,6 @@
                                 "ES",
                                 "FI",
                                 "FR",
-                                "UK",
                                 "GR",
                                 "HR",
                                 "HU",
@@ -73,7 +72,11 @@
                                 "RO",
                                 "SE",
                                 "SI",
-                                "SK"
+                                "SK",
+                                "GB-ENG", 
+                                "GB-WLS", 
+                                "GB-NIR", 
+                                "GB-SCT"
                             ]
                         }
                     },
