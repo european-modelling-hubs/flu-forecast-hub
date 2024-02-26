@@ -8,3 +8,4 @@ model_contributors:
       email: stefania.fiandrino@isi.it
 team_model_designation: primary
 methods: An exogenous autoregressive model that integrates information on digital surveillance data from the Influweb participatory system.
+data_inputs: Surveillance data from the official Italian Institute (Istituto Superiore di Sanità, ISS), and participatory surveillance data from Influweb platform. 
