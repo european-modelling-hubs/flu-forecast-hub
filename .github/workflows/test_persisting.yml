@@ -24,7 +24,7 @@ jobs:
   #   needs: prepare-data-to-be-persisted
     uses: european-modelling-hubs/flu-forecast-hub/.github/workflows/persist_changes.yml@main
     with:
-      change-list: 'model-output/TEST_TEAM-TEST_MODEL/2024-02-28-TEST_TEAM-TEST_MODEL.csv'
+      changes-list: 'model-output/TEST_TEAM-TEST_MODEL/2024-02-28-TEST_TEAM-TEST_MODEL.csv'
   #     changes-list: ${{ needs. prepare-data-to-be-persisted.outputs.changed_files }}
     secrets:
       envPAT: ${{ secrets.GITHUB_TOKEN }}
