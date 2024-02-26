@@ -13,6 +13,12 @@
             "changes": [
                 "model-output/ECDC-soca_simplex/2024-02-28-ECDC-soca_simplex.csv"
             ]
+        },
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2024-02-28-ECDC-FluForARIMA.csv"
+            ]
         }
     ]
 }
