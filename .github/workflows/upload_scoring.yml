@@ -1,9 +1,11 @@
-name: Scoring Upload
+name: ScoringUpload
 
 on:
-  # scheduled submission every day at 23.00 p.m. 
-  schedule:
-    - cron: '30 03 * * 4'  
+  workflow_run:
+    workflows: [Scoring]
+      
+    types:
+      - completed  
 
   # needed to trigger manually
   workflow_dispatch:
@@ -11,11 +13,15 @@ on:
   
 jobs:
   scheduled-submit:
-    if: github.repository_owner == 'european-modelling-hubs'
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
     runs-on: ubuntu-latest
     
     steps:
-
+      # Introduce some delay to complete DB write 
+      - name: Sleep for 90 seconds
+        run: sleep 90s
+        shell: bash
+      
       # Checkout the python tools repo
       # used to authenticate and validate the PR
       # -------------------------------------------      
@@ -100,6 +106,7 @@ jobs:
         if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
         run: |
           echo "UPLOAD FAILED -  ignore djson db cleaning"
+          exit 1
 
       # Final commit
       # --------------------------------------------
