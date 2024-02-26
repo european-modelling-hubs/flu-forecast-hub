@@ -30,25 +30,25 @@ jobs:
         echo "Changes: ${{ inputs.changes-list }}"
 
 
-    # # Checkout the python tools repo
-    # # used to authenticate and validate the PR
-    # # -------------------------------------------      
-    # - name: checkout python tools repo
-    #   uses: actions/checkout@v3
-    #   with:
-    #     token: ${{ secrets.envPAT }}
-    #     repository: 'european-modelling-hubs/hub-tools'
-    #     ref: 'main'
-    #     path: './tools/'
+    # Checkout the python tools repo
+    # used to authenticate and validate the PR
+    # -------------------------------------------      
+    - name: checkout python tools repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.envPAT }}
+        repository: 'european-modelling-hubs/hub-tools'
+        ref: 'main'
+        path: './tools/'
 
 
-    # - name: checkout data repo
-    #   uses: actions/checkout@v3
-    #   with:
-    #     token: ${{ secrets.envPAT }}
-    #     repository: 'european-modelling-hubs/flu-forecast-hub'
-    #     ref: 'main'
-    #     path: './repo/'
+    - name: checkout data repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.envPAT }}
+        repository: 'european-modelling-hubs/flu-forecast-hub'
+        ref: 'main'
+        path: './repo/'
 
 
     
