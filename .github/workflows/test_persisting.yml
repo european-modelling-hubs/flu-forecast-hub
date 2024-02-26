@@ -12,18 +12,21 @@ jobs:
       changed_files:  ${{ steps.fake-data-generator.outputs.all_changed_files }}
 
     steps:
+      - name: tracer
+        run: echo "Running prepare-data-to-be-persisted"
+        
       - name: fake data generator
         id: fake-data-generator
         run: echo "all_changed_files='model-output/TEST_TEAM-TEST_MODEL/2024-02-28-TEST_TEAM-TEST_MODEL.csv'" >> $GITHUB_OUTPUT
 
 
-  call-persisting-wf:
-    needs: prepare-data-to-be-persisted
-    uses: european-modelling-hubs/flu-forecast-hub/.github/workflows/persist_changes.yml@main
-    with:
-      changes-list: ${{ needs. prepare-data-to-be-persisted.outputs.changed_files }}
-    secrets:
-      envPAT: ${{ secrets.GITHUB_TOKEN }}
+  # call-persisting-wf:
+  #   needs: prepare-data-to-be-persisted
+  #   uses: european-modelling-hubs/flu-forecast-hub/.github/workflows/persist_changes.yml@main
+  #   with:
+  #     changes-list: ${{ needs. prepare-data-to-be-persisted.outputs.changed_files }}
+  #   secrets:
+  #     envPAT: ${{ secrets.GITHUB_TOKEN }}
 
 
 
