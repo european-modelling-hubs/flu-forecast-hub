@@ -1,0 +1,47 @@
+name: TestNewPersist
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+
+  call_persisting_wf:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checkout the tools repo
+      # -------------------------------------------      
+      - name: checkout tools repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: 'european-modelling-hubs/hub-tools'
+          ref: 'main'
+          path: './tools/'
+
+          
+      # Checkout the data repository
+      # -------------------------------------------      
+      - name: checkout data repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: 'european-modelling-hubs/flu-forecast-hub'
+          ref: 'main'
+          path: './repo/'
+
+
+      # Save test data to the persist_changes wf
+      - uses: european-modelling-hubs/flu-forecast-hub/.github/workflows/persist_changes.yml@main
+        with:
+          changes-list: 'model-output/ECDC-FluForARIMA/2024-02-28-ECDC-FluForARIMA.csv'          
+        # secrets:
+        #   envPAT: ${{ secrets.GITHUB_TOKEN }}
+          
+
+
+
+
+
+          
