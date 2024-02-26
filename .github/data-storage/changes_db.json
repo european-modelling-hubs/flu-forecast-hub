@@ -28,5 +28,13 @@
                 "model-output/QMUL-ARIMA/2024-02-28-QMUL-ARIMA.csv"
             ]
         }
+    ],
+    "TEST_TEAM": [
+        {
+            "model": "TEST_MODEL",
+            "changes": [
+                "model-output/TEST_TEAM-TEST_MODEL/2024-02-28-TEST_TEAM-TEST_MODEL.csv"
+            ]
+        }
     ]
 }
