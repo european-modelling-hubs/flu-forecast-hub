@@ -11,3 +11,4 @@ model_contributors:
       email: nicolo.gozzi@isi.it
 team_model_designation: primary
 methods: A semimechanistic model based on Rt estimation developed by the epiforecasts team at LSHTM
+input_data: ECDC ERVISS
