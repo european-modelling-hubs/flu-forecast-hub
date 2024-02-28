@@ -61,6 +61,12 @@
             "changes": [
                 "model-output/ISI-IPSICast/2024-02-28-ISI-IPSICast.csv"
             ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-02-28-ISI-EpiNow.csv"
+            ]
         }
     ]
 }
