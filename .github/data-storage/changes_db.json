@@ -79,6 +79,12 @@
             "changes": [
                 "model-output/ISI-EpiNow/2024-02-28-ISI-EpiNow.csv"
             ]
+        },
+        {
+            "model": "GLEAM",
+            "changes": [
+                "model-output/ISI-GLEAM/2024-02-28-ISI-GLEAM.csv"
+            ]
         }
     ],
     "fjordhest": [
