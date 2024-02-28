@@ -5,7 +5,9 @@ The European Flu Forecasting Hub collates weekly forecasts on Influenza-Like-Ill
 During the influenza season, participating teams submit weekly probabilistic forecasts from their models regarding ILI incidence for the upcoming four weeks. This data is communicated every week by the ECDC through the [ERVISS report](https://erviss.org/). Data is updated generally on Friday, and it reports ILI incidence related up to the previous week. Forecast submission opens right after updated data are uploaded to this repository and closes on the next Wednesday at 23:59 CET. In the event of changes in the timelines of data availability, the day of the week for forecast submissions may be adjusted accordingly. In such instances, participants will receive notifications at least one week in advance. Following the submission deadline, forecasts and the ensemble are published on the [Hub website](https://respicast.ecdc.europa.eu/forecasts/) every Thursday. They cover the preceding week (which lacks consolidated public data), the current week, and the two subsequent weeks.
 
 ## Quick Start
-This is a brief outline for anyone considering contributing a forecast. For a detailed guide on how to structure and submit a forecast, please read the technical [Wiki](https://github.com/european-modelling-hubs/flu-forecast-hub/wiki).
+This is a brief outline for anyone considering contributing a forecast. For a detailed guide on how to structure and submit a forecast, please read the technical [Wiki](https://github.com/european-modelling-hubs/flu-forecast-hub/wiki) or watch the following tutorial video on how to submit your first forecast: 
+
+[![IMAGE ALT TEXT HERE](https://github.com/european-modelling-hubs/hub-tools/blob/main/submission_tutorial_img.png)](https://www.youtube.com/watch?v=Gpyc2fr9PYw)
 
 
 #### Setup

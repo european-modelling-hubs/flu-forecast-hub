@@ -4,17 +4,16 @@ on:
 
   workflow_dispatch:
 
-  workflow_run:
-    workflows: [BaselineEnsembleUpload]
-      
-    types:
-      - completed
+  # scheduled submission every Thursday at 01.15 CET
+  schedule:
+    - cron: "15 00 * * 4"
 
     
 jobs:
 
   scoring_job:
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    # if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    if: ${{ github.repository_owner == 'european-modelling-hubs' }}
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
