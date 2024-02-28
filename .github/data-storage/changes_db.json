@@ -68,5 +68,13 @@
                 "model-output/ISI-EpiNow/2024-02-28-ISI-EpiNow.csv"
             ]
         }
+    ],
+    "fjordhest": [
+        {
+            "model": "ensemble",
+            "changes": [
+                "model-output/fjordhest-ensemble/2024-02-28-fjordhest-ensemble.csv"
+            ]
+        }
     ]
 }
