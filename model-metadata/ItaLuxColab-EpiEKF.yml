@@ -16,5 +16,6 @@ model_contributors:
     affiliation: Luxembourg Centre for Systems Biomedicine, University of Luxembourg
     email: jorge.goncalves@uni.lu
 team_model_designation: primary
-methods: A stochastic SIRS model coupled with the extended Kalman filter (EKF) with adaptive hyperparameter estimation for automatic data integration, applied separately on each region.
+methods: Stochastic SIRS model with automatic data integration by the extended Kalman filter (EKF) with adaptive hyperparameter estimation, applied separately on each region (github.com/AtteAalto/EpiEKF)
+data_inputs: ECDC ERVISS and FluID (as provided in flu-forecast-hub)
 license: CC-BY-4.0

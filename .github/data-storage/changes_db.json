@@ -3,33 +3,33 @@
         {
             "model": "metaFlu",
             "changes": [
-                "model-output/CSL_PoliTo-metaFlu/2024-02-21-CSL_PoliTo-metaFlu.csv"
+                "model-output/CSL_PoliTo-metaFlu/2024-02-28-CSL_PoliTo-metaFlu.csv"
             ]
         }
     ],
     "ECDC": [
         {
+            "model": "soca_simplex",
+            "changes": [
+                "model-output/ECDC-soca_simplex/2024-02-28-ECDC-soca_simplex.csv"
+            ]
+        },
+        {
             "model": "FluForARIMA",
             "changes": [
-                "model-output/ECDC-FluForARIMA/2024-02-21-ECDC-FluForARIMA.csv"
+                "model-output/ECDC-FluForARIMA/2024-02-28-ECDC-FluForARIMA.csv"
             ]
         },
         {
             "model": "norrsken_blue",
             "changes": [
-                "model-output/ECDC-norrsken_blue/2024-02-21-ECDC-norrsken_blue.csv"
+                "model-output/ECDC-norrsken_blue/2024-02-28-ECDC-norrsken_blue.csv"
             ]
         },
         {
             "model": "norrsken_green",
             "changes": [
-                "model-output/ECDC-norrsken_green/2024-02-21-ECDC-norrsken_green.csv"
-            ]
-        },
-        {
-            "model": "soca_simplex",
-            "changes": [
-                "model-output/ECDC-soca_simplex/2024-02-21-ECDC-soca_simplex.csv"
+                "model-output/ECDC-norrsken_green/2024-02-28-ECDC-norrsken_green.csv"
             ]
         }
     ],
@@ -37,39 +37,13 @@
         {
             "model": "ARIMA",
             "changes": [
-                "model-output/QMUL-ARIMA/2024-02-21-QMUL-ARIMA.csv"
+                "model-output/QMUL-ARIMA/2024-02-28-QMUL-ARIMA.csv"
             ]
         },
         {
             "model": "SEIR",
             "changes": [
-                "model-output/QMUL-SEIR/2024-02-21-QMUL-SEIR.csv"
-            ]
-        }
-    ],
-    "ISI": [
-        {
-            "model": "FluABCaster",
-            "changes": [
-                "model-output/ISI-FluABCaster/2024-02-21-ISI-FluABCaster.csv"
-            ]
-        },
-        {
-            "model": "GenLogModel",
-            "changes": [
-                "model-output/ISI-GenLogModel/2024-02-21-ISI-GenLogModel.csv"
-            ]
-        },
-        {
-            "model": "EpiNow",
-            "changes": [
-                "model-output/ISI-EpiNow/2024-02-21-ISI-EpiNow.csv"
-            ]
-        },
-        {
-            "model": "GLEAM",
-            "changes": [
-                "model-output/ISI-GLEAM/2024-02-21-ISI-GLEAM.csv"
+                "model-output/QMUL-SEIR/2024-02-28-QMUL-SEIR.csv"
             ]
         }
     ],
@@ -77,7 +51,33 @@
         {
             "model": "EpiEKF",
             "changes": [
-                "model-output/ItaLuxColab-EpiEKF/2024-02-21-ItaLuxColab-EpiEKF.csv"
+                "model-output/ItaLuxColab-EpiEKF/2024-02-28-ItaLuxColab-EpiEKF.csv"
+            ]
+        }
+    ],
+    "ISI": [
+        {
+            "model": "GenLogModel",
+            "changes": [
+                "model-output/ISI-GenLogModel/2024-02-28-ISI-GenLogModel.csv"
+            ]
+        },
+        {
+            "model": "FluABCaster",
+            "changes": [
+                "model-output/ISI-FluABCaster/2024-02-28-ISI-FluABCaster.csv"
+            ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-02-28-ISI-IPSICast.csv"
+            ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-02-28-ISI-EpiNow.csv"
             ]
         }
     ],
@@ -85,7 +85,7 @@
         {
             "model": "ensemble",
             "changes": [
-                "model-output/fjordhest-ensemble/2024-02-21-fjordhest-ensemble.csv"
+                "model-output/fjordhest-ensemble/2024-02-28-fjordhest-ensemble.csv"
             ]
         }
     ]
