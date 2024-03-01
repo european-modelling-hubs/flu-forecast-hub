@@ -3,11 +3,11 @@ name: GenerateBaseline
 on:
 
   workflow_dispatch:
-  workflow_run:
-    workflows: [ForecastUpload]
+  # workflow_run:
+  #   workflows: [ForecastUpload]
       
-    types:
-      - completed
+  #   types:
+  #     - completed
     
 jobs:
 
