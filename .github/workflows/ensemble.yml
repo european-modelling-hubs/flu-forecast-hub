@@ -4,11 +4,11 @@ on:
 
   workflow_dispatch:
 
-  workflow_run:
-    workflows: [GenerateBaseline]
+  # workflow_run:
+  #   workflows: [GenerateBaseline]
       
-    types:
-      - completed
+  #   types:
+  #     - completed
 
 
 jobs:
