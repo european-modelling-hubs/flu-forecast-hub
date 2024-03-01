@@ -12,7 +12,8 @@ on:
 jobs:
 
   baseline_job:
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    # if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    if: ${{ github.repository_owner == 'european-modelling-hubs' }}
     outputs:
       changed_files:  ${{ steps.compute_baseline.outputs.baseline_file }}  
     
