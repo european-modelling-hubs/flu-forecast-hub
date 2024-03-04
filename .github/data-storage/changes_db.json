@@ -6,5 +6,13 @@
                 "model-output/ECDC-FluForARIMA/2024-03-06-ECDC-FluForARIMA.csv"
             ]
         }
+    ],
+    "ISI": [
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-03-06-ISI-EpiNow.csv"
+            ]
+        }
     ]
 }
