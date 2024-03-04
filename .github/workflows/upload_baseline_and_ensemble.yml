@@ -3,6 +3,7 @@ name: BaselineEnsembleUpload
 on:
   workflow_run:
     workflows: [GenerateEnsemble]
+    
       
     types:
       - completed
@@ -12,8 +13,8 @@ on:
   
 jobs:
   scheduled-submit:
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
-    
+    # if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    if: ${{ github.repository_owner == 'european-modelling-hubs' }}
     runs-on: ubuntu-latest
     
     steps:
