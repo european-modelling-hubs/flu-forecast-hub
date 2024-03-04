@@ -37,7 +37,7 @@
                         },
                         "horizon": {
                             "required": null,
-                            "optional": [1, 2, 3, 4]
+                            "optional": [-1, 0, 1, 2, 3, 4]
                         },
                         "location": {
                             "required": null,
