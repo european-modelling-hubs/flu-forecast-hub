@@ -4,18 +4,21 @@ on:
 
   workflow_dispatch:
 
-  workflow_run:
-    workflows: [GenerateBaseline]
+  # workflow_run:
+  #   workflows: [GenerateBaseline]
       
-    types:
-      - completed
+  #   types:
+  #     - completed
 
 
 jobs:
   
-  ensemble:
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+  ensemble_job:
+    # if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    if: ${{ github.repository_owner == 'european-modelling-hubs' }}
     runs-on: ubuntu-latest
+    outputs:
+      changed_files:  ${{ steps.generate_ensemble.outputs.ensemble_file }}
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
@@ -65,15 +68,25 @@ jobs:
           default_author: github_actions
           push: true
 
+
+  call-persisting-wf:
+    needs: ensemble_job
+    uses: european-modelling-hubs/flu-forecast-hub/.github/workflows/persist_changes.yml@main
+    with:
+      changes-list: ${{ needs.ensemble_job.outputs.changed_files }}
+
+    secrets:
+      envPAT: ${{ secrets.GITHUB_TOKEN }}     
+
     # Save changes to artifact for later persisting 
-    - name: Save changes to artifact
-      env:
-        changed_files: ${{ steps.generate_ensemble.outputs.ensemble_file }}
-      run: |
-        echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
+    # - name: Save changes to artifact
+    #   env:
+    #     changed_files: ${{ steps.generate_ensemble.outputs.ensemble_file }}
+    #   run: |
+    #     echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
           
-    - name: Upload changes
-      uses: actions/upload-artifact@v2
-      with:
-        name: pr_changes
-        path: ./pr_changes.json
+    # - name: Upload changes
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     name: pr_changes
+    #     path: ./pr_changes.json
