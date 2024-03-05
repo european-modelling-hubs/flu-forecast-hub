@@ -97,6 +97,7 @@ jobs:
         if: ${{ steps.invoke_webhook.outputs.run_results.status == 'error'}}
         run: |
           echo "UPLOAD FAILED -  ignore djson db cleaning"
+          exit 1
 
       # Final commit
       # --------------------------------------------

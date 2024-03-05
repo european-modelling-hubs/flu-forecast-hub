@@ -4,11 +4,9 @@ on:
 
   workflow_dispatch:
 
-  workflow_run:
-    workflows: [BaselineEnsembleUpload]
-      
-    types:
-      - completed
+  # scheduled submission every Thursday at 01.15 CET
+  schedule:
+    - cron: "15 00 * * 4"
 
     
 jobs:
