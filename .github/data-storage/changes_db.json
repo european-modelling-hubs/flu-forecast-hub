@@ -5,6 +5,12 @@
             "changes": [
                 "model-output/ECDC-FluForARIMA/2024-03-06-ECDC-FluForARIMA.csv"
             ]
+        },
+        {
+            "model": "soca_simplex",
+            "changes": [
+                "model-output/ECDC-soca_simplex/2024-03-06-ECDC-soca_simplex.csv"
+            ]
         }
     ],
     "ISI": [
