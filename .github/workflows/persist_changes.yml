@@ -19,11 +19,9 @@ on:
 
 jobs:
 
-  update_json_changes:    
+  persist_to_json_job:    
     runs-on: ubuntu-latest
     steps:
-
-    
       
     - name: Trace the changes
       run: | 
@@ -49,8 +47,6 @@ jobs:
         repository: 'european-modelling-hubs/flu-forecast-hub'
         ref: 'main'
         path: './repo/'
-
-
     
     # Store changes 
     # -------------------------
