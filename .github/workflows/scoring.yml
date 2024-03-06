@@ -54,7 +54,7 @@ jobs:
     - name: Installing dependencies
       run: |
         install.packages("remotes")
-        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubUtils")
+        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubData")
         install.packages("dplyr")
         install.packages("optparse")
         install.packages("scoringutils")
