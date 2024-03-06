@@ -4,18 +4,17 @@ on:
 
   workflow_dispatch:
 
-  # workflow_run:
-  #   workflows: [GenerateBaseline]
+  workflow_run:
+    workflows: [GenerateBaseline]
       
-  #   types:
-  #     - completed
+    types:
+      - completed
 
 
 jobs:
   
   ensemble_job:
-    # if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
-    if: ${{ github.repository_owner == 'european-modelling-hubs' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
     runs-on: ubuntu-latest
     outputs:
       changed_files:  ${{ steps.generate_ensemble.outputs.ensemble_file }}
