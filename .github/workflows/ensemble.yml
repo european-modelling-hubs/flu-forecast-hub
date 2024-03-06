@@ -46,7 +46,7 @@ jobs:
     - name: Installing dependencies
       run: |
         install.packages("remotes")
-        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubUtils")
+        remotes::install_github("Infectious-Disease-Modeling-Hubs/hubData")
         remotes::install_github("Infectious-Disease-Modeling-Hubs/hubEnsembles")
         install.packages("dplyr")
         install.packages("jsonlite")
