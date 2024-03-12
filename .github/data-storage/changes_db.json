@@ -55,6 +55,12 @@
             "changes": [
                 "model-output/QMUL-SEIR/2024-03-13-QMUL-SEIR.csv"
             ]
+        },
+        {
+            "model": "ARIMA",
+            "changes": [
+                "model-output/QMUL-ARIMA/2024-03-13-QMUL-ARIMA.csv"
+            ]
         }
     ],
     "ItaLuxColab": [
