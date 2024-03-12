@@ -40,5 +40,13 @@
                 "model-output/ECDC-norrsken_green/2024-03-13-ECDC-norrsken_green.csv"
             ]
         }
+    ],
+    "fjordhest": [
+        {
+            "model": "ensemble",
+            "changes": [
+                "model-output/fjordhest-ensemble/2024-03-13-fjordhest-ensemble.csv"
+            ]
+        }
     ]
 }
