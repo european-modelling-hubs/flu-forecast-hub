@@ -56,5 +56,13 @@
                 "model-output/QMUL-SEIR/2024-03-13-QMUL-SEIR.csv"
             ]
         }
+    ],
+    "ItaLuxColab": [
+        {
+            "model": "EpiEKF",
+            "changes": [
+                "model-output/ItaLuxColab-EpiEKF/2024-03-13-ItaLuxColab-EpiEKF.csv"
+            ]
+        }
     ]
 }
