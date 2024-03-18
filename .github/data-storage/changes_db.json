@@ -14,5 +14,13 @@
                 "model-output/CSL_PoliTo-metaFlu/2024-03-20-CSL_PoliTo-metaFlu.csv"
             ]
         }
+    ],
+    "fjordhest": [
+        {
+            "model": "ensemble",
+            "changes": [
+                "model-output/fjordhest-ensemble/2024-03-20-fjordhest-ensemble.csv"
+            ]
+        }
     ]
 }
