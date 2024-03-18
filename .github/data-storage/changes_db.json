@@ -1,43 +1,17 @@
 {
-    "CSL_PoliTo": [
-        {
-            "model": "metaFlu",
-            "changes": [
-                "model-output/CSL_PoliTo-metaFlu/2024-03-13-CSL_PoliTo-metaFlu.csv"
-            ]
-        }
-    ],
     "ISI": [
         {
             "model": "FluABCaster",
             "changes": [
-                "model-output/ISI-FluABCaster/2024-03-13-ISI-FluABCaster.csv"
-            ]
-        },
-        {
-            "model": "IPSICast",
-            "changes": [
-                "model-output/ISI-IPSICast/2024-03-13-ISI-IPSICast.csv"
-            ]
-        },
-        {
-            "model": "EpiNow",
-            "changes": [
-                "model-output/ISI-EpiNow/2024-03-13-ISI-EpiNow.csv"
+                "model-output/ISI-FluABCaster/2024-03-20-ISI-FluABCaster.csv"
             ]
         }
     ],
-    "ECDC": [
+    "CSL_PoliTo": [
         {
-            "model": "norrsken_blue",
+            "model": "metaFlu",
             "changes": [
-                "model-output/ECDC-norrsken_blue/2024-03-13-ECDC-norrsken_blue.csv"
-            ]
-        },
-        {
-            "model": "norrsken_green",
-            "changes": [
-                "model-output/ECDC-norrsken_green/2024-03-13-ECDC-norrsken_green.csv"
+                "model-output/CSL_PoliTo-metaFlu/2024-03-20-CSL_PoliTo-metaFlu.csv"
             ]
         }
     ]
