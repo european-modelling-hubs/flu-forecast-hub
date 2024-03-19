@@ -42,5 +42,13 @@
                 "model-output/ItaLuxColab-EpiEKF/2024-03-20-ItaLuxColab-EpiEKF.csv"
             ]
         }
+    ],
+    "ECDC": [
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2024-03-20-ECDC-FluForARIMA.csv"
+            ]
+        }
     ]
 }
