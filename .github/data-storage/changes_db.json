@@ -11,6 +11,12 @@
             "changes": [
                 "model-output/ISI-EpiNow/2024-03-20-ISI-EpiNow.csv"
             ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-03-20-ISI-IPSICast.csv"
+            ]
         }
     ],
     "CSL_PoliTo": [
