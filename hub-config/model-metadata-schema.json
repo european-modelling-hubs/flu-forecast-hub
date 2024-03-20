@@ -108,6 +108,7 @@
         "model_abbr",
         "model_contributors",
         "team_model_designation",
-        "methods"
+        "methods",
+        "data_inputs"
     ]
 }
