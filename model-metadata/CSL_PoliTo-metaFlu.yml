@@ -3,8 +3,14 @@ model_name: Metapopulation SEINR model
 team_abbr: CSL_PoliTo
 model_abbr: metaFlu
 model_contributors:
-  - name: Alessandro Rizzo, Lorenzo Zino, Francesco Celino
+  - name: Alessandro Rizzo
     affiliation: Politecnico di Torino
     email: alessandro.rizzo@polito.it
+  - name: Lorenzo Zino, Francesco Celino
+    affiliation: Politecnico di Torino
+    email: lorenzo.zino@polito.it
+  - name: Francesco Celino
+    affiliation: Politecnico di Torino
+    email: celinofrancesco849@gmail.com
 team_model_designation: primary
 methods: An epidemic model based on the susceptible-exposed-infectious-noninfectious-removed dynamic, with meta-population and activity-driven modelling, class subdivision, Bayesian parameter optimization
