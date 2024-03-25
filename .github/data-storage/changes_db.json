@@ -3,7 +3,15 @@
         {
             "model": "FluABCaster",
             "changes": [
-                "model-output/ISI-FluABCaster/2024-03-20-ISI-FluABCaster.csv"
+                "model-output/ISI-FluABCaster/2024-03-27-ISI-FluABCaster.csv"
+            ]
+        }
+    ],
+    "fjordhest": [
+        {
+            "model": "ensemble",
+            "changes": [
+                "model-output/fjordhest-ensemble/2024-03-27-fjordhest-ensemble.csv"
             ]
         }
     ]
