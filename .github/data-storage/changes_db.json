@@ -22,5 +22,13 @@
                 "model-output/CSL_PoliTo-metaFlu/2024-03-27-CSL_PoliTo-metaFlu.csv"
             ]
         }
+    ],
+    "QMUL": [
+        {
+            "model": "ARIMA",
+            "changes": [
+                "model-output/QMUL-ARIMA/2024-03-27-QMUL-ARIMA.csv"
+            ]
+        }
     ]
 }
