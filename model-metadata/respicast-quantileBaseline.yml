@@ -8,4 +8,5 @@ model_contributors:
     email: European.Modelling.Hub@ecdc.europa.eu
 team_model_designation: hub_other
 methods: A simple baseline model that samples future target changes from historical increments.
+methods_long: The baseline model consistently predicts as median value the last data point within the calibration period, while its confidence intervals are estimated on past data increments. Similar baseline models have become a standard neutral benchmark providing a simple reference for all models in the context of collaborative forecasting hubs, see Cramer et al. "Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the United States", 2022 and Sherratt et al. "Predictive performance of multi-model ensemble forecasts of COVID-19 across European nations", 2023.
 license: CC-BY-4.0
