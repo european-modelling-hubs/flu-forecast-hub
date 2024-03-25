@@ -14,3 +14,4 @@ model_contributors:
     email: celinofrancesco849@gmail.com
 team_model_designation: primary
 methods: An epidemic model based on the susceptible-exposed-infectious-noninfectious-removed dynamic, with meta-population and activity-driven modelling, class subdivision, Bayesian parameter optimization
+data_inputs: epidemiological, demographic, and behavioural data
