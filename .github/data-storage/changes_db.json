@@ -5,6 +5,12 @@
             "changes": [
                 "model-output/ISI-FluABCaster/2024-03-27-ISI-FluABCaster.csv"
             ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-03-27-ISI-EpiNow.csv"
+            ]
         }
     ],
     "fjordhest": [
