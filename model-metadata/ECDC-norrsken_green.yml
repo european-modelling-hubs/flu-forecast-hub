@@ -6,7 +6,6 @@ model_contributors:
   - name: ECDC Mathematical Modelling Team
     affiliation: European Centre for Disease Prevention and Control
     email: modellingh@ecdc.europa.eu
-team_model_designation: primary
 data_inputs: ECDC ERVISS
 team_model_designation: primary
 methods: "A Bayesian piece-wise log-linear model fit."
