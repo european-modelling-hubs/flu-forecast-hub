@@ -5,6 +5,12 @@
             "changes": [
                 "model-output/ISI-FluABCaster/2024-03-27-ISI-FluABCaster.csv"
             ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-03-27-ISI-EpiNow.csv"
+            ]
         }
     ],
     "fjordhest": [
@@ -36,6 +42,14 @@
             "model": "FluForARIMA",
             "changes": [
                 "model-output/ECDC-FluForARIMA/2024-03-27-ECDC-FluForARIMA.csv"
+            ]
+        }
+    ],
+    "ItaLuxColab": [
+        {
+            "model": "EpiEKF",
+            "changes": [
+                "model-output/ItaLuxColab-EpiEKF/2024-03-27-ItaLuxColab-EpiEKF.csv"
             ]
         }
     ]
