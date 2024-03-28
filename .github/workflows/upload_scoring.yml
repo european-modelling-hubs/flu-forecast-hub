@@ -13,7 +13,7 @@ on:
   
 jobs:
   scheduled-submit:
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    # if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
     runs-on: ubuntu-latest
     
     steps:
