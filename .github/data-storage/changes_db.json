@@ -1,1 +1,10 @@
-{}
+{
+    "ISI": [
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-04-03-ISI-IPSICast.csv"
+            ]
+        }
+    ]
+}
