@@ -5,6 +5,12 @@
             "changes": [
                 "model-output/ISI-IPSICast/2024-04-03-ISI-IPSICast.csv"
             ]
+        },
+        {
+            "model": "GLEAM",
+            "changes": [
+                "model-output/ISI-GLEAM/2024-04-03-ISI-GLEAM.csv"
+            ]
         }
     ],
     "CSL_PoliTo": [
