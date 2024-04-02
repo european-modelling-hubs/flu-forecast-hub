@@ -1,17 +1,9 @@
 {
     "ISI": [
         {
-            "model": "FluABCaster",
+            "model": "IPSICast",
             "changes": [
-                "model-output/ISI-FluABCaster/2024-03-27-ISI-FluABCaster.csv"
-            ]
-        }
-    ],
-    "fjordhest": [
-        {
-            "model": "ensemble",
-            "changes": [
-                "model-output/fjordhest-ensemble/2024-03-27-fjordhest-ensemble.csv"
+                "model-output/ISI-IPSICast/2024-04-03-ISI-IPSICast.csv"
             ]
         }
     ]
