@@ -17,6 +17,12 @@
             "changes": [
                 "model-output/ISI-FluABCaster/2024-04-03-ISI-FluABCaster.csv"
             ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-04-03-ISI-EpiNow.csv"
+            ]
         }
     ],
     "CSL_PoliTo": [
