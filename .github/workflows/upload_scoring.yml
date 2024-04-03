@@ -1,11 +1,11 @@
 name: ScoringUpload
 
 on:
-  workflow_run:
-    workflows: [Scoring]
+  # workflow_run:
+  #   workflows: [Scoring]
       
-    types:
-      - completed  
+  #   types:
+  #     - completed  
 
   # needed to trigger manually
   workflow_dispatch:
