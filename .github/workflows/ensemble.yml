@@ -45,6 +45,7 @@ jobs:
     - name: Installing dependencies
       run: |
         install.packages("remotes")
+        install.packages("arrow", repos = c("https://apache.r-universe.dev", "https://cran.r-project.org"))
         remotes::install_github("Infectious-Disease-Modeling-Hubs/hubData", dependencies=TRUE)
         remotes::install_github("Infectious-Disease-Modeling-Hubs/hubEnsembles")
         install.packages("dplyr")
