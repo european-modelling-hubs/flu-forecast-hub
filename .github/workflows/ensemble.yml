@@ -14,7 +14,7 @@ on:
 jobs:
   
   ensemble_job:
-    # if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'european-modelling-hubs' }}
     runs-on: ubuntu-latest
     outputs:
       changed_files:  ${{ steps.generate_ensemble.outputs.ensemble_file }}
@@ -77,16 +77,3 @@ jobs:
 
     secrets:
       envPAT: ${{ secrets.GITHUB_TOKEN }}     
-
-    # Save changes to artifact for later persisting 
-    # - name: Save changes to artifact
-    #   env:
-    #     changed_files: ${{ steps.generate_ensemble.outputs.ensemble_file }}
-    #   run: |
-    #     echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
-          
-    # - name: Upload changes
-    #   uses: actions/upload-artifact@v2
-    #   with:
-    #     name: pr_changes
-    #     path: ./pr_changes.json
