@@ -12,6 +12,9 @@ jobs:
   fluID_job:
     if: github.repository_owner == 'european-modelling-hubs'
     runs-on: ubuntu-latest
+    outputs:
+      changed_files:  ${{ steps.download_fluID_data.outputs.imported_snapshot }}
+      
     steps:
 
     # Checkout the python tools repo
@@ -57,15 +60,24 @@ jobs:
           default_author: github_actions
           push: true
 
+  call-persisting-wf:
+    needs: fluID_job
+    uses: european-modelling-hubs/flu-forecast-hub/.github/workflows/persist_changes.yml@main
+    with:
+      changes-list: ${{ needs.fluID_job.outputs.changed_files }}
+
+    secrets:
+      envPAT: ${{ secrets.GITHUB_TOKEN }}    
+      
     # Save changes to artifact for later persisting 
-    - name: Save changes to artifact
-      env:
-        changed_files: ${{ steps.download_fluID_data.outputs.imported_snapshot }}
-      run: |
-        echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
+    # - name: Save changes to artifact
+    #   env:
+    #     changed_files: ${{ steps.download_fluID_data.outputs.imported_snapshot }}
+    #   run: |
+    #     echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
           
-    - name: Upload changes
-      uses: actions/upload-artifact@v2
-      with:
-        name: pr_changes
-        path: ./pr_changes.json
+    # - name: Upload changes
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     name: pr_changes
+    #     path: ./pr_changes.json
