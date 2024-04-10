@@ -1,6 +1,6 @@
 {
     "schema_version": "https://raw.githubusercontent.com/Infectious-Disease-Modeling-Hubs/schemas/main/v2.0.0/admin-schema.json",
-    "name": "Influenza Forecasting Hub Europe",
+    "name": "European Flu Forecasting Hub",
     "maintainer": "ISI Foundation",
     "contact": {
         "name": "Paolo Milano",
@@ -9,9 +9,14 @@
     "repository_url": "https://github.com/european-modelling-hubs/flu-forecast-hub",
     "file_format": ["csv"],
     "hub_models": [{
-        "team_abbr": "ECDC",
-        "model_abbr": "TBD",
+        "team_abbr": "respicast",
+        "model_abbr": "hubEnsemble",
         "model_type": "ensemble"
+    },
+    {
+        "team_abbr": "respicast",
+        "model_abbr": "quantileBaseline",
+        "model_type": "baseline"
     }],
     "timezone": "Europe/Stockholm"
 }
