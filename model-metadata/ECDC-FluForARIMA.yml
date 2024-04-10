@@ -3,8 +3,9 @@ model_name: ARIMA model with seasonality
 team_abbr: ECDC
 model_abbr: FluForARIMA
 model_contributors:
-  - name: Lydia Champezou
+  - name: ECDC Mathematical Modelling Team 
     affiliation: European Centre for Disease Prevention and Control
-    email: lydia.champezou@ecdc.europa.eu
+    email: modelling@ecdc.europa.eu
 team_model_designation: primary
+data_inputs: data provided by RespiCast
 methods: A simple ARIMA model with seasonality
