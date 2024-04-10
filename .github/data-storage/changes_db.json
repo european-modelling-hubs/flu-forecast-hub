@@ -47,6 +47,12 @@
             "changes": [
                 "model-output/ISI-FluABCaster/2024-04-10-ISI-FluABCaster.csv"
             ]
+        },
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-04-10-ISI-EpiNow.csv"
+            ]
         }
     ]
 }
