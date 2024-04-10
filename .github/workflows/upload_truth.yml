@@ -64,8 +64,8 @@ jobs:
           
         run: |
           pip install requests
-          python ./tools/.github/scripts/utils/workflow_webhook.py
-
+          python ./tools/code/ws_webhook.py
+          
       - name: trace only
         run: |
           echo "webhook results: ${{ steps.invoke_webhook.outputs.run_results }}"

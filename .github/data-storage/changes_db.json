@@ -1,37 +1,9 @@
 {
-    "ISI": [
-        {
-            "model": "IPSICast",
-            "changes": [
-                "model-output/ISI-IPSICast/2024-04-03-ISI-IPSICast.csv"
-            ]
-        },
-        {
-            "model": "GLEAM",
-            "changes": [
-                "model-output/ISI-GLEAM/2024-04-03-ISI-GLEAM.csv"
-            ]
-        },
-        {
-            "model": "FluABCaster",
-            "changes": [
-                "model-output/ISI-FluABCaster/2024-04-03-ISI-FluABCaster.csv"
-            ]
-        }
-    ],
-    "CSL_PoliTo": [
-        {
-            "model": "metaFlu",
-            "changes": [
-                "model-output/CSL_PoliTo-metaFlu/2024-04-03-CSL_PoliTo-metaFlu.csv"
-            ]
-        }
-    ],
     "ItaLuxColab": [
         {
             "model": "EpiEKF",
             "changes": [
-                "model-output/ItaLuxColab-EpiEKF/2024-04-03-ItaLuxColab-EpiEKF.csv"
+                "model-output/ItaLuxColab-EpiEKF/2024-04-10-ItaLuxColab-EpiEKF.csv"
             ]
         }
     ],
@@ -39,7 +11,41 @@
         {
             "model": "FluForARIMA",
             "changes": [
-                "model-output/ECDC-FluForARIMA/2024-04-03-ECDC-FluForARIMA.csv"
+                "model-output/ECDC-FluForARIMA/2024-04-10-ECDC-FluForARIMA.csv"
+            ]
+        },
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2024-04-10-ECDC-norrsken_blue.csv"
+            ]
+        },
+        {
+            "model": "norrsken_green",
+            "changes": [
+                "model-output/ECDC-norrsken_green/2024-04-10-ECDC-norrsken_green.csv"
+            ]
+        },
+        {
+            "model": "soca_simplex",
+            "changes": [
+                "model-output/ECDC-soca_simplex/2024-04-10-ECDC-soca_simplex.csv"
+            ]
+        }
+    ],
+    "CSL_PoliTo": [
+        {
+            "model": "metaFlu",
+            "changes": [
+                "model-output/CSL_PoliTo-metaFlu/2024-04-10-CSL_PoliTo-metaFlu.csv"
+            ]
+        }
+    ],
+    "ISI": [
+        {
+            "model": "FluABCaster",
+            "changes": [
+                "model-output/ISI-FluABCaster/2024-04-10-ISI-FluABCaster.csv"
             ]
         }
     ]
