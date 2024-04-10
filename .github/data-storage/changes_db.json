@@ -62,5 +62,13 @@
                 "model-output/fjordhest-ensemble/2024-04-10-fjordhest-ensemble.csv"
             ]
         }
+    ],
+    "QMUL": [
+        {
+            "model": "SEIR",
+            "changes": [
+                "model-output/QMUL-SEIR/2024-04-10-QMUL-SEIR.csv"
+            ]
+        }
     ]
 }
