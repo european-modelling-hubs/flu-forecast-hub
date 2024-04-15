@@ -6,5 +6,19 @@
                 "model-output/fjordhest-ensemble/2024-04-17-fjordhest-ensemble.csv"
             ]
         }
+    ],
+    "ECDC": [
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2024-04-17-ECDC-FluForARIMA.csv"
+            ]
+        },
+        {
+            "model": "soca_simplex",
+            "changes": [
+                "model-output/ECDC-soca_simplex/2024-04-17-ECDC-soca_simplex.csv"
+            ]
+        }
     ]
 }
