@@ -48,5 +48,13 @@
                 "model-output/QMUL-SEIR/2024-04-17-QMUL-SEIR.csv"
             ]
         }
+    ],
+    "ISI": [
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-04-17-ISI-EpiNow.csv"
+            ]
+        }
     ]
 }
