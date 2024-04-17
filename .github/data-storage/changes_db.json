@@ -74,5 +74,13 @@
                 "model-output/ISI-IPSICast/2024-04-17-ISI-IPSICast.csv"
             ]
         }
+    ],
+    "CSL_PoliTo": [
+        {
+            "model": "metaFlu",
+            "changes": [
+                "model-output/CSL_PoliTo-metaFlu/2024-04-17-CSL_PoliTo-metaFlu.csv"
+            ]
+        }
     ]
 }
