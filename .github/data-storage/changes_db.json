@@ -5,6 +5,12 @@
             "changes": [
                 "model-output/ISI-EpiNow/2024-04-24-ISI-EpiNow.csv"
             ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-04-24-ISI-IPSICast.csv"
+            ]
         }
     ]
 }
