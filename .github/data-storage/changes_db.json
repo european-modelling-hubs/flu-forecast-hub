@@ -1,9 +1,23 @@
 {
+    "ISI": [
+        {
+            "model": "EpiNow",
+            "changes": [
+                "model-output/ISI-EpiNow/2024-04-24-ISI-EpiNow.csv"
+            ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-04-24-ISI-IPSICast.csv"
+            ]
+        }
+    ],
     "fjordhest": [
         {
             "model": "ensemble",
             "changes": [
-                "model-output/fjordhest-ensemble/2024-04-17-fjordhest-ensemble.csv"
+                "model-output/fjordhest-ensemble/2024-04-24-fjordhest-ensemble.csv"
             ]
         }
     ]
