@@ -39,6 +39,18 @@
             "changes": [
                 "model-output/ECDC-FluForARIMA/2024-04-24-ECDC-FluForARIMA.csv"
             ]
+        },
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2024-04-24-ECDC-norrsken_blue.csv"
+            ]
+        },
+        {
+            "model": "norrsken_green",
+            "changes": [
+                "model-output/ECDC-norrsken_green/2024-04-24-ECDC-norrsken_green.csv"
+            ]
         }
     ],
     "QMUL": [
