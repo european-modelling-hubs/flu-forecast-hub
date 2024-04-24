@@ -17,6 +17,12 @@
             "changes": [
                 "model-output/ISI-FluABCaster/2024-04-24-ISI-FluABCaster.csv"
             ]
+        },
+        {
+            "model": "GLEAM",
+            "changes": [
+                "model-output/ISI-GLEAM/2024-04-24-ISI-GLEAM.csv"
+            ]
         }
     ],
     "fjordhest": [
