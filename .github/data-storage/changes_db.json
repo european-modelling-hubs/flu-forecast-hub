@@ -19,6 +19,18 @@
             "changes": [
                 "model-output/ECDC-norrsken_green/2024-05-01-ECDC-norrsken_green.csv"
             ]
+        },
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2024-05-01-ECDC-FluForARIMA.csv"
+            ]
+        },
+        {
+            "model": "soca_simplex",
+            "changes": [
+                "model-output/ECDC-soca_simplex/2024-05-01-ECDC-soca_simplex.csv"
+            ]
         }
     ],
     "fjordhest": [
