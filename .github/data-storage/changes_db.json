@@ -1,15 +1,23 @@
 {
     "ISI": [
         {
-            "model": "EpiNow",
+            "model": "FluABCaster",
             "changes": [
-                "model-output/ISI-EpiNow/2024-04-24-ISI-EpiNow.csv"
+                "model-output/ISI-FluABCaster/2024-05-01-ISI-FluABCaster.csv"
+            ]
+        }
+    ],
+    "ECDC": [
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2024-05-01-ECDC-norrsken_blue.csv"
             ]
         },
         {
-            "model": "IPSICast",
+            "model": "norrsken_green",
             "changes": [
-                "model-output/ISI-IPSICast/2024-04-24-ISI-IPSICast.csv"
+                "model-output/ECDC-norrsken_green/2024-05-01-ECDC-norrsken_green.csv"
             ]
         }
     ]
