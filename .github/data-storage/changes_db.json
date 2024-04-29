@@ -6,5 +6,19 @@
                 "model-output/ISI-FluABCaster/2024-05-01-ISI-FluABCaster.csv"
             ]
         }
+    ],
+    "ECDC": [
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2024-05-01-ECDC-norrsken_blue.csv"
+            ]
+        },
+        {
+            "model": "norrsken_green",
+            "changes": [
+                "model-output/ECDC-norrsken_green/2024-05-01-ECDC-norrsken_green.csv"
+            ]
+        }
     ]
 }
