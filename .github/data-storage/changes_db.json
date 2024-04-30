@@ -1,21 +1,35 @@
 {
     "ISI": [
         {
-            "model": "EpiNow",
-            "changes": [
-                "model-output/ISI-EpiNow/2024-04-24-ISI-EpiNow.csv"
-            ]
-        },
-        {
-            "model": "IPSICast",
-            "changes": [
-                "model-output/ISI-IPSICast/2024-04-24-ISI-IPSICast.csv"
-            ]
-        },
-        {
             "model": "FluABCaster",
             "changes": [
-                "model-output/ISI-FluABCaster/2024-04-24-ISI-FluABCaster.csv"
+                "model-output/ISI-FluABCaster/2024-05-01-ISI-FluABCaster.csv"
+            ]
+        }
+    ],
+    "ECDC": [
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2024-05-01-ECDC-norrsken_blue.csv"
+            ]
+        },
+        {
+            "model": "norrsken_green",
+            "changes": [
+                "model-output/ECDC-norrsken_green/2024-05-01-ECDC-norrsken_green.csv"
+            ]
+        },
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2024-05-01-ECDC-FluForARIMA.csv"
+            ]
+        },
+        {
+            "model": "soca_simplex",
+            "changes": [
+                "model-output/ECDC-soca_simplex/2024-05-01-ECDC-soca_simplex.csv"
             ]
         }
     ],
@@ -23,21 +37,15 @@
         {
             "model": "ensemble",
             "changes": [
-                "model-output/fjordhest-ensemble/2024-04-24-fjordhest-ensemble.csv"
+                "model-output/fjordhest-ensemble/2024-05-01-fjordhest-ensemble.csv"
             ]
         }
     ],
-    "ECDC": [
+    "ItaLuxColab": [
         {
-            "model": "soca_simplex",
+            "model": "EpiEKF",
             "changes": [
-                "model-output/ECDC-soca_simplex/2024-04-24-ECDC-soca_simplex.csv"
-            ]
-        },
-        {
-            "model": "FluForARIMA",
-            "changes": [
-                "model-output/ECDC-FluForARIMA/2024-04-24-ECDC-FluForARIMA.csv"
+                "model-output/ItaLuxColab-EpiEKF/2024-05-01-ItaLuxColab-EpiEKF.csv"
             ]
         }
     ]
