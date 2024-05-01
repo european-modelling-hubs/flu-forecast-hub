@@ -1,9 +1,59 @@
 {
     "ISI": [
         {
-            "model": "EpiNow",
+            "model": "FluABCaster",
             "changes": [
-                "model-output/ISI-EpiNow/2024-04-24-ISI-EpiNow.csv"
+                "model-output/ISI-FluABCaster/2024-05-01-ISI-FluABCaster.csv"
+            ]
+        }
+    ],
+    "ECDC": [
+        {
+            "model": "norrsken_blue",
+            "changes": [
+                "model-output/ECDC-norrsken_blue/2024-05-01-ECDC-norrsken_blue.csv"
+            ]
+        },
+        {
+            "model": "norrsken_green",
+            "changes": [
+                "model-output/ECDC-norrsken_green/2024-05-01-ECDC-norrsken_green.csv"
+            ]
+        },
+        {
+            "model": "FluForARIMA",
+            "changes": [
+                "model-output/ECDC-FluForARIMA/2024-05-01-ECDC-FluForARIMA.csv"
+            ]
+        },
+        {
+            "model": "soca_simplex",
+            "changes": [
+                "model-output/ECDC-soca_simplex/2024-05-01-ECDC-soca_simplex.csv"
+            ]
+        }
+    ],
+    "fjordhest": [
+        {
+            "model": "ensemble",
+            "changes": [
+                "model-output/fjordhest-ensemble/2024-05-01-fjordhest-ensemble.csv"
+            ]
+        }
+    ],
+    "ItaLuxColab": [
+        {
+            "model": "EpiEKF",
+            "changes": [
+                "model-output/ItaLuxColab-EpiEKF/2024-05-01-ItaLuxColab-EpiEKF.csv"
+            ]
+        }
+    ],
+    "QMUL": [
+        {
+            "model": "SEIR",
+            "changes": [
+                "model-output/QMUL-SEIR/2024-05-01-QMUL-SEIR.csv"
             ]
         }
     ]
