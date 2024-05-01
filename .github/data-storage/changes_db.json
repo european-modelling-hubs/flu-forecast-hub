@@ -11,6 +11,12 @@
             "changes": [
                 "model-output/ISI-EpiNow/2024-05-01-ISI-EpiNow.csv"
             ]
+        },
+        {
+            "model": "IPSICast",
+            "changes": [
+                "model-output/ISI-IPSICast/2024-05-01-ISI-IPSICast.csv"
+            ]
         }
     ],
     "ECDC": [
