@@ -113,23 +113,6 @@ jobs:
       envPAT: ${{ secrets.GITHUB_TOKEN }}      
 
 
-    # Save changes to artifact for later persisting 
-    # - name: Save changes to artifact
-    #   env:
-    #     changed_files: ${{ steps.format_scoring_output.outputs.scoring_file_latest }} ${{ steps.format_scoring_output.outputs.scoring_file_snapshot }}
-    #   run: |
-    #     echo "{ \"pr-changes\" : \"$changed_files\" }" > pr_changes.json
-          
-    # - name: Upload changes
-    #   uses: actions/upload-artifact@v2
-    #   with:
-    #     name: pr_changes
-    #     path: ./pr_changes.json
-
-
-
-
-
 
 
 
