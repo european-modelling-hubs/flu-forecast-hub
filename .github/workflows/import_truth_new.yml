@@ -59,11 +59,11 @@ jobs:
           default_author: github_actions
           push: true
 
-  # call-persisting-wf:
-  #   needs: import_truth_job
-  #   uses: european-modelling-hubs/flu-forecast-hub/.github/workflows/persist_changes.yml@main
-  #   with:
-  #     changes-list: ${{ needs.import_truth_job.outputs.changed_files }}
+  call-persisting-wf:
+    needs: import_truth_job
+    uses: european-modelling-hubs/flu-forecast-hub/.github/workflows/persist_changes.yml@main
+    with:
+      changes-list: ${{ needs.import_truth_job.outputs.changed_files }}
 
-  #   secrets:
-  #     envPAT: ${{ secrets.GITHUB_TOKEN }} 
+    secrets:
+      envPAT: ${{ secrets.GITHUB_TOKEN }} 
