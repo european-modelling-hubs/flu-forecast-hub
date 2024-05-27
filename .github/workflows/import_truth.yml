@@ -49,7 +49,7 @@ jobs:
     - name: Import Truth
       id: import_truth
       run: |
-        python ./tools/code/import_truth_new.py --hub_path ./repo --disease_name "ILI"
+        python ./tools/code/import_truth.py --hub_path ./repo --disease_name "ILI"
 
     - name: Commit data repo changes
       uses: EndBug/add-and-commit@v7
