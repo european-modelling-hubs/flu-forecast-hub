@@ -1,4 +1,4 @@
-name: "ImportTruthErviss_new"
+name: "ImportTruthErviss"
 on:
 
   workflow_dispatch:
