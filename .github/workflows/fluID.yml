@@ -45,7 +45,7 @@ jobs:
       with:
         python-version: '3.10' 
     
-    - run: pip install pandas==1.2.5 pycountry==23.12.11
+    - run: pip install pandas pycountry==23.12.11
     
     - name: download fluID data
       id: download_fluID_data
