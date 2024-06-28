@@ -42,7 +42,7 @@ jobs:
       with:
         python-version: '3.10' 
     
-    - run: pip install pandas==1.2.5
+    - run: pip install pandas
     
     - name: update forecasting weeks
       id: update_forecasting_weeks
