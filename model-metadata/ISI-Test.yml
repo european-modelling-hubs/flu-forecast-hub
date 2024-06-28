@@ -8,3 +8,4 @@ model_contributors:
     email: luca.rossi@isi.it
 team_model_designation: primary
 methods: A stochastic, age-structured compartmental model based on a metapopulation approach that uses real-world data on populations and human mobility to simulate epidemic spreading on a global scale.
+data_inputs: Surveillance data from the official Italian Institute (Istituto Superiore di Sanità, ISS), and participatory surveillance data from Influweb platform. 
