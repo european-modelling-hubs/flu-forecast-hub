@@ -73,7 +73,7 @@ jobs:
     
     # eventually install additional packages
     - name: Installing python additional packages
-      run: pip install pandas==1.2.5 numpy==1.22.4
+      run: pip install pandas numpy==1.22.4
 
     
     # Run R code to compute scoring and produce an output file (scoring_outfile)
