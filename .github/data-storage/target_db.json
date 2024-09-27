@@ -1,26 +1,27 @@
 {
     "ILI incidence": {
         "changes": [
-            "target-data/FluID/snapshots/2024-08-16-ILI_incidence.csv",
-            "target-data/ERVISS/snapshots/2024-09-20-ILI_incidence.csv",
-            "target-data/ERVISS/snapshots/2024-07-26-ILI_incidence.csv",
-            "target-data/FluID/snapshots/2024-08-23-ILI_incidence.csv",
-            "target-data/ERVISS/snapshots/2024-09-06-ILI_incidence.csv",
-            "target-data/ERVISS/snapshots/2024-07-12-ILI_incidence.csv",
-            "target-data/FluID/snapshots/2024-07-26-ILI_incidence.csv",
-            "target-data/FluID/snapshots/2024-07-19-ILI_incidence.csv",
-            "target-data/FluID/snapshots/2024-07-12-ILI_incidence.csv",
-            "target-data/FluID/snapshots/2024-09-13-ILI_incidence.csv",
             "target-data/ERVISS/snapshots/2024-08-09-ILI_incidence.csv",
-            "target-data/ERVISS/snapshots/2024-07-19-ILI_incidence.csv",
-            "target-data/FluID/snapshots/2024-08-02-ILI_incidence.csv",
-            "target-data/FluID/snapshots/2024-09-20-ILI_incidence.csv",
-            "target-data/ERVISS/snapshots/2024-09-27-ILI_incidence.csv",
-            "target-data/ERVISS/snapshots/2024-08-02-ILI_incidence.csv",
             "target-data/ERVISS/snapshots/2024-08-30-ILI_incidence.csv",
             "target-data/ERVISS/snapshots/2024-08-16-ILI_incidence.csv",
+            "target-data/ERVISS/snapshots/2024-07-12-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2024-07-12-ILI_incidence.csv",
             "target-data/ERVISS/snapshots/2024-09-13-ILI_incidence.csv",
-            "target-data/ERVISS/snapshots/2024-08-23-ILI_incidence.csv"
+            "target-data/FluID/snapshots/2024-09-20-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2024-07-19-ILI_incidence.csv",
+            "target-data/ERVISS/snapshots/2024-09-27-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2024-08-02-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2024-08-16-ILI_incidence.csv",
+            "target-data/ERVISS/snapshots/2024-07-19-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2024-07-26-ILI_incidence.csv",
+            "target-data/ERVISS/snapshots/2024-09-06-ILI_incidence.csv",
+            "target-data/ERVISS/snapshots/2024-08-23-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2024-08-23-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2024-09-13-ILI_incidence.csv",
+            "target-data/ERVISS/snapshots/2024-08-02-ILI_incidence.csv",
+            "target-data/ERVISS/snapshots/2024-07-26-ILI_incidence.csv",
+            "target-data/ERVISS/snapshots/2024-09-20-ILI_incidence.csv",
+            "target-data/FluID/snapshots/2024-09-27-ILI_incidence.csv"
         ]
     }
 }
